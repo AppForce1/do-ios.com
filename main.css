@@ -57,6 +57,10 @@
   }
 
 	@media screen and (max-width: 1000px) {
+		#topMenu img#logo {
+			height: 153px;
+		}
+
     #topMenu {
 			text-align: center;
 		}
@@ -71,6 +75,9 @@
 		}
 	}
 
+  .doios {
+		text-transform: none;
+  }
 
 	ol, ul {
 		list-style: none;
@@ -572,7 +579,7 @@
 
 	.main {
 		position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 90px;
 		max-width: 85%;
 		min-width: 200px;
 		padding: 0.5em 2em 0.5em 2em;
@@ -589,10 +596,10 @@
 		-webkit-transform: rotateX(0deg);
 		-ms-transform: rotateX(0deg);
 		transform: rotateX(0deg);
-		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-		transition: opacity 1s ease, transform 1s ease;
+		-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease;
+		-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+		-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease;
+		transition: opacity 0.5s ease, transform 0.5s ease;
     border-top: 1px solid #F8F8F8;
     background: #F8F8F8; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(white, #F8F8F8); /* For Safari 5.1 to 6.0 */
