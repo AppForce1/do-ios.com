@@ -189,21 +189,20 @@
 		transition: color 0.2s ease, border-color 0.2s ease;
 		color: inherit;
 		text-decoration: none;
+	  color: #008de2;
 	}
 
-         
+	a:before {
+		-moz-transition: color 0.2s ease, text-shadow 0.2s ease;
+		-webkit-transition: color 0.2s ease, text-shadow 0.2s ease;
+		-ms-transition: color 0.2s ease, text-shadow 0.2s ease;
+		transition: color 0.2s ease, text-shadow 0.2s ease;
+	}
 
-		a:before {
-			-moz-transition: color 0.2s ease, text-shadow 0.2s ease;
-			-webkit-transition: color 0.2s ease, text-shadow 0.2s ease;
-			-ms-transition: color 0.2s ease, text-shadow 0.2s ease;
-			transition: color 0.2s ease, text-shadow 0.2s ease;
-		}
-
-		a:hover {
-		    color: #313f47;
-                    text-decoration: underline;
-		}
+	a:hover {
+	    color: #313f47;
+                  text-decoration: underline;
+	}
 
 	strong, b {
 		color: #313f47;
@@ -223,9 +222,9 @@
 		margin: 0 0 1em 0;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
-		}
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		color: inherit;
+	}
 
 	h1 {
 		font-size: 1.85em;
@@ -569,33 +568,15 @@
 			opacity: 0.5;
 		}
 
-/* Animated Lander */
-	#animation {
-		position: fixed;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-		width: 100%;
-                height: 100%;
-		image-rendering: -webkit-optimize-contrast;
-		z-index: -1;
-	}
-
-        .passThroughAnimation {
-            pointer-events: none;
-        }
-
-
 /* Main */
 
 	.main {
 		position: relative;
-                margin-bottom: 40px;
+    margin-bottom: 40px;
 		max-width: 85%;
 		min-width: 200px;
 		padding: 0.5em 2em 0.5em 2em;
-                background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 		opacity: 0.9;
 		border-radius: 4px;
 		cursor: default;
@@ -612,36 +593,36 @@
 		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 		transition: opacity 1s ease, transform 1s ease;
-                border-top: 1px solid #F8F8F8;
-                background: #F8F8F8; /* For browsers that do not support gradients */
-                background: -webkit-linear-gradient(white, #F8F8F8); /* For Safari 5.1 to 6.0 */
-                background: -o-linear-gradient(white, #F8F8F8); /* For Opera 11.1 to 12.0 */
-                background: -moz-linear-gradient(white, #F8F8F8); /* For Firefox 3.6 to 15 */
-                background: linear-gradient(white, #F8F8F8); /* Standard syntax */
+    border-top: 1px solid #F8F8F8;
+    background: #F8F8F8; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #F8F8F8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #F8F8F8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #F8F8F8); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #F8F8F8); /* Standard syntax */
 	}
 
-         .main .col-3 {
-           width: 30%;
-           float: left;
-           margin: 0 1.5%;
-         }
+	.main .col-3 {
+	  width: 30%;
+	  float: left;
+	  margin: 0 1.5%;
+	}
 
-         .main .col-3 h3 {
-           color: #008de2;
-           font-weight: bold;
-         }
-    
-         .main iframe.youtube {
-            margin-bottom: 25px;
+	.main .col-3 h3 {
+	  color: #008de2;
+	  font-weight: bold;
+	}
 
-            min-height: 315px;
-         }
+	.main iframe.youtube {
+	   margin-bottom: 25px;
 
-         #eventbriteButtonImage {
-             width: 100%;
-             max-width: 253px;
-             min-width: 100px;
-         }
+	   min-height: 315px;
+	}
+
+	#eventbriteButtonImage {
+	   width: 100%;
+	   max-width: 253px;
+	   min-width: 100px;
+	}
 
          #eventbrite {
 		position: relative;
