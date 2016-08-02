@@ -18,45 +18,52 @@
 	}
         
 	body {
-             line-height: 1;
-             height: 100%;
+		line-height: 1;
+		height: 100%;
 	}
 
-        #topMenu {
-           min-width: 75%;
-           font-size: 150%;
-        }
-        
-        .marginWrapper {
-            margin: 25px 10px 35px 10px;
-        }
+  #topMenu {
+     min-width: 75%;
+     font-size: 150%;
+  }
+  
+  .marginWrapper {
+      margin: 25px 10px 35px 10px;
+  }
 
-        .marginWrapper .twitter-follow-button {
-            margin-left: 30px;
-        }
+  .marginWrapper .twitter-follow-button {
+      margin-left: 30px;
+  }
 
-        #topMenu img#logo {
-          height: 306px;
-          margin: 50px 40px 50px 0px;
-          float: left;
-        }
+  #topMenu img#logo {
+    height: 306px;
+    margin: 50px 40px 50px 0px;
+    float: left;
+  }
 
-        #topMenu ul {
-          list-style: none;
-          line-height: 75px;
-          font-weight: bold;
-          text-align: right;
-          padding-top: 30px;
-        }
+  #topMenu ul {
+    list-style: none;
+    line-height: 75px;
+    font-weight: bold;
+    text-align: right;
+    padding-top: 30px;
+  }
+
+  #topMenu ul img.listicon {
+  	width: 1.5em;
+  	vertical-align: middle;
+  	padding-bottom: 3px;
+  	margin-left: 0.5em;
+  }
 
 	@media screen and (max-width: 1000px) {
-                #topMenu {
+    #topMenu {
 			text-align: center;
 		}
 
 		#topMenu img#logo {
 			float: none;
-                        margin-left: 40px;
+      margin-left: 40px;
 		}
 		
 		#topMenu ul {
