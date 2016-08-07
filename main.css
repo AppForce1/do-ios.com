@@ -622,28 +622,7 @@ iframe#aftermovie {
 }
 
 #eventbrite {
-	position: relative;
-	margin-bottom: 40px;
-	max-width: 95%;
-	min-width: 200px;
-	padding: 3.5em 3em 1em 3em;
-	background-color: rgba(255, 255, 255, 0.8);
-	opacity: 0.9;
-	border-radius: 4px;
-	cursor: default;
-	text-align: center;
-	-moz-transform-origin: 50% 50%;
-	-webkit-transform-origin: 50% 50%;
-	-ms-transform-origin: 50% 50%;
-	transform-origin: 50% 50%;
-	-moz-transform: rotateX(0deg);
-	-webkit-transform: rotateX(0deg);
-	-ms-transform: rotateX(0deg);
-	transform: rotateX(0deg);
-	-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-	-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-	-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-	transition: opacity 1s ease, transform 1s ease;
+	height: 400px;
 }
 
 img.sponsor {
@@ -737,6 +716,10 @@ iframe#map {
 	    	display: block;
 		}
 
+		#eventbrite {
+			height: 500px;
+		}
+
 		img.sponsor {
 			width: 200px
 		}
@@ -749,6 +732,7 @@ iframe#map {
 		iframe#map {
 			float: none;
 			width: 100%;
+			margin-top: 40px;
 		}
 	}
 
