@@ -1,16 +1,16 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>DO iOS Conference - The iOS conference in Amsterdam</title>
+    <title>DO iOS Conference-The iOS conference in Amsterdam</title>
     <meta charset="utf-8"/>
     <meta name="description" content="Meet us in Amsterdam, November 15th and 16th, 2016 and get inspired by talks from the best gurus and iOS professionals."/>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="http://do-ios.com/images/card.png">
     <meta name="twitter:site" content="@iosconf">
-    <meta name="twitter:title" content="DO iOS Conference - The iOS conference in Amsterdam">
+    <meta name="twitter:title" content="DO iOS Conference-The iOS conference in Amsterdam">
     <meta name="twitter:description" content="Meet us in Amsterdam, November 15th and 16th, 2016 and get inspired by talks from the best gurus and iOS professionals.">
     <meta property="og:url" content="http://do-ios.com/" />
-    <meta property="og:title" content="DO iOS Conference - The iOS Conference in Amsterdam" />
+    <meta property="og:title" content="DO iOS Conference-The iOS Conference in Amsterdam" />
     <meta property="og:description" content="Meet us in Amsterdam, November 15th and 16th, 2016 and get inspired by talks from the best gurus and iOS professionals." />
     <meta property="og:image" content="http://do-ios.com/images/card.png" />
     <meta name="keywords" content="iOS conference amsterdam do november 2016 zwijger"/>
@@ -33,20 +33,20 @@
           <img id="caliper" src="images/caliper.png" />
         </div>
         <div class="full-horizontal upper">
-            <a href="#conference">Conference</a>
-            <a href="#university">University</a>
-            <a href="#speakers">Speakers</a>
-            <a href="#tickets">Tickets</a>
-            <!--<a href="#">Sponsors</a>-->
-            <a href="#contact">Contact</a>
+            <a href="#conference" class="hover-blue">Conference</a>
+            <a href="#university" class="hover-purple">University</a>
+            <a href="#speakers" class="hover-red">Speakers</a>
+            <a href="#tickets" class="hover-orange">Tickets</a>
+            <!--<a href="#sponsors" class="hover-yellow">Sponsors</a>-->
+            <a href="#contact" class="hover-green">Contact</a>
         </div>​
         <div id="fake-bottom-separator"></div>
       </div>
       <section class="main">
         <a name="conference"></a> 
         <p>Mark your calendars for another great conference <span style="font-weight: bold; font-size: 115%;">November 15 and 16</span> in <span style="font-weight: bold; font-size: 115%;">Amsterdam</span>!<br> The first DO <span class="ios">iOS</span> 2015 was a huge success. So we're bringing it back for 2016, with an exciting, new line-up of the most well-known international <span class="ios">iOS</span> Gurus.</p>
-        <img width="171.5" class="date" src="images/november_15.png" />
-        <img width="172" class="date" src="images/november_16.png" /><br>
+        <img width="171.5" class="date scale-effect" src="images/november_15.png" />
+        <img width="172" class="date scale-effect" src="images/november_16.png" /><br>
         <a href="http://www.eventbrite.nl/e/doios-2016-tickets-26388244951?ref=ebtn" target="_blank">Get your Early Bird ticket now!</a>
       </section>
       <section class="main fade">
@@ -63,7 +63,7 @@
       </section>
       <section class="main">
         <a name="speakers"></a>
-        <img class="h1" src="images/speech_bubble.png"/>
+        <img class="h1 scale-effect" src="images/speech_bubble.png"/>
         <h1>Speakers</h1>
         <table id="speaker-table">
           <tr>
@@ -72,8 +72,32 @@
               <span class="time-of-talk">09:00-10:00</span>
               <img class="responsive-speaker-image" src="images/speakers/ayaka_nonaka.jpg" />
             </td>
-            <td><span class="speaker-name">Ayaka Nonaka</span> is an iOS engineer at Workflow and was previously at Venmo leading their iOS team. In the past, she’s given talks on natural language processing in Swift, scripting in Swift, and a few other things. Recently she’s been writing at <a href="http://swift.ayaka.me/">Learn Swift ↯</a> to show how powerful the language can be.</td>
+            <td class="talk-description"><span class="speaker-name">Ayaka Nonaka</span> is an iOS engineer at Workflow and was previously at Venmo leading their iOS team. In the past, she’s given talks on natural language processing in Swift, scripting in Swift, and a few other things. Recently she’s been writing at <a href="http://swift.ayaka.me/">Learn Swift ↯</a> to show how powerful the language can be.</td>
             <td class="speaker-image"><img src="images/speakers/ayaka_nonaka.jpg" /></td>
+          </tr>
+          <tr class="tba">
+            <td class="talk-cell">
+              <span class="type-of-talk">Talks</span><br>
+              <span class="time-of-talk">10:00-12:00</span>
+            </td>
+            <td class="talk-description"></td>
+            <td class="speaker-image"></td>
+          </tr>
+          <tr>
+            <td class="talk-cell">
+              <span class="type-of-talk">Lunch</span><br>
+              <span class="time-of-talk">12:00-13:00</span>
+            </td>
+            <td class="talk-description">Take a break from the amazing content with a delicious lunch. Vegetarian options available!</td>
+            <td class="speaker-image"></td>
+          </tr>
+          <tr class="tba">
+            <td class="talk-cell">
+              <span class="type-of-talk">Talks</span><br>
+              <span class="time-of-talk">13:00-16:00</span>
+            </td>
+            <td class="talk-description"></td>
+            <td class="speaker-image"></td>
           </tr>
           <tr>
             <td class="talk-cell">
@@ -81,15 +105,16 @@
               <span class="time-of-talk">16:00-17:00</span>
               <img class="responsive-speaker-image" src="images/speakers/daniel_steinberg.jpg" />
             </td>
-            <td><span class="speaker-name">Daniel Steinberg</span> has spent the last three decades working as a professional Swift developer. OK, he hasn't. But he's really enjoying the Swift Programming Language. He has written apps for the iPhone and the iPad since the SDKs first appeared and has written programs for the Mac all the way back to System 7. You can find him at <a href="http://dimsumthinking.com">Dim Sum Thinking</a>.</td>
+            <td class="talk-description"><span class="speaker-name">Daniel Steinberg</span> has spent the last three decades working as a professional Swift developer. OK, he hasn't. But he's really enjoying the Swift Programming Language. He has written apps for the iPhone and the iPad since the SDKs first appeared and has written programs for the Mac all the way back to System 7. You can find him at <a href="http://dimsumthinking.com">Dim Sum Thinking</a>.</td>
             <td class="speaker-image"><img src="images/speakers/daniel_steinberg.jpg" /></td>
           </tr>
         </table>
+        <p>Programme and speakers will be updated regularly after the CFP has ended. So check back!</p>
       </section>
       <section class="main fade">
           <a name="university"></a> 
-          <img class="h1" src="images/fingerprint.png"/>
-          <h1>University Day - Thinking in Swift 3 by Daniel Steinberg</h1>
+          <img class="h1 scale-effect" src="images/fingerprint.png"/>
+          <h1>University Day-Thinking in Swift 3 by Daniel Steinberg</h1>
           <p>In addition to the main <span class="ios">DO iOS</span> Conference Day, we’ll host a <span class="ios">DO iOS</span> University Day where Daniel Steinberg will explain more about the Patterns of Programming in Swift.</p>
           <h2>Who's it for?</h2>
           <p>This course is for programmers who know the fundamentals of the Swift Programming Language but haven't mastered the paradigms.</p>
@@ -101,10 +126,26 @@
       </section>
       <section class="main">
           <a name="tickets"></a> 
-          <img class="h1" src="images/gear.png"/>
+          <img class="h1 scale-effect" src="images/gear.png"/>
           <h1>Available Tickets</h1>
           <p>In addition to the main <span class="ios">DO iOS</span> Conference Day, we’ll host a <span class="ios">DO iOS</span> University Day when leading experts will explain the latest tech, step by step. (limited availability)</p>
-          <iframe  src="http://eventbrite.nl/tickets-external?eid=26388244951&ref=etckt" frameborder="0" vspace="0" hspace="0" width="100%" height="430px" scrolling="auto" allowtransparency="true"></iframe>
+          <iframe  src="http://eventbrite.nl/tickets-external?eid=26388244951&ref=etckt" frameborder="0" vspace="0" hspace="0" width="100%" height="400px" scrolling="no" allowtransparency="true"></iframe>
+      </section>
+      <section class="main fade">
+          <h1>Sponsors</h1>
+          <img width="400" src="images/sponsors/ING.png" />
+      </section>
+      <section class="main">
+          <h1>Location</h1>
+          <p>You loved last years location, so this year we return to</p>
+          <ul id="location-address">
+            <li><a href="https://dezwijger.nl/over-ons/about-us/">Pakhuis de Zwijger</a></li>
+            <li>Piet Heinkade 181 K</li>
+            <li>1019 HC</li>
+            <li>Amsterdam, The Netherlands</li>
+          </ul>
+          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11016.024376682528!2d4.914606613274338!3d52.37243403858497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609a80e2c8a2f%3A0x7aa4a309522352c!2sZalen+Pakhuis+de+Zwijger+B.V.!5e0!3m2!1sen!2snl!4v1470589349237" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <p class="clear"></p>
       </section>
       <section class="main fade cfp">
           <h1>Enter our Call For Papers</h1>
@@ -120,7 +161,7 @@
           <p><a class="twitter-follow-button" href="https://twitter.com/iosconf">Follow DO iOS</a></p>
           <p>Produced by: <a href="http://xebia.com">Xebia</a></p>
           <p>Community Partner: <a href="http://cocoaheads.nl/">CocoaHeadsNL</a></p>
-          <img class="h1" src="images/camera.png"/>
+          <img class="h1 scale-effect" src="images/camera.png"/>
           <p><span class="ios">DO iOS</span> is dedicated to a harassment-free conference experience for everyone. Our anti-harassment policy can be found here: <a href="http://confcodeofconduct.com/" class="nowrap">confcodeofconduct.com</a></p>
           <p>We're always looking for more sponsors that are just as enthousiastic about mobile as we are.<br> Get in touch to get involved: <a href="tel:+31628453246">+31 (0)6 284 532 46</a> or email to <a href="mailto:info@do-ios.com" class="nowrap">info@do-ios.com</a></p>
       </footer>
