@@ -441,6 +441,14 @@ div#fake-bottom-separator {
 	letter-spacing: 0.1em;
 }
 
+img.h1 {
+	width: 100px;
+}
+
+.main img {
+	vertical-align: baseline;
+}
+
 .main img.date {
 	margin: 0 25px 25px 25px;
 }
@@ -467,6 +475,54 @@ div#fake-bottom-separator {
 	font-size: 175%;
 	margin: 0.2em;
 	line-height: 1.2;
+}
+
+table#speaker-table {
+vertical-align: bottom;
+}
+
+table#speaker-table tr {
+}
+
+table#speaker-table tr td {
+	vertical-align: middle;
+	text-align: justify;
+	padding: 1%;
+}
+
+img.responsive-speaker-image {
+	display: none;
+}
+
+span.type-of-talk {
+	font-style: italic;
+}
+
+span.time-of-talk {
+
+}
+
+span.speaker-name {
+	font-weight: bold;
+}
+
+table#speaker-table tr td.speaker-image {
+	width: 15%;
+	padding: 0;
+	padding-left: 40px;
+}
+
+td.speaker-image img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.cfp p {
+	margin: 0;
+}
+
+.cfp {
+	padding-bottom: 20px;
 }
 
 section.aftermovie {
@@ -502,6 +558,16 @@ iframe#aftermovie {
 	    .main iframe {
 	       min-height: 0px;
 	    }
+
+	    td.speaker-image {
+	    	display: none;
+	    }
+
+	    img.responsive-speaker-image {
+	    	display: inline-block;
+	    	width: 100%;
+	    	vertical-align: middle;
+		}
 	}
 
 body.is-loading .main {
@@ -546,19 +612,6 @@ body.is-loading .main {
 
 #poweredBy {
 	display: none;
-}
-
-#icons {
-	padding: 1.5em 1em 1em 1em;
-}
-
-#icons img {
-	width: 32px;
-	margin: 10px 10px;
-}
-
-#iconImages {
-	margin-bottom: 10px;
 }
 
 .fade {
