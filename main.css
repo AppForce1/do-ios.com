@@ -481,17 +481,16 @@ table#speaker-table {
 vertical-align: bottom;
 }
 
-table#speaker-table tr {
-}
-
-table#speaker-table tr td {
+table tr td {
 	vertical-align: middle;
 	text-align: justify;
 	padding: 1%;
 }
 
-img.responsive-speaker-image {
-	display: none;
+tr td.talk-cell {
+	text-align: center;
+	padding-right: 40px;
+	border-right: 1px solid silver;
 }
 
 span.type-of-talk {
@@ -506,10 +505,17 @@ span.speaker-name {
 	font-weight: bold;
 }
 
-table#speaker-table tr td.speaker-image {
+tr td.speaker-image {
 	width: 15%;
 	padding: 0;
 	padding-left: 40px;
+}
+
+img.responsive-speaker-image {
+	display: none;
+	width: 50%;
+	vertical-align: middle;
+	margin: 10px auto;
 }
 
 td.speaker-image img {
@@ -559,14 +565,16 @@ iframe#aftermovie {
 	       min-height: 0px;
 	    }
 
+	    td.talk-cell {
+	    	padding-right: 10px;
+	    }
+
 	    td.speaker-image {
 	    	display: none;
 	    }
 
 	    img.responsive-speaker-image {
-	    	display: inline-block;
-	    	width: 100%;
-	    	vertical-align: middle;
+	    	display: block;
 		}
 	}
 
