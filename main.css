@@ -389,7 +389,7 @@ div.full-horizontal a:hover {
 div#fake-bottom-separator {
 	width: 100%;
 	height: 1px;
-	margin-top: -3.7em;
+	margin-top: -3.9em;
 	border-bottom: 1px solid silver;
 }
 
@@ -615,6 +615,82 @@ iframe#aftermovie {
 	height: 500px;
 }
 
+#eventbriteButtonImage {
+   width: 100%;
+   max-width: 253px;
+   min-width: 100px;
+}
+
+#eventbrite {
+	position: relative;
+	margin-bottom: 40px;
+	max-width: 95%;
+	min-width: 200px;
+	padding: 3.5em 3em 1em 3em;
+	background-color: rgba(255, 255, 255, 0.8);
+	opacity: 0.9;
+	border-radius: 4px;
+	cursor: default;
+	text-align: center;
+	-moz-transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-moz-transform: rotateX(0deg);
+	-webkit-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	-moz-transition: opacity 1s ease, -moz-transform 1s ease;
+	-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+	-ms-transition: opacity 1s ease, -ms-transform 1s ease;
+	transition: opacity 1s ease, transform 1s ease;
+}
+
+img.sponsor {
+	width: 300px;
+}
+
+ul#location-address {
+	float: left;
+	text-align: left;
+
+}
+
+iframe#map {
+	float: right;
+	width: 50%;
+	height: 200px;
+}
+
+.clear {
+	clear: both;
+}
+
+.fade {
+	background: #F2F2F0; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#FCFCFC, #F2F2F0); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#FCFCFC, #F2F2F0); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#FCFCFC, #F2F2F0); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#FCFCFC, #F2F2F0); /* Standard syntax */
+}
+
+/* Footer */
+
+.footer {
+	clear: both;
+	-moz-align-self: -moz-flex-end;
+	-webkit-align-self: -webkit-flex-end;
+	-ms-align-self: -ms-flex-end;
+	align-self: flex-end;
+            margin: 0 auto;
+	padding: 1.5em 10% 1.5em 10%;
+	color: rgba(0, 0, 0, 0.75);
+	cursor: default;
+	text-align: center;
+	letter-spacing: 0;
+	font-size: 80%;
+}
+
 	@media screen and (max-width: 520px) {
 		.main {
 			min-width: 0;
@@ -660,80 +736,16 @@ iframe#aftermovie {
 	    img.responsive-speaker-image {
 	    	display: block;
 		}
+
+		img.sponsor {
+			width: 200px
+		}
+
+		iframe.map {
+			float: none;
+		}
 	}
 
-
-#eventbriteButtonImage {
-   width: 100%;
-   max-width: 253px;
-   min-width: 100px;
-}
-
-#eventbrite {
-	position: relative;
-	margin-bottom: 40px;
-	max-width: 95%;
-	min-width: 200px;
-	padding: 3.5em 3em 1em 3em;
-	background-color: rgba(255, 255, 255, 0.8);
-	opacity: 0.9;
-	border-radius: 4px;
-	cursor: default;
-	text-align: center;
-	-moz-transform-origin: 50% 50%;
-	-webkit-transform-origin: 50% 50%;
-	-ms-transform-origin: 50% 50%;
-	transform-origin: 50% 50%;
-	-moz-transform: rotateX(0deg);
-	-webkit-transform: rotateX(0deg);
-	-ms-transform: rotateX(0deg);
-	transform: rotateX(0deg);
-	-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-	-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-	-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-	transition: opacity 1s ease, transform 1s ease;
-}
-
-ul#location-address {
-	float: left;
-	text-align: left;
-
-}
-
-iframe#map {
-	float: right;
-	width: 50%;
-	height: 200px;
-}
-
-.clear {
-	clear: both;
-}
-
-.fade {
-	background: #F2F2F0; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(#FCFCFC, #F2F2F0); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#FCFCFC, #F2F2F0); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#FCFCFC, #F2F2F0); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#FCFCFC, #F2F2F0); /* Standard syntax */
-}
-
-/* Footer */
-
-.footer {
-	clear: both;
-	-moz-align-self: -moz-flex-end;
-	-webkit-align-self: -webkit-flex-end;
-	-ms-align-self: -ms-flex-end;
-	align-self: flex-end;
-            margin: 0 auto;
-	padding: 1.5em 10% 1.5em 10%;
-	color: rgba(0, 0, 0, 0.75);
-	cursor: default;
-	text-align: center;
-	letter-spacing: 0;
-	font-size: 80%;
-}
 
 	
 
