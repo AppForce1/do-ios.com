@@ -33,17 +33,18 @@
           <img id="caliper" src="images/caliper.png" />
         </div>
         <div class="full-horizontal upper">
-            <a href="#">Conference</a>
-            <a href="#">Training</a>
-            <a href="#">2015</a>
-            <a href="#">Speakers</a>
-            <a href="#">Tickets</a>
-            <a href="#">Sponsors</a>
-            <a href="#">Contact</a>
+            <a href="#conference">Conference</a>
+            <a href="#university">University</a>
+            <a href="#2015">2015</a>
+            <a href="#speakers">Speakers</a>
+            <a href="#tickets">Tickets</a>
+            <!--<a href="#">Sponsors</a>-->
+            <a href="#contact">Contact</a>
         </div>​
         <div id="fake-bottom-separator"></div>
       </div>
       <section class="main">
+        <a name="conference"></a> 
         <p>Mark your calendars for another great conference <span style="font-weight: bold; font-size: 115%;">November 15 and 16</span> in <span style="font-weight: bold; font-size: 115%;">Amsterdam</span>!<br> The first DO <span class="ios">iOS</span> 2015 was a huge success. So we're bringing it back for 2016, with an exciting, new line-up of the most well-known international <span class="ios">iOS</span> Gurus.</p>
         <img width="171.5" class="date" src="images/november_15.png" />
         <img width="172" class="date" src="images/november_16.png" /><br>
@@ -52,17 +53,34 @@
       <section class="main fade">
         <div class="col-3 text-center"><h3>Conference for developers</h3><p>Learn about the latest advancements in Apple technologies.</p></div>
         <div class="vertical-separator"></div>
-        <div class="col-3 text-center"><h3>In-depth experience</h3><p>Immerse yourself in fantastic sessions about <span class="ios">iOS</span>, Swift and the latest frameworks.</p></div>
+        <div class="col-3 text-center"><h3>In-Depth experience</h3><p>Immerse yourself in fantastic sessions about <span class="ios">iOS</span>, Swift and the latest frameworks.</p></div>
         <div class="vertical-separator"></div>
         <div class="col-3 text-center"><h3>Build to last</h3><p>Get insight into best practices to create 5-star apps.</p></div>
       </section>
-      <section class="main">
-        <h1>Why developers love <span class="ios">DO iOS</span></h1>
-        <p>Check out the links below to watch the <span class="ios">DO iOS</span> 2015 After Movie and Past Presentations. You’ll discover why developers loved last year’s event. And <span class="ios">DO iOS</span> 2016 promises to be even better!</p>
-        <p><a href="https://www.youtube.com/embed/vrDJlEOFg-g">WATCH</a> <span class="ios">DO iOS</span> 2015 After Movie</p>
+      <section class="main aftermovie fade">
+        <a name="2015"></a>
+        <iframe id="aftermovie" src="https://www.youtube.com/embed/vrDJlEOFg-g" frameborder="0" allowfullscreen></iframe>
+        <p>Last year developers absolutely loved DO iOS. You can watch the aftermovie or check out the link below to watch past presentations. And DO iOS 2016 promises to be even better!</p>
         <p><a href="https://www.youtube.com/playlist?list=PLC3RVtNPazW9npPAmF61HyNDCiL3GDmoZ">WATCH</a> <span class="ios">DO iOS</span> 2015 Past Presentations</p>
       </section>
       <section class="main" id="icons">
+          <a name="university"></a> 
+          <h1>University Day - Thinking in Swift 3 by Daniel Steinberg</h1>
+          <p>In addition to the main <span class="ios">DO iOS</span> Conference Day, we’ll host a <span class="ios">DO iOS</span> University Day where Daniel Steinberg will explain more about the Patterns of Programming in Swift.</p>
+          <h2>Who's it for?</h2>
+          <p>This course is for programmers who know the fundamentals of the Swift Programming Language but haven't mastered the paradigms.</p>
+          <h2>What you'll learn</h2>
+          <p>This fast-paced workshop shows you how to take advantage of Swift features to write more robust code that is easier to reason about. Swift has been changing quickly over the past year. In this workshop you'll learn to embrace the latest Swift 3 conventions.</p>
+          <p>One of the strengths of Swift is that it can borrow the best from a multitude of paradigms. Swift stresses protocol oriented programming. We'll look at how to successfully use it and weave it together with OO and functional code into a readable and flexible architecture.</p>
+          <p>We assume that you are an experienced programmer who has spent some time looking at Swift but you aren't yet an expert in Swift. You understand most of the hows and whats of working with Swift and are looking for the whys and wheres.</p>
+      </section>
+      <section class="main fade" id="icons">
+        <a name="speakers"></a>
+        <h1>Speakers</h1>
+        <p></p>
+      </section>
+      <section class="main" id="icons">
+          <a name="tickets"></a> 
           <h1>Available Tickets</h1>
           <p>In addition to the main <span class="ios">DO iOS</span> Conference Day, we’ll host a <span class="ios">DO iOS</span> University Day when leading experts will explain the latest tech, step by step. (limited availability)</p>
           <iframe  src="http://eventbrite.nl/tickets-external?eid=26388244951&ref=etckt" frameborder="0" vspace="0" hspace="0" width="100%" height="430px" scrolling="auto" allowtransparency="true"></iframe>
@@ -73,7 +91,7 @@
             <img src="images/sirikit.png" />
         </div>
       </section>
-      <section class="main" id="icons">
+      <section class="main fade" id="icons">
           <h1>Enter our Call For Papers</h1>
           <p>Please submit your proposals for a talk. We are looking for regular and keynote sessions.</p>
           <p>Talk duration can be 25 minutes or 50 minutes. The CFP submission form will guide you through.</p>
@@ -83,10 +101,11 @@
           <p>Keep an eye on our twitter and website for more information and announcements</p>
       </section>
       <footer class="footer">
-         <p>Produced by: <a href="http://xebia.com">Xebia</a></p>
-         <p>Community Partner: <a href="http://cocoaheads.nl/">CocoaHeadsNL</a></p>
-         <p><span class="ios">DO iOS</span> is dedicated to a harassment-free conference experience for everyone. Our anti-harassment policy can be found here: <a href="http://confcodeofconduct.com/" class="nowrap">confcodeofconduct.com</a></p>
-         <p>We're always looking for more sponsors that are just as enthousiastic about mobile as we are.<br> Get in touch to get involved: <a href="tel:+31628453246">+31 (0)6 284 532 46</a> or email to <a href="mailto:info@do-ios.com" class="nowrap">info@do-ios.com</a></p>
+          <a name="contact"></a> 
+          <p>Produced by: <a href="http://xebia.com">Xebia</a></p>
+          <p>Community Partner: <a href="http://cocoaheads.nl/">CocoaHeadsNL</a></p>
+          <p><span class="ios">DO iOS</span> is dedicated to a harassment-free conference experience for everyone. Our anti-harassment policy can be found here: <a href="http://confcodeofconduct.com/" class="nowrap">confcodeofconduct.com</a></p>
+          <p>We're always looking for more sponsors that are just as enthousiastic about mobile as we are.<br> Get in touch to get involved: <a href="tel:+31628453246">+31 (0)6 284 532 46</a> or email to <a href="mailto:info@do-ios.com" class="nowrap">info@do-ios.com</a></p>
       </footer>
     </div>
     </div>

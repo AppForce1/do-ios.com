@@ -417,7 +417,7 @@ div#fake-bottom-separator {
 .main {
 	position: relative;
 	margin-bottom: 20px;
-	max-width: 95%;
+	width: 95%;
 	min-width: 200px;
 	text-align: center;
 	margin-top: 40px;
@@ -437,6 +437,10 @@ div#fake-bottom-separator {
 	transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
+.main h1 {
+	letter-spacing: 0.1em;
+}
+
 .main img.date {
 	margin: 0 25px 25px 25px;
 }
@@ -446,6 +450,9 @@ div#fake-bottom-separator {
 	width: 31%;
 	float: left;
 	margin: 0 1.0%;
+	font-size: 150%;
+	letter-spacing: 0;
+	line-height: 1.2;
 }
 
 .main .vertical-separator {
@@ -456,13 +463,19 @@ div#fake-bottom-separator {
 }
 
 .main .col-3 h3 {
-  color: #008de2;
-  font-weight: bold;
+	font-weight: bold;
+	font-size: 175%;
+	margin: 0.2em;
+	line-height: 1.2;
 }
 
-.main iframe.youtube {
-   margin-bottom: 25px;
-   min-height: 315px;
+section.aftermovie {
+	margin-top: -15px;
+}
+
+iframe#aftermovie {
+	width: 100%;
+	height: 500px;
 }
 
 
@@ -472,6 +485,10 @@ div#fake-bottom-separator {
 			min-width: 0;
 			width: 100%;
 			padding: 4em 2em 2.5em 2em ;
+		}
+
+		section.aftermovie {
+			padding: 0;
 		}
 
 	    .main .col-3 {
@@ -545,11 +562,11 @@ body.is-loading .main {
 }
 
 .fade {
-	background: #F8F8F8; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(#FDFDFD, #F8F8F8); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#FDFDFD, #F8F8F8); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#FDFDFD, #F8F8F8); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#FDFDFD, #F8F8F8); /* Standard syntax */
+	background: #F2F2F0; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#FCFCFC, #F2F2F0); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#FCFCFC, #F2F2F0); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#FCFCFC, #F2F2F0); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#FCFCFC, #F2F2F0); /* Standard syntax */
 }
 
 /* Footer */
@@ -564,6 +581,8 @@ body.is-loading .main {
 	color: rgba(0, 0, 0, 0.75);
 	cursor: default;
 	text-align: center;
+	letter-spacing: 0;
+	font-size: 80%;
 }
 
 	
