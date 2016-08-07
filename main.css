@@ -741,8 +741,14 @@ iframe#map {
 			width: 200px
 		}
 
-		iframe.map {
+		ul#location-address {
 			float: none;
+			text-align: center;
+		}
+
+		iframe#map {
+			float: none;
+			width: 100%;
 		}
 	}
 
