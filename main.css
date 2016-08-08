@@ -524,6 +524,13 @@ img.scale-effect:hover {
 	line-height: 1.2;
 }
 
+section.university p {
+	text-align: justify;
+
+	padding-right: 20%;
+	padding-left: 20%;
+}
+
 table#speaker-table {
 	vertical-align: bottom;
 	max-width: 80%;
@@ -694,6 +701,11 @@ iframe#map {
 	    .main iframe {
 	       min-height: 0px;
 	    }
+
+		section.university p {
+			padding-right: inherit;
+			padding-left: inherit;
+		}
 
 	    table#speaker-table {
     		width: 100%;
