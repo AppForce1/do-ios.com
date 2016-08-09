@@ -590,22 +590,6 @@ td.speaker-image img {
 	vertical-align: middle;
 }
 
-td.speaker-image img {
-    -webkit-transition: all 10s ease; /* Safari and Chrome */
-    -moz-transition: all 10s ease; /* Firefox */
-    -ms-transition: all 10s ease; /* IE 9 */
-    -o-transition: all 10s ease; /* Opera */
-    transition: all 10s ease;
-}
-
-td.speaker-image img:hover {
-    -webkit-transform:scale(2); /* Safari and Chrome */
-    -moz-transform:scale(2); /* Firefox */
-    -ms-transform:scale(2); /* IE 9 */
-    -o-transform:scale(2); /* Opera */
-     transform:scale(2);
-}
-
 .cfp p {
 	margin: 0;
 }
