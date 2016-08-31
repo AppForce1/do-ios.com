@@ -529,7 +529,7 @@ section.university p {
 }
 
 ul#speakers {
-	text-align: center;
+	margin-top: 50px;
 }
 
 ul#speakers li {
