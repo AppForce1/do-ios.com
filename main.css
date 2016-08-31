@@ -181,10 +181,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 1em;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	color: inherit;
-}
-
 h1 {
 	font-size: 1.85em;
 	letter-spacing: 0.22em;
@@ -532,6 +528,49 @@ section.university p {
 	padding-left: 20%;
 }
 
+ul#speakers {
+	margin-top: 50px;
+}
+
+ul#speakers li {
+	width: 250px;
+	display: inline-block;
+	text-align: center;
+	list-style-type: none;
+	vertical-align: top;
+}
+
+ul#speakers li * {
+	width: 20%;
+}
+
+ul#speakers li img.speaker-image-round {
+	width: 60%;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
+
+ul#speakers li h4 {
+	width: 100%;
+	margin-bottom: 0;
+	color: #DF0F20;
+	font-weight: bold;
+}
+
+ul#speakers li h5 {
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 70%;
+	font-weight: bold;
+}
+
+ul#speakers li p {
+	width: 100%;
+	font-size: 80%;
+	color: #666;
+}
+
 table#speaker-table {
 	vertical-align: bottom;
 	max-width: 80%;
@@ -791,5 +830,15 @@ iframe#map {
 	.formerize-placeholder {
 		color: #616f77 !important;
 		opacity: 1.0;
+	}
+
+  .header-text {
+  	font-size: 36px;
+  	margin-bottom: 0px;
+  }
+	.sub-text {
+		font-size: 18px;
+		margin-top: 0px;
+		padding-top: 0px;
 	}
 
