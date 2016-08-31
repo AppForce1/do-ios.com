@@ -832,3 +832,13 @@ iframe#map {
 		opacity: 1.0;
 	}
 
+  .header-text {
+  	font-size: 36px;
+  	margin-bottom: 0px;
+  }
+	.sub-text {
+		font-size: 18px;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+
