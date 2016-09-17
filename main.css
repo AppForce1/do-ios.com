@@ -529,8 +529,8 @@ section.university p {
 }
 
 ul#speakers {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin: 50px auto;
+	width: 80%;
 }
 
 ul#speakers li {
@@ -730,6 +730,11 @@ iframe#map {
 		section.university p {
 			padding-right: inherit;
 			padding-left: inherit;
+		}
+
+		ul#speakers {
+			margin: 40px auto;
+			width: 95%;
 		}
 
 	    table#speaker-table {
