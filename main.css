@@ -885,7 +885,10 @@ iframe#map {
 			display: none;
 		}
 		.schedule-title {
-			font-size: 14pt;
+			font-size: 13pt;
+		}
+		.time {
+			font-size: 13pt;
 		}
 	}
 	.session-title {
