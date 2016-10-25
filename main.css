@@ -858,17 +858,31 @@ iframe#map {
 	.schedule p {
 		font-size: 10pt;
 	}
-	.schedule a, .session-speaker {
+	.schedule a, .speaker, .small-screen-speaker {
 		font-size: 12pt;
 		color: #DF0F20;
 	}
 	.schedule-contents li {
+		margin-left: 15%;
+		margin-right: 15%;
 		margin-bottom: 20px;
 	}
-	@media screen and (min-width: 768px) {
+	.small-screen-speaker {
+		display: none;
+	}
+	.schedule-contents .speaker {
+		display: inline;
+	}
+	@media screen and (max-width: 520px) {
 		.schedule-contents li {
-			margin-left: 200px;
-			margin-right: 200px;
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.small-screen-speaker {
+			display: block;
+		}
+		.schedule-contents .speaker {
+			display: none;
 		}
 	}
 	.session-title {
