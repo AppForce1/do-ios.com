@@ -856,24 +856,24 @@ iframe#map {
 		text-align: left;
 	}
 	.schedule p {
-		font-size: 8pt;
+		font-size: 10pt;
 	}
-	.schedule a, .session-speaker span {
+	.schedule a, .session-speaker {
 		font-size: 12pt;
 		color: #DF0F20;
 	}
-	@media screen and (min-width: 768px) {
-	.schedule .row {
-		margin-left: 200px;
-		margin-right: 200px;
+	.schedule-contents li {
+		margin-bottom: 20px;
 	}
-}
+	@media screen and (min-width: 768px) {
+		.schedule-contents li {
+			margin-left: 200px;
+			margin-right: 200px;
+		}
+	}
 	.session-title {
 		font-size: : 14pt;
 		font-weight: bold;
-	}
-	.schedule-time {
-		float: left;
 	}
 	.col-md-offset-4 {
 		clear: both;
