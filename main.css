@@ -346,7 +346,7 @@ div.full-horizontal:after {
 
 div.full-horizontal a {
 	color: black;
-	padding: 0 1em;
+	padding: 0 0.5em;
 	padding-bottom: 0.05em;
 	transition-duration: .15s;
 	transition-timing-function: ease-in-out;
@@ -852,3 +852,37 @@ iframe#map {
 		padding-top: 0px;
 	}
 
+	.schedule-contents {
+		text-align: left;
+	}
+	.schedule p {
+		font-size: 8pt;
+	}
+	.schedule a, .session-speaker span {
+		font-size: 12pt;
+		color: #DF0F20;
+	}
+	@media screen and (min-width: 768px) {
+	.schedule .row {
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+}
+	.session-title {
+		font-size: : 14pt;
+		font-weight: bold;
+	}
+	.schedule-time {
+		float: left;
+	}
+	.col-md-offset-4 {
+		clear: both;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	.schedule-title {
+		font-weight: bold;
+	}
+	.schedule .sessions-footer {
+		font-size: 8pt;
+	}
