@@ -665,11 +665,13 @@ img.sponsor {
 	width: 300px;
 }
 
+/*
 ul#location-address {
 	float: left;
 	text-align: left;
 
 }
+*/
 
 iframe#map {
 	float: right;
