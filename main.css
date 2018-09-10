@@ -661,9 +661,14 @@ iframe#aftermovie {
 	height: 530px;
 }
 
-img.sponsor {
+img.platinum-sponsor {
 	width: 300px;
 }
+
+img.gold-sponsor {
+	width: 75px;
+}
+
 
 /*
 ul#location-address {
