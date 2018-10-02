@@ -669,6 +669,9 @@ img.gold-sponsor {
 	width: 75px;
 }
 
+td.speaker-image img.gold-speaker {
+	width: 50px;
+}
 
 /*
 ul#location-address {
