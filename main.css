@@ -599,6 +599,12 @@ td.talk-cell {
 	border-right: 1px solid silver;
 }
 
+td.info-cell {
+	text-align: center;
+	padding-right: 40px;
+}
+
+
 span.type-of-talk {
 	font-style: italic;
 }
@@ -667,6 +673,10 @@ img.platinum-sponsor {
 
 img.gold-sponsor {
 	width: 75px;
+}
+
+img.silver-sponsor {
+	width: 60px;
 }
 
 td.speaker-image img.gold-speaker {

@@ -15,7 +15,7 @@
     <meta property="og:image" content="https://do-ios.com/images/card.png?v=1337" />
     <meta name="keywords" content="iOS conference amsterdam do november 2018"/>
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="main.css?v=43"/>
+    <link rel="stylesheet" href="main.css?v=44"/>
     <link rel="shortcut icon" type="image/png" href="/images/logo-60.png"/>
     <link rel="apple-touch-icon" href="/images/logo-60.png">
     <link rel="apple-touch-icon" sizes="76x76" href="/images/logo-76.png">
@@ -33,13 +33,11 @@
           <img id="caliper" src="images/caliper.png" />
         </div>
         <div class="full-horizontal upper">
-            <a href="#conference" class="hover-blue">Conference</a>
             <a href="#sponsors" class="hover-purple">Sponsors</a>
-<!--             <a href="#schedule" class="hover-green">Schedule</a> -->
+            <a href="#schedule" class="hover-red">Schedule</a>
             <a href="#tickets" class="hover-orange">Tickets</a>
             <a href="#location" class="hover-yellow">Location</a>
-            <a href="#speakers" class="hover-red">Speakers</a>
-            <a href="#university" class="hover-yellow">University</a>
+            <a href="#university" class="hover-blue">University</a>
             <a href="#contact" class="hover-green">Contact</a>
         </div>​
         <div id="fake-bottom-separator"></div>
@@ -52,12 +50,6 @@
         <h1>November 1st, 2018.</h1>
 	        Full day training day by Daniel Steinberg.
         </h1>
-<!--
-        <p>
-          Thanks for a great DO iOS 2015 and 2016!<br>
-          Videos of the 2016 sessions are available at Xebia's <a href="https://www.youtube.com/playlist?list=PLC3RVtNPazW9npPAmF61HyNDCiL3GDmoZ&mc_cid=24fc5b5631">YouTube channel</a><br>
-        </p>
--->
       </section>
       <section class="main">
           <a name="sponsors"></a> 
@@ -91,119 +83,138 @@
       </section>
 
       <section class="main">
-        <a name="speakers"></a>
+        <a name="schedule"></a>
         <img class="h1 scale-effect" src="images/speech_bubble.png"/>
-        <h1>Speakers</h1>
+        <h1>Schedule</h1>
         <table id="speaker-table">
           <tr>
             <td class="talk-cell">
-<!--
-              <span class="type-of-talk">Keynote</span><br>
+              <span class="type-of-talk">Registration</span><br>
               <span class="time-of-talk">09:00-10:00</span>
--->
-              <img class="responsive-speaker-image" src="images/speakers/daniel_steinberg.jpg" />
             </td>
-            <td><p><span class="speaker-name">Daniel Steinberg</span> has spent the last three decades working as a professional Swift developer. OK, he hasn't. But he's really enjoying the Swift Programming Language. He has written apps for the iPhone and the iPad since the SDKs first appeared and has written programs for the Mac all the way back to System 7. You can find him at <a href="http://dimsumthinking.com">Dim Sum Thinking</a>.</p></td>
-            <td class="speaker-image"><img src="images/speakers/daniel_steinberg.jpg" /></td>
+            <td><p>Get your badge, grab a coffee & interact.</p></td>
           </tr>
-          <tr>
-            <td></td>
-          </tr>
-
+          <tr><td></td></tr>
           <tr>
             <td class="talk-cell">
-<!--
-              <span class="type-of-talk">Session</span><br>
-              <span class="time-of-talk">09:00-10:00</span>
--->
-              <img class="responsive-speaker-image" src="images/speakers/alexander.jpg" />
+              <span class="type-of-talk">Welcome</span><br>
+              <span class="time-of-talk">10:00-10:15</span>
+              <img class="responsive-speaker-image" src="images/speakers/jeroen.png" />
             </td>
-            
-            <td><p><a href="https://agenda.com">Agenda</a> is Dutch, made by <span class="speaker-name">Alexander Griekspoor</span>, Drew McCormack and Marcello Luppi, three former scientists with a long history of making indie apps. Alex previously made a successful app for researchers called Papers, which he eventually sold to a scientific publisher. Back in 2013 he talked about <a href="https://www.youtube.com/watch?v=M_UpIonXn2U">what made him decide to give up his life as an indie developer</a> at NSConference. In this talk he picks up the story where he previously left off, telling how after a 3 year corporate stint, he felt it was time to start anew and return to something small and more hands-on creative again. How this eventually led to the idea for Agenda app and the bumpy road to his fourth Apple Design Award.</p></td>
-            <td class="speaker-image"><img src="images/speakers/alexander.jpg" /></td>
+            <td><p><span class="speaker-name">Jeroen Leenarts</span></p></td>
+            <td class="speaker-image"><img src="images/speakers/jeroen.jpg" /></td>
           </tr>
-          
-          <tr>
-            <td></td>
-          </tr>
-
-          
+          <tr><td></td></tr>
           <tr>
             <td class="talk-cell">
-<!--
               <span class="type-of-talk">Session</span><br>
-              <span class="time-of-talk">09:00-10:00</span>
--->
+              <span class="time-of-talk">10:15-11:00</span>
+              <img class="responsive-speaker-image" src="images/sponsors/q42.png" />
+            </td>
+            <td><p><span class="speaker-name">Tom Lokhorst</span></p></td>
+            <td class="speaker-image"><img class="gold-speaker" src="images/sponsors/q42.png" /></td>
+          </tr>
+          <tr><td></td></tr>
+          <tr>
+            <td class="talk-cell">
+              <span class="type-of-talk">Session</span><br>
+              <span class="time-of-talk">11:00-11:45</span>
               <img class="responsive-speaker-image" src="images/speakers/bas_broek.jpg" />
             </td>
             
-            <td><p>Our speaker <b>Bas Broek</b> is an interesting one. Co-author of the SwiftWeekly newsletter. Developing iOS apps since 2014. You could have met him at one of the <a href="https://www.meetup.com/cocoaheadsnl">CocoaHeadsNL Meetups</a>, or a try! Swift conference <a href="https://www.tryswift.co/events/2018/sanjose/">here</a> or <a href="https://www.tryswift.co/events/2018/nyc/">there</a>. </p>
-	            <p>In this talk Bas will look at how documenting your APIs can help anyone interacting with it have a more pleasant time and smoother experience for every user of your framework (including your future self). All that while writing better, more maintainable code, with fewer bugs and better testability in the process.</p>
-<!--
-				<p>Can you imagine working in a project where the API does not have documentation?</p>
-				<p>In programming, we often think about grouping logical components to prevent repeating ourselves. Often what comes next is to put these grouped components in what many of us know as a framework: a component that could be used independently of the application you're writing. But these clear borders can also be achieved in projects that do not aim to share those components with other applications, but rather to enforce logical grouping and structure.</p>
---></td>
+            <td><p><span class="speaker-name">Bas Broek</span></p><p>Our speaker Bas Broek is an interesting one. Co-author of the SwiftWeekly newsletter. Developing iOS apps since 2014. You could have met him at one of the <a href="https://www.meetup.com/cocoaheadsnl">CocoaHeadsNL Meetups</a>, or a try! Swift conference <a href="https://www.tryswift.co/events/2018/sanjose/">here</a> or <a href="https://www.tryswift.co/events/2018/nyc/">there</a>. </p>
+	            <p>In this talk Bas will look at how documenting your APIs can help anyone interacting with it have a more pleasant time and smoother experience for every user of your framework (including your future self). All that while writing better, more maintainable code, with fewer bugs and better testability in the process.</p></td>
             <td class="speaker-image"><img src="images/speakers/bas_broek.jpg" /></td>
           </tr>
-
-          <tr>
-            <td></td>
-          </tr>
-
+          <tr><td></td></tr>
           <tr>
             <td class="talk-cell">
-<!--
               <span class="type-of-talk">Session</span><br>
-              <span class="time-of-talk">09:00-10:00</span>
--->
-              <img class="responsive-speaker-image" src="images/speakers/eduard_ockerse.jpg" />
-            </td>
-            <td><p>Eduard Ockerse will provide a talk for our platinum sponsor <a href="https://werkenbijachmea.nl">Achmea</a>. Eduard has been an iOS developer for over 4 years, starting as a freelance developer in Málaga for small local companies.</p><p> The last three years he has worked on various large projects for clients in the financial industry, a telco and Smartify. <a href="https://smartify.org">Smartify</a> has been highlighted by Apple and has won multiple awards. Currently Eduard is spending his time on the <a href="https://www.centraalbeheer.nl/apps/even-appen/Paginas/even-appen.aspx">Centraal Beheer app</a>.</p></td>
-            <td class="speaker-image"><img src="images/speakers/eduard_ockerse.jpg" /></td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td class="talk-cell">
-<!--
-              <span class="type-of-talk">Session</span><br>
-              <span class="time-of-talk">09:00-10:00</span>
--->
+              <span class="time-of-talk">11:45-12:30</span>
               <img class="responsive-speaker-image" src="images/sponsors/ABN-AMRO.png" />
             </td>
-            <td><p>In the mobile department of ABN AMRO we feel the need of frequent releases to quickly react to our customers’ needs.</p>
+            <td><p><span class="speaker-name">ABN AMRO</span></p><p>In the mobile department of ABN AMRO we feel the need of frequent releases to quickly react to our customers’ needs.</p>
             <p>In 2017 we started a journey to accelerate our release cycle without compromising on quality. In this talk we will focus on interesting areas that we believe are slightly less common in the industry and that are part of our ongoing journey.</p></td>
             <td class="speaker-image"><img src="images/sponsors/ABN-AMRO.png" /></td>
-          </tr>    
-                    <tr>
-            <td></td>
-          </tr>
-      
+          </tr>          
+          <tr><td></td></tr>
           <tr>
             <td class="talk-cell">
-<!--
-              <span class="type-of-talk">Session</span><br>
-              <span class="time-of-talk">09:00-10:00</span>
--->
-              <img class="responsive-speaker-image" src="images/sponsors/q42.png" />
+              <span class="type-of-talk">Lunch</span><br>
+              <span class="time-of-talk">12:30-13:15</span>
             </td>
-            <td>Our gold sponsor, Q42 will host a technical talk.</td>
-            <td class="speaker-image"><img class="gold-speaker" src="images/sponsors/q42.png" /></td>
+            <td><p>Time to recover, recharge and get ready for the afternoon.</p></td>
           </tr>
-
-
+          <tr><td></td></tr>
           <tr>
-            <td></td>
-            <td>More info on our speakers soon...</td>
-            <td></td>
+            <td class="talk-cell">
+              <span class="type-of-talk">Session</span><br>
+              <span class="time-of-talk">13:15-14:00</span>
+              <img class="responsive-speaker-image" src="images/speakers/alexander.jpg" />
+            </td>
+            <td><p><span class="speaker-name">Alexander Griekspoor</span></p><p><a href="https://agenda.com">Agenda</a> is Dutch, made by Alexander Griekspoor, Drew McCormack and Marcello Luppi, three former scientists with a long history of making indie apps. Alex previously made a successful app for researchers called Papers, which he eventually sold to a scientific publisher. Back in 2013 he talked about <a href="https://www.youtube.com/watch?v=M_UpIonXn2U">what made him decide to give up his life as an indie developer</a> at NSConference. In this talk he picks up the story where he previously left off, telling how after a 3 year corporate stint, he felt it was time to start anew and return to something small and more hands-on creative again. How this eventually led to the idea for Agenda app and the bumpy road to his fourth Apple Design Award.</p></td>
+            <td class="speaker-image"><img src="images/speakers/alexander.jpg" /></td>
           </tr>
+          <tr><td></td></tr>
+          <tr>
+            <td class="talk-cell">
+              <span class="type-of-talk">Session</span><br>
+              <span class="time-of-talk">14:00-14:45</span>
+              <img class="responsive-speaker-image" src="images/speakers/eduard_ockerse.jpg" />
+            </td>
+            <td><p><span class="speaker-name">Eduard Ockerse</span></p><p>Eduard Ockerse will provide a talk for our platinum sponsor <a href="https://werkenbijachmea.nl">Achmea</a>. Eduard has been an iOS developer for over 4 years, starting as a freelance developer in Málaga for small local companies.</p><p> The last three years he has worked on various large projects for clients in the financial industry, a telco and <a href="https://smartify.org">Smartify</a>, which has been highlighted by Apple and has won multiple awards. Currently Eduard is spending his time on the <a href="https://www.centraalbeheer.nl/apps/even-appen/Paginas/even-appen.aspx">Centraal Beheer app</a>.</p></td>
+            <td class="speaker-image"><img src="images/speakers/eduard_ockerse.jpg" /></td>
+          </tr>
+          <tr><td></td></tr>
+          <tr>
+            <td class="talk-cell">
+              <span class="type-of-talk">Break</span><br>
+              <span class="time-of-talk">14:45-15:15</span>
+            </td>
+            <td><p>Almost made it, time for a coffee or a soda.</p></td>
+          </tr>
+          <tr><td></td></tr>
+          <tr>
+            <td class="talk-cell">
+              <span class="type-of-talk">Session</span><br>
+              <span class="time-of-talk">15:15-16:00</span>
+              <img class="responsive-speaker-image" src="images/speakers/daniel_steinberg.jpg" />
+            </td>
+            <td><p><span class="speaker-name">Daniel Steinberg</span></p><p>Daniel Steinberg has spent the last three decades working as a professional Swift developer. OK, he hasn't. But he's really enjoying the Swift Programming Language. He has written apps for the iPhone and the iPad since the SDKs first appeared and has written programs for the Mac all the way back to System 7. You can find him at <a href="http://dimsumthinking.com">Dim Sum Thinking</a>.</p></td>
+            <td class="speaker-image"><img src="images/speakers/daniel_steinberg.jpg" /></td>
+          </tr>
+          <tr><td></td></tr>
+          <tr>
+            <td class="talk-cell">
+              <span class="type-of-talk">Session</span><br>
+              <span class="time-of-talk">16:00-16:45</span>
+<!--               <img class="responsive-speaker-image" src="images/sponsors/q42.png" /> -->
+            </td>
+            <td><p><span class="speaker-name">David Broza</span></p></td>
+            <td class="speaker-image"><!--<img class="gold-speaker" src="images/sponsors/anwb.png" />--></td>
+          </tr>
+          <tr><td></td></tr>
+          <tr>
+            <td class="talk-cell">
+              <span class="type-of-talk">Closing</span><br>
+              <span class="time-of-talk">16:45-17:00</span>
+              <img class="responsive-speaker-image" src="images/speakers/jeroen.png" />
+            </td>
+            <td><p><span class="speaker-name">Jeroen Leenarts</span></p></td>
+            <td class="speaker-image"><img src="images/speakers/jeroen.jpg" /></td>
+          </tr>
+          <tr>
+            <td class="talk-cell">
+              <span class="type-of-talk">Drinks</span><br>
+              <span class="time-of-talk">17:00-19:00</span>
+            </td>
+            <td><p>Drinks are on us. But do collect your beverage coins with us.</p></td>
+          </tr>
+
         </table>
 
       </section>
-      
-            <section class="main">      
+      <section class="main">      
         <a name="university"></a> 
           <h1>University day<h1>
           <h2>Get the most from functional programming in Swift</h2>
