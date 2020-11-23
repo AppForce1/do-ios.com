@@ -43,6 +43,17 @@
         <div id="fake-bottom-separator"></div>
       </div>
       <section class="main">
+        <div id="newsletter_signup">
+          <form action="https://appforce1.news/subscribe" method="POST" accept-charset="utf-8">
+          	<label for="email">Stay informed on Do iOS news and updates.</label>
+            <input type="email" name="email" id="email" class="email" placeholder="email address" required/><br/>
+            <input type="submit" value="Subscribe" name="submit" id="submit"  class="button"/>
+            <div style="display:none;"><label for="hp">HP</label><input type="text" name="hp" id="hp"/></div>
+          	<input type="hidden" name="list" value="AdW3A892ID2J58BxyArjRhFw"/>
+          	<input type="hidden" name="subform" value="yes"/>
+            </span>
+          </form>
+        </div>
         <a name="conference"></a> 
         <h1>Important update</h1>
         <h2>Due to the COVID19/Corona crisis we have decided not to continue organizing a 2020 edition of Do iOS.</h2>
@@ -206,9 +217,6 @@
  
   return t;
 }(document, "script", "twitter-wjs"));</script>
-
-<!-- Mailchimp signup. -->
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"6f877a041116607a7177a86fc","lid":"d2c44fb265"}) })</script>
 
   </body>
 </html>

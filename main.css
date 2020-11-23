@@ -930,3 +930,68 @@ iframe#map {
 	.schedule .sessions-footer {
 		font-size: 8pt;
 	}
+  
+  #newsletter_signup form {
+      text-align: center;
+      padding: 10px 0 10px 0;
+  }
+
+  #newsletter_signup label {
+      display: block;
+      font-size: 16px;
+      padding-bottom: 10px;
+      margin: 0;
+      font-weight: bold;
+  }
+
+  #newsletter_signup input.email {
+      font-size: 15px;
+      border: 1px solid #ABB0B2;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      color: #343434;
+      background-color: #fff;
+      box-sizing: border-box;
+      height: 32px;
+      padding: 0px 0.4em;
+      display: inline-block;
+      margin: 0;
+      width: 350px;
+      vertical-align: top;
+  }
+
+  #newsletter_signup .button {
+      font-size: 13px;
+      border: none;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      letter-spacing: .03em;
+      color: #fff;
+      background-color: #aaa;
+      box-sizing: border-box;
+      height: 32px;
+      line-height: 32px;
+      padding: 0 18px;
+      display: inline-block;
+      margin: 0;
+      transition: all 0.23s ease-in-out 0s;
+      width: 350px;
+  }
+
+  #newsletter_signup .button:hover {
+    background-color: #FF8300; /* Green */
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    #newsletter_signup .button {
+        width: 100%;
+        margin: 0;
+    }
+    #newsletter_signup input.email {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+  }
