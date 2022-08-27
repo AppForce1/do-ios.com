@@ -16,7 +16,7 @@
     <meta name="keywords" content="iOS conference amsterdam do november 2022"/>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css" async>
-    <link rel="stylesheet" href="main.css?v=47"/>
+    <link rel="stylesheet" href="main.css?v=50"/>
     <link rel="shortcut icon" type="image/png" href="/images/logo-60.png"/>
     <link rel="apple-touch-icon" href="/images/logo-60.png">
     <link rel="apple-touch-icon" sizes="76x76" href="/images/logo-76.png">
@@ -28,7 +28,7 @@
     <header id="masthead" role="banner" class="site-head site-header">
       <div class="jumbotron">
         <div class="container">
-          <nav class="main-navigation navbar navbar-expand-md navbar-dark">
+          <nav class="main-navigation navbar navbar-expand-md navbar-light">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -46,26 +46,25 @@
               </ul>
             </div>
           </nav>
-          <div id="wrapper">
-            <div id="topMenu">
-                  <div id="logo-wrapper">
-                    <p id="logo_and_payoff">
-                      <img id="logo" src="images/do_ios_logo.png" />
-                      Conference for<br>developers
-                    </p>
-                    <img id="caliper" src="images/caliper.png" />
-                  </div>
-                  <div class="full-horizontal upper">
-                      <a href="#sponsors" class="hover-purple">Sponsors</a>
+          <h1>Do iOS: Conference for iOS Developer</h1>
+          <div id="topMenu">
+            <div id="logo-wrapper">
+              <p id="logo_and_payoff">
+                <img id="logo" src="images/do_ios_logo.png" />
+                  Conference for<br>developers
+                </p>
+                <img id="caliper" src="images/caliper.png" />
+              </div>
+              <div class="full-horizontal upper">
+                  <a href="#sponsors" class="hover-purple">Sponsors</a>
           <!--             <a href="#schedule" class="hover-red">Schedule</a> -->
           <!--             <a href="#tickets" class="hover-orange">Tickets</a> -->
           <!--             <a href="#location" class="hover-yellow">Location</a> -->
           <!--             <a href="#university" class="hover-blue">University</a> -->
-                      <a href="#contact" class="hover-green">Contact</a>
-                  </div>​
-                  <div id="fake-bottom-separator"></div>
-                </div>
-          </div>
+                  <a href="#contact" class="hover-green">Contact</a>
+                </div>​
+              <div id="fake-bottom-separator"></div>
+            </div>
         </div>
       </div>
       <div class="container">
@@ -89,21 +88,32 @@
       <div class="row">   
         <div class="col-md-12 text-center">         
           <a name="conference"></a> 
-          <h1>Important update</h1>
-          <h2>On August 24, 2022 we have started organising Do iOS 2022. We are looking at a tentative date of November 8 and 9, 2022. More updates, tickets and CFP when we have booked our venue.</h2>
+          <h2>Important update</h2>
+          <p>On August 24, 2022 we have started organising Do iOS 2022. We are looking at a tentative date of November 8 and 9, 2022. More updates, tickets and CFP when we have booked our venue.</p>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <a name="sponsors"></a> 
+          <h2>Gold Sponsors</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12 text-center">
-          <a name="sponsors"></a> 
-          <h1>Sponsors</h1>
-          <h2>Gold Sponsors</h2>
-          <a href="https://getstream.io/chat/sdk/swiftui/?utm_source=DOiOS&utm_medium=Whole_Event_L&utm_content=Developer&utm_campaign=DOiOS_November2022_SwiftChatSDK_klmh22"><img class="gold-sponsor" alt="Stream Chat SDK - Real-time In-App Messaging SDK" src="images/sponsors/stream-logo.png" /></a>
-          <h3>Community Sponsor</h3>
+          <a href="https://getstream.io/chat/sdk/swiftui/?utm_source=DOiOS&utm_medium=Whole_Event_L&utm_content=Developer&utm_campaign=DOiOS_November2022_SwiftChatSDK_klmh22">
+            <img class="gold-sponsor" alt="Stream Chat SDK - Real-time In-App Messaging SDK" src="images/sponsors/stream-logo.svg" /><br />
+          </a>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>Community Sponsor</h2>
           <a href="https://appdevcon.nl"><img class="community-sponsor" src="images/sponsors/appdevcon.jpg" /></a>
         </div>
       </div>
-
+      <hr />
       <footer class="footer">
         <a name="contact"></a>
         <p><a class="twitter-follow-button" href="https://twitter.com/iosconf">Follow DO iOS</a></p>
@@ -129,6 +139,8 @@
     
       gtag('config', 'UA-59854133-5');
     </script>
+    <script src="jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
     <script>window.twttr = (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0],
         t = window.twttr || {};
