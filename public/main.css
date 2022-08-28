@@ -284,6 +284,10 @@ body.is-ie #wrapper {
 	float: left;
 	margin: 0;
 }
+img#new_logo {
+	height: 116px;
+	margin: 10px 40px 50px 0px;
+}
 
 img#logo {
 	float: left;
