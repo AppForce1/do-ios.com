@@ -68,6 +68,7 @@
                   <a href="#sponsors" class="hover-purple">Sponsors</a>
                   <a href="#speakers" class="hover-purple">Speakers</a>
                   <a href="#tickets" class="hover-orange">Tickets</a>
+                  <a href="#schedule" class="hover-red">Schedule</a>
                   <a href="#location" class="hover-yellow">Location</a>
                   <a href="#contact" class="hover-green">Contact</a>
                 </div>​
@@ -226,6 +227,349 @@
           <p>Regular</p>
           <p>€ 300,00</p>
         </div> -->
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <a name="schedule"></a> 
+          <h2>Schedule</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3>Workshop | November 7</h3>
+        </div>
+      </div>
+      <div class="accordion" id="dayWorkshop">
+        <!-- Start of Workshop collapse -->
+        <div class="card">
+          <div class="card-header" id="headingWorkshop">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseWorkshop" aria-expanded="false" aria-controls="collapseWorkshop">
+                <div class="row">
+                  <div class="col-sm-3 col-md-2">
+                    <b>9:00</b>
+                  </div>
+                  <div class="col-sm-6 col-md-8 text-center">
+                    Workshop: Getting started with Swift Concurrency
+                  </div>
+                  <div class="col-sm-3 col-md-2 text-center">
+                  </div>
+                </div>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseWorkshop" class="collapse" aria-labelledby="headingWorkshop" data-parent="#dayWorkshop">
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    
+                    <h2>What you'll get out of this workshop</h2>
+                    
+                    <p>This workshop is an online workshop that will be held on Zoom. The format alternates between a theoretical explanation with presentations and coding examples, and performing tasks alone, and / or in groups. After each task we go over the solution and there will be tons of room for questions.</p>
+                    <p>Alongside the presentations, you will have access to a reader that you can download. This reader contains all theory that is explained during the workshop, as well as information on each of the tasks, and it also contains the sample app you'll be working on. Having this reader allows you to refer back to what you've learned whenever you want, even after the workshop is already done.</p>
+                    <p>By the end of the workshop, you will receive a certificate of completion so you can show what you've learned to friends, family, and employers!</p>
+                    <h2>Workshop prerequisites</h2>
+                    <p>This workshop is intended for intermediate to advanced developers. The sample app we'll work on will be SwiftUI based, but the majority of the work you'll do is done in a UI agnostic manner. This helps ensure that we focus on Swift Concurrency, and not on details like the UI. Of course, we will take a good look at how data flows towards the UI but it's not the workshop's main focus.</p>
+                    <p>Attendees are expected to be familiar with the basics of SwiftUI, networking, and ideally attendees have worked with Grand Central Dispatch at some point. You don't need to have mastered these topics, but basic familiarity is assumed.</p>
+                    <p>The workshop will use Xcode 14.3 with Swift 5.8, and the materials will be focussed on iOS 15.5 and newer.</p>
+                    <h2>Topics covered in the workshop</h2>
+                    <p>In this workshop, attendees will refactor a simple application that fetches data from the network with various requirements that make Swift Concurrency a great candidate.</p>
+                    <h3>An introduction into async / await</h3>
+                    <p>The cornerstone of Swift Concurrency that programmers interact with most is async/await. In the first section of the Concurrency workshop we’ll dig into the basics of using async/await, and we’ll immediately talk about how Swift Concurrency manages threads and tasks. This is vastly different from GCD and requires some explanation.</p>
+                    <p>After the initial explanation, attendees will practice using async/await in a simple example where they’ll just fetch some data from the network.</p>
+                    <h3>Refactoring existing code to work with async / await</h3>
+                    <p>As much as we’d all love to dig in with async/await right now, the fact of the matter is that most of us are maintaining existing codebases and can’t just replace everything all at once. In this section, you will learn about the mechanisms in Swift Concurrency that allows you to take existing callback based code and make it work with async/await.</p>
+                    <h3>Synchronizing access with actors</h3>
+                    <p>Actors are a huge part of Swift Concurrency that solve an extremely important and complex problem. In this section, you will learn how actors fix data races. I’ll explain some of the rules and limitations of using actors by building a simple token refresh flow.</p>
+                    <p>While the focus in this section is on actors, we’ll be using various interesting concepts within the world of async await to implement a token refresh flow logic.</p>
+                    <h3>Testing your async / await code</h3>
+                    <p>In this section we’ll take a very quick look at XCTest and how you can test your asynchronous code.</p>
+                    <h3>Orchestrating tasks with async / await</h3>
+                    <p>Sometimes, you want to kick off multiple tasks that need to be performed asynchronously, and only resume work when all tasks are done. With GCD, we would use tools like a dispatch group to achieve this.</p>
+                    <p>With Swift Concurrency, there are different tools like task groups and `async let` that we can leverage to achieve our goal of performing work and waiting for all work to be finished. You will learn about these features in this section, and then you’ll apply the lessons learned in the sample app.</p>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <p>Donny Wals</p>
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <p>Donny is a passionate and curious iOS developer, Author and Speaker. He has written several books on iOS development and has delivered dozens of talks and workshops over the past years. Next to iOS development he’s a huge cat lover and he likes dabbling on his guitars.</p>
+                  </div>
+                  <div class="col-md-12 col-lg-4 text-center">
+                    <p><img class="img-fluid rounded-circle" src="/images/speakers/2023/donny.webp" /></p>
+                    <p><a class="twitter-follow-button" href="https://twitter.com/donnywals">Follow Donny</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Workshop collapse -->
+        <!-- Start of Day1Break1 intro collapse -->
+        <div class="card">
+          <div class="card-body" id="headingDay1End">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseWorkshop" aria-expanded="false" aria-controls="collapseWorkshop">
+                <div class="row">
+                  <div class="col-sm-3 col-md-2">
+                    <b>17:00</b>
+                  </div>
+                  <div class="col-sm-6 col-md-8 text-center">
+                    End of Workshop Day
+                  </div>
+                  <div class="col-sm-3 col-md-2 text-center">
+                  </div>
+                </div>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseWorkshop" class="collapse" aria-labelledby="headingDay1End" data-parent="#dayWorkshop">
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <p>
+                    Time to go home or to your room, perhaps grab a drink and a meal?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Day1End collapse -->
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <br />
+          <h3>Day 1 | November 8</h3>
+        </div>
+      </div>
+      <div class="accordion" id="day1Schedule">
+        <!-- Start of Day1 intro collapse -->
+        <div class="card">
+          <div class="card-body" id="headingDay1Intro">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseDay1Intro" aria-expanded="false" aria-controls="collapseDay1Intro">
+                <div class="row">
+                  <div class="col-sm-3 col-md-2">
+                    <b>8:30</b>
+                  </div>
+                  <div class="col-sm-6 col-md-8 text-center">
+                    Doors open
+                  </div>
+                  <div class="col-sm-3 col-md-2 text-center">
+                  </div>
+                </div>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseDay1Intro" class="collapse" aria-labelledby="headingDay1Intro" data-parent="#day1Schedule">
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <p>
+                    Get into the venue, mingle and get to know each other.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Day1 intro collapse -->
+        <!-- Start of Welcome collapse -->
+        <div class="card">
+          <div class="card-header" id="headingWelcome">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseWelcome" aria-expanded="false" aria-controls="collapseWelcome">
+                <div class="row">
+                <div class="col-sm-3 col-md-2">
+                  <b>9:00</b>
+                </div>
+                <div class="col-sm-6 col-md-8 text-center">
+                  Welcome
+                </div>
+                <div class="col-sm-3 col-md-2 text-center">
+                </div>        
+                </div>
+              </button>
+            </h2>
+          </div>
+        
+          <div id="collapseWelcome" class="collapse" aria-labelledby="headingWelcome" data-parent="#day1Schedule">
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 col-lg-8">
+                    <p>We're very happy to have you as an attendee, we have an amazing line-up of speakers. Before we start, Jeroen will take you through the practical details of the conference.
+                    </p>
+                  </div>
+                  <div class="col-md-12 col-lg-4 text-center">
+                    <p>Jeroen Leenarts</p>
+                    <p><img class="img-fluid rounded-circle" float="left" src="/images/speakers/2022/jeroen.webp" /></p>
+                    <p><a class="twitter-follow-button" href="https://twitter.com/appforce1">Follow Jeroen</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Welcome collapse -->
+        <!-- Start of Day1Break1 intro collapse -->
+        <div class="card">
+          <div class="card-body" id="headingDay1End">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseDay1End" aria-expanded="false" aria-controls="collapseDay1End">
+                <div class="row">
+                  <div class="col-sm-3 col-md-2">
+                    <b>17:00</b>
+                  </div>
+                  <div class="col-sm-6 col-md-8 text-center">
+                    End of Day 1
+                  </div>
+                  <div class="col-sm-3 col-md-2 text-center">
+                  </div>
+                </div>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseDay1End" class="collapse" aria-labelledby="headingDay1End" data-parent="#day1Schedule">
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <p>
+                    Time to go home or to your room, perhaps grab a drink and a meal?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Day1End collapse -->
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <br />
+          <h3>Day 2 | November 9</h3>
+        </div>
+      </div>
+      <div class="accordion" id="day2Schedule">
+        <!-- Start of Day1 intro collapse -->
+      <div class="card">
+        <div class="card-body" id="headingDay2Intro">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseDay2Intro" aria-expanded="false" aria-controls="collapseDay2Intro">
+              <div class="row">
+                <div class="col-sm-3 col-md-2">
+                  <b>8:30</b>
+                </div>
+                <div class="col-sm-6 col-md-8 text-center">
+                  Doors open
+                </div>
+                <div class="col-sm-3 col-md-2 text-center">
+                </div>
+              </div>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseDay2Intro" class="collapse" aria-labelledby="headingDay2Intro" data-parent="#day2Schedule">
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <p>
+                  Get into the venue, mingle and get to know each other.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Day1 intro collapse -->
+      <!-- Start of Welcome collapse -->
+      <div class="card">
+        <div class="card-header" id="headingWelcome2">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseWelcome2" aria-expanded="false" aria-controls="collapseWelcome2">
+              <div class="row">
+              <div class="col-sm-3 col-md-2">
+                <b>9:00</b>
+              </div>
+              <div class="col-sm-6 col-md-8 text-center">
+                Welcome
+              </div>
+              <div class="col-sm-3 col-md-2 text-center">
+              </div>
+      
+              </div>
+            </button>
+          </h2>
+        </div>
+      
+        <div id="collapseWelcome2" class="collapse" aria-labelledby="headingWelcome2" data-parent="#day2Schedule">
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-lg-8">
+                  <p>We're very happy to have you as an attendee, we have an amazing line-up of speakers. Before we start, Jeroen will take you through the practical details of the conference.
+                  </p>
+                </div>
+                  <div class="col-md-12 col-lg-4 text-center">
+                  <p>Jeroen Leenarts</p>
+                  <p><img class="img-fluid rounded-circle" float="left" src="/images/speakers/2022/jeroen.webp" /></p>
+                  <p><a class="twitter-follow-button" href="https://twitter.com/appforce1">Follow Jeroen</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Welcome collapse -->
+      <!-- Start of Day2End intro collapse -->
+      <div class="card">
+        <div class="card-body" id="headingDay2End">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseDay2End" aria-expanded="false" aria-controls="collapseDay2End">
+              <div class="row">
+                <div class="col-sm-3 col-md-2">
+                  <b>17:00</b>
+                </div>
+                <div class="col-sm-6 col-md-8 text-center">
+                  End of Day 2
+                </div>
+                <div class="col-sm-3 col-md-2 text-center">
+                </div>
+              </div>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseDay2End" class="collapse" aria-labelledby="headingDay2End" data-parent="#day2Schedule">
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <p>
+                  Time to go home.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Day2End collapse -->
       </div>
       <hr />
       <div class="row">
