@@ -1,0 +1,86 @@
+---
+import nemo from '../data/nemo.jpeg';
+import map from '../data/nemo-location.png';
+---
+
+<section>
+  <h2>Location</h2>
+  <a
+    href='http://maps.apple.com/?address=Oosterdok+2+Amsterdam&q=NEMO+Science+Museum'
+    class='map'
+  >
+    <img src={map} alt="A map showing the Nemo Science Museum's location." />
+    <div class='details'>
+      <p class='address'>
+        <span>Nemo Science Museum</span>
+        <span>Oosterdok 2</span>
+        <span>1011 VX Amsterdam</span>
+      </p>
+      <img src={nemo} alt='The Nemo Science museum.' />
+    </div>
+  </a>
+</section>
+
+<style>
+  :root {
+    --opacity: 1;
+    --bottom: 0;
+    --scale: 1.5;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    font-weight: 800;
+  }
+
+  .map {
+    display: block;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .map:hover {
+    --opacity: 0.3;
+    --bottom: -3rem;
+    --scale: 1;
+  }
+
+  .map > img {
+    scale: var(--scale);
+    transition: all 0.2s ease-in-out;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  .details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    position: absolute;
+    bottom: var(--bottom);
+    opacity: var(--opacity);
+    backdrop-filter: blur(20px);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .address {
+    font-size: 18px;
+    line-height: 28px;
+    margin: auto;
+    color: black;
+  }
+
+  .address span {
+    display: block;
+  }
+
+  .address span:nth-child(1) {
+    font-weight: bold;
+  }
+</style>
