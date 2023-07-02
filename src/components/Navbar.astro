@@ -1,0 +1,39 @@
+---
+import logo from '../../public/logo.png';
+---
+
+<nav>
+  <ul>
+    <li>
+      <a href='/'>
+        <img src={logo} alt='Do iOS logo.' />
+      </a>
+    </li>
+    <li><a href='#call-for-papers'>CfP</a></li>
+    <li><a href='#agenda'>Agenda</a></li>
+    <li><a href='#tickets'>Tickets</a></li>
+  </ul>
+</nav>
+
+<style>
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto repeat(3, 1fr);
+    gap: 1rem;
+    place-items: center;
+  }
+
+  img {
+    width: 4rem;
+    object-fit: contain;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: var(--font-text-size);
+    color: var(--primary-text-color);
+  }
+</style>
