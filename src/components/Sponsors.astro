@@ -1,0 +1,28 @@
+---
+import stream from '../data/stream.png';
+---
+
+<section>
+  <h2>Sponsors</h2>
+  <h3>Platinum</h3>
+  <div class='sponsors-grid'>
+    <img src={stream} alt='Stream logo' />
+  </div>
+  <h3>Gold</h3>
+  <div class='sponsors-grid'>
+    <img src={stream} alt='Stream logo' />
+    <img src={stream} alt='Stream logo' />
+  </div>
+</section>
+
+<style>
+  .sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-gap: 1rem;
+  }
+  .sponsors-grid img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+</style>
