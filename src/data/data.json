@@ -1,4 +1,24 @@
 {
+  "speakers": [
+    {
+      "name": "Drew McCormack",
+      "image": "/src/data/images/people/drew.webp",
+      "twitter": "https://twitter.com/drewmccormack",
+      "twitterHandle": "drewmccormack"
+    },
+    {
+      "name": "Monika Mateska",
+      "image": "/src/data/images/people/monika.jpeg",
+      "twitter": "https://twitter.com/monika_mateska",
+      "twitterHandle": "monika_mateska"
+    },
+    {
+      "name": "Rudrank Riyam",
+      "image": "/src/data/images/people/rudrank.jpeg",
+      "twitter": "https://twitter.com/rudrankriyam",
+      "twitterHandle": "rudrankriyam"
+    }
+  ],
   "days": [
     {
       "date": "2023-11-07",

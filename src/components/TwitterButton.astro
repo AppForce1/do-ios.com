@@ -1,0 +1,37 @@
+---
+const { handle } = Astro.props;
+import twitter from '../data/images/twitter-logo.svg';
+---
+
+<a href={`https://twitter.com/${handle}`} class='twitter-button'>
+  <img src={twitter} alt="Twitter's logo" />
+  <p>@{handle}</p>
+</a>
+
+<style>
+  .twitter-button {
+    background: var(--twitter-blue);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .twitter-button:hover {
+    background: var(--twitter-black);
+  }
+
+  .twitter-button img {
+    width: 1rem;
+    aspect-ratio: 1;
+  }
+
+  .twitter-button p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+  }
+</style>
