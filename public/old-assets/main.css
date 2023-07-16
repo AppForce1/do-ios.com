@@ -106,49 +106,25 @@ body, input, select, textarea {
 @media screen and (max-width: 1680px) {
 
 	body, input, select, textarea {
-		font-size: 18pt;
+		font-size: 16pt;
 	}
 
 }
 
-/* @media screen and (max-width: 840px) {
+@media screen and (max-width: 840px) {
 
 	body, input, select, textarea {
 		font-size: 13pt;
 		line-height: 1.75;
 	}
 
-} */
+}
 
 @media screen and (max-width: 520px) {
 
-	/* body, input, select, textarea {
+	body, input, select, textarea {
 		font-size: 10pt;
 		line-height: 1.75;
-	} */
-	
-	.hover-blue {
-		font-size: 10pt;
-	}
-	
-	.hover-purple {
-		font-size: 10pt;
-	}
-	
-	.hover-red {
-		font-size: 10pt;
-	}
-	
-	.hover-orange {
-		font-size: 10pt;
-	}
-	
-	.hover-yellow {
-		font-size: 10pt;
-	}
-	
-	.hover-green {
-		font-size: 10pt;
 	}
 
 }
@@ -290,7 +266,7 @@ body.is-ie #wrapper {
 
 #topMenu {
 	min-width: 95%;
-	/* font-size: 100%; */
+	font-size: 100%;
 }
 
 #logo-wrapper {
