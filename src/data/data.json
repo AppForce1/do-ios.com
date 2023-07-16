@@ -2,25 +2,25 @@
   "speakers": [
     {
       "name": "Drew McCormack",
-      "image": "/src/data/images/people/drew.webp",
+      "image": "/images/speakers/2023/drew.webp",
       "twitter": "https://twitter.com/drewmccormack",
       "twitterHandle": "drewmccormack"
     },
     {
       "name": "Monika Mateska",
-      "image": "/src/data/images/people/monika.jpeg",
+      "image": "/images/speakers/2023/monika.jpeg",
       "twitter": "https://twitter.com/monika_mateska",
       "twitterHandle": "monika_mateska"
     },
     {
       "name": "Rudrank Riyam",
-      "image": "/src/data/images/people/rudrank.jpeg",
+      "image": "/images/speakers/2023/rudrank.jpeg",
       "twitter": "https://twitter.com/rudrankriyam",
       "twitterHandle": "rudrankriyam"
     },
     {
       "name": "Josh Holtz",
-      "image": "/src/data/images/people/josh.jpeg",
+      "image": "/images/speakers/2023/josh.jpeg",
       "twitter": "https://twitter.com/joshdholtz",
       "twitterHandle": "joshdholtz"
     }
@@ -43,7 +43,7 @@
                 "type": "twitter",
                 "handle": "donnywals"
               },
-              "image": "https://do-ios.com/images/speakers/2023/donny.webp"
+              "image": "/images/speakers/2023/donny.webp"
             }
           ]
         }

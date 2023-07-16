@@ -22,7 +22,7 @@ import data from '../data/data.json';
                   <div class='speaker-row'>
                     {talk.speakers.map((speaker) => (
                       <div class='speaker-element'>
-                        <img src={speaker.image} alt='Stefan' />
+                        <img src={speaker.image} alt='{speaker.name}' />
                         <p>{speaker.name}</p>
                       </div>
                     ))}
