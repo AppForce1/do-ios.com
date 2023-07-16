@@ -16,6 +16,12 @@ const { title } = Astro.props;
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
+    <!-- Cronitor RUM -->
+    <script async src="https://rum.cronitor.io/script.js"></script>
+    <script>
+        window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+        cronitor('config', { clientKey: '88a303a6306e1c02db1cd0c59c1cf533' });
+    </script>
   </head>
   <body>
     <Navbar />
