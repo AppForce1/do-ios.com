@@ -1,4 +1,18 @@
 {
+  "hosts": [
+    {
+      "name": "Jeroen Leenarts",
+      "image": "/images/hosts/2023/jeroen.webp",
+      "twitter": "https://twitter.com/appforce1",
+      "twitterHandle": "appforce1"
+    },
+    {
+      "name": "Daniel Steinberg",
+      "image": "/images/hosts/2023/daniel.webp",
+      "twitter": "https://twitter.com/dimsumthinking",
+      "twitterHandle": "dimsumthinking"
+    }
+  ],
   "speakers": [
     {
       "name": "Drew McCormack",

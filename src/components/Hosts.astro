@@ -1,0 +1,67 @@
+---
+import data from '../data/data.json';
+import TwitterButton from './TwitterButton.astro';
+---
+
+<section>
+  <h2>Hosts</h2>
+  <section>
+    <p>
+      Two hosts will guide you through the day. They will introduce the speakers, ask questions and make sure you have a great time.
+    </p>
+  </section>
+  <div class='host-grid'>
+    {
+      data.hosts.map((host) => (
+        <div class='host-element'>
+          <img src={host.image} alt={host.name} />
+          <h3>{host.name}</h3>
+          <TwitterButton handle={host.twitterHandle} />
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  .host-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .host-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .host-element h3 {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -1px;
+    font-weight: 800;
+    margin: 0;
+    background: var(--my-yellow);
+    padding: 0.5rem 1rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .host-element img {
+    border-radius: 50%;
+    max-width: 100%;
+    aspect-ratio: 1;
+    border: 4px solid var(--my-yellow);
+  }
+</style>
