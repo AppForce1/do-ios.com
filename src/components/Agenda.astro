@@ -12,13 +12,8 @@ import data from '../data/data.json';
           <ul class='talk-list'>
             {day.talks.map((talk) => (
               <li class='talk-card'>
-                <p class='talk-time'>{talk.time}</p>
                 <div class='talk-element'>
-                  <div>
-                    <span class='badge'>Workshop</span>
-                    <h4>{talk.title}</h4>
-                    <p>{talk.description}</p>
-                  </div>
+                  <p class='talk-time'>{talk.time}</p>
                   <div class='speaker-row'>
                     {talk.speakers.map((speaker) => (
                       <div class='speaker-element'>
@@ -27,6 +22,11 @@ import data from '../data/data.json';
                       </div>
                     ))}
                   </div>
+                </div>
+                <div>
+                  <span class='badge'>Workshop</span>
+                  <h4>{talk.title}</h4>
+                  <p>{talk.description}</p>
                 </div>
               </li>
             ))}
@@ -73,24 +73,18 @@ import data from '../data/data.json';
   .talk-card {
     border: 4px solid var(--border-color);
     border-radius: 1rem;
-    padding: 1rem 1rem;
-    display: flex;
+    padding: 2rem 2rem;
   }
 
   .talk-card:not(:last-child) {
     margin-bottom: 1rem;
   }
 
-  .talk-time {
-    font-size: 46px;
-    font-family: monospace;
-    line-height: 54px;
-    letter-spacing: -0.5px;
-    font-weight: 400;
-    padding: 1rem 0;
-    padding-right: 1rem;
-    margin: auto 0;
-    border-right: 2px solid var(--border-color);
+  .talk-element {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    place-content: center;
+    margin-bottom: 1rem;
   }
 
   .talk-element h4 {
@@ -101,7 +95,7 @@ import data from '../data/data.json';
     margin-bottom: 0.25rem;
   }
 
-  .talk-element p {
+  .talk-card p {
     font-size: 18px;
     line-height: 28px;
     margin: 0;
@@ -110,13 +104,24 @@ import data from '../data/data.json';
     overflow-y: scroll;
   }
 
+  .talk-element p {
+    font-size: 30px;
+    font-family: monospace;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    padding: 1rem 0;
+    padding-right: 1rem;
+    margin: auto 0;
+    border-right: 2px solid var(--border-color);
+  }
+
   .speaker-row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     align-items: center;
-    /* justify-content: center; */
+    padding-left: 1rem;
     width: 100%;
-    margin-top: 1rem;
   }
 
   .speaker-element {
@@ -157,15 +162,39 @@ import data from '../data/data.json';
     z-index: 10;
   }
 
-  .talk-element {
-    padding: 1rem;
-  }
-
   .badge {
     background: violet;
     font-size: 14px;
     /* font-weight: bold; */
     padding: 0.25rem 0.75rem;
     border-radius: 1.5rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .talk-card {
+      padding: 1rem;
+    }
+
+    .talk-element p {
+      padding-right: 1rem;
+      margin-right: 1rem;
+    }
+
+    .speaker-row {
+      padding-left: 0.5rem;
+    }
+
+    .speaker-element:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    .speaker-element img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    .speaker-element p {
+      font-size: 14px;
+    }
   }
 </style>

@@ -42,10 +42,12 @@ import map from '../data/images/location/nemo-location.png';
     overflow: hidden;
   }
 
-  .map:hover {
-    --opacity: 0.3;
-    --bottom: -3rem;
-    --scale: 1;
+  @media only screen and (min-width: 600px) {
+    .map:hover {
+      --opacity: 0.3;
+      --bottom: -3rem;
+      --scale: 1;
+    }
   }
 
   .map > img {
@@ -82,5 +84,19 @@ import map from '../data/images/location/nemo-location.png';
 
   .address span:nth-child(1) {
     font-weight: bold;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .details {
+      grid-template-columns: 1fr;
+      position: relative;
+      padding: 2rem 0;
+    }
+
+    .details img {
+      position: absolute;
+      z-index: -10;
+      opacity: 0.6;
+    }
   }
 </style>

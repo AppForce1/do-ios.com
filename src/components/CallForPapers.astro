@@ -6,7 +6,6 @@ import stage from '../data/images/location/stage.jpeg';
   <h2>Call for Papers</h2>
   <div class='stage-section'>
     <div>
-      <!-- <h3>You would look great on that stage!</h3> -->
       <figure>
         <blockquote>
           <p>"You (yes, you!) would look great on that stage."</p>
@@ -18,15 +17,19 @@ import stage from '../data/images/location/stage.jpeg';
   </div>
 
   <p class='description'>
-    We encourage each and everyone of you to submit a talk for our conference.
-    First-time speaker? Great! Niche topic, that you're extremely passionate
+    We encourage each and everyone of you to <strong>submit a talk</strong> for our
+    conference. First-time speaker? Great! Niche topic, that you're extremely passionate
     about? Lovely!
   </p>
 
   <div class='info'>
     <div>
       <h3>🤔 How?</h3>
-      <form action="https://www.papercall.io/do-ios-2023" method="get" target="_blank">
+      <form
+        action='https://www.papercall.io/do-ios-2023'
+        method='get'
+        target='_blank'
+      >
         <button><span>Submit on papercall.io</span></button>
       </form>
     </div>
@@ -103,5 +106,22 @@ import stage from '../data/images/location/stage.jpeg';
     color: white;
     box-shadow: 0 0 0 4px rgba(1, 1, 1, 0.2);
     border: 0 solid transparent;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .stage-section {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 180px;
+    }
+
+    .info {
+      padding: 0 1rem;
+      grid-template-columns: 1fr;
+      justify-items: start;
+    }
+
+    .description {
+      padding: 0 1rem;
+    }
   }
 </style>

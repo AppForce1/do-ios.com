@@ -61,4 +61,10 @@ const { title, body } = Astro.props;
   .link-card:is(:hover, :focus-within) h2 {
     color: rgb(var(--accent));
   }
+
+  @media only screen and (max-width: 600px) {
+    h2 {
+      font-size: 1.1rem;
+    }
+  }
 </style>

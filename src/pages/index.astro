@@ -9,7 +9,6 @@ import Sponsors from '../components/Sponsors.astro';
 import Footer from '../components/Footer.astro';
 import Speakers from '../components/Speakers.astro';
 import Hosts from '../components/Hosts.astro';
-
 ---
 
 <Layout title='Do iOS 2023'>
@@ -20,7 +19,7 @@ import Hosts from '../components/Hosts.astro';
         Join us in Amsterdam on<br /><strong>November 8 and 9, 2023</strong>.<br
         /><br />Separate workshop on <strong>November 7</strong>.
       </h2>
-      <form action="#tickets" method="get">
+      <form action='#tickets' method='get'>
         <button class='ticket-button'>🚀 Tickets available now 🚀</button>
       </form>
     </section>
@@ -145,5 +144,23 @@ import Hosts from '../components/Hosts.astro';
   p {
     font-size: 18px;
     line-height: 28px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    main {
+      padding: 0.5rem;
+    }
+
+    .ticket-button {
+      font-size: 20px;
+    }
+
+    .info-grid {
+      gap: 1rem;
+    }
+
+    p {
+      padding: 1rem;
+    }
   }
 </style>

@@ -11,7 +11,10 @@ import abnamro from '../data/images/sponsors/ABN-AMRO.png';
     <a href='https://www.revenuecat.com/' class='revenue-cat'>
       <img src={revenuecat} alt='RevenueCat logo' />
     </a>
-    <a href='https://www.werkenbijabnamro.nl/en/vacancies/department/it' class='abn-amro'>
+    <a
+      href='https://www.werkenbijabnamro.nl/en/vacancies/department/it'
+      class='abn-amro'
+    >
       <img src={abnamro} alt='ABN AMRO logo' />
     </a>
   </div>
@@ -44,13 +47,12 @@ import abnamro from '../data/images/sponsors/ABN-AMRO.png';
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .revenue-cat {
     height: 6rem;
   }
 
-  .abn-amro {
-    height: 6rem;
+  @media only screen and (max-width: 600px) {
+    .sponsors-grid {
+      padding: 1rem;
+    }
   }
 </style>
