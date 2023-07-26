@@ -1,7 +1,7 @@
 name: Deploy Astro Dist to astro subdomain
 on:
   push:
-    branches: [ new-site ]
+    branches-ignore: [ main ]
 
 jobs:
   deploy:
