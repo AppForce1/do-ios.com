@@ -15,6 +15,7 @@ for (const item of allAgendaItems) {
     name: item.data.name,
     time: item.data.time,
     image: item.data.image,
+    summary: item.data.summary,
   };
   switch(item.data.date) {
     case '2023-11-07':
@@ -45,7 +46,10 @@ day2Talks = day2Talks.sort((a, b) => a.time.localeCompare(b.time));
           <span class='badge'>{talk.time}</span><span class='badge'>{talk.type}</span>
           <div>
             <h4>{talk.title}</h4>
-            <talk.content>
+            <details>
+              <summary>{talk.summary}</summary>
+              <talk.content>
+            </details>
           </div>
           <div class='speaker-row'>
               <div class='speaker-element'>
@@ -151,6 +155,8 @@ day2Talks = day2Talks.sort((a, b) => a.time.localeCompare(b.time));
     border: 4px solid var(--border-color);
     border-radius: 1rem;
     padding: 2rem 2rem;
+    margin-bottom: 1rem;
+
   }
 
   .speaker-row {
@@ -199,6 +205,7 @@ day2Talks = day2Talks.sort((a, b) => a.time.localeCompare(b.time));
   @media only screen and (max-width: 600px) {
     .talk-card {
       padding: 1rem;
+      margin-bottom: 1rem;
     }
 
     .speaker-element:not(:last-child) {

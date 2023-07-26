@@ -12,6 +12,7 @@ const agendaCollection = defineCollection({
     time: z.string(),
     image: z.string(),
     type: z.string(),
+    summary: z.string().optional(),
   }),
 });
 
