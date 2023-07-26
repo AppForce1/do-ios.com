@@ -1,7 +1,7 @@
 ---
-import stream from '../data/stream.png';
 import revenuecat from '../data/images/sponsors/revenuecat.svg';
 import abnamro from '../data/images/sponsors/ABN-AMRO.png';
+import stream from '../data/images/sponsors/stream-logo.svg';
 ---
 
 <section>
@@ -12,17 +12,14 @@ import abnamro from '../data/images/sponsors/ABN-AMRO.png';
       <img src={revenuecat} alt='RevenueCat logo' />
     </a>
     <a
-      href='https://www.werkenbijabnamro.nl/en/vacancies/department/it'
-      class='abn-amro'
-    >
+      href='https://www.werkenbijabnamro.nl/en/vacancies/department/it' class='abn-amro'>
       <img src={abnamro} alt='ABN AMRO logo' />
     </a>
+    <a
+      href='https://getstream.io/video/docs/' class='stream'>
+      <img src={stream} alt='Stream logo' />
+    </a>
   </div>
-  <!-- <h3>Gold</h3>
-  <div class='sponsors-grid'>
-    <img src={stream} alt='Stream logo' />
-    <img src={stream} alt='Stream logo' />
-  </div> -->
 </section>
 
 <style>
@@ -40,7 +37,7 @@ import abnamro from '../data/images/sponsors/ABN-AMRO.png';
   }
   .sponsors-grid img {
     max-width: 100%;
-    height: 100%;
+    /* height: 100%; */
   }
 
   .sponsors-grid a {
