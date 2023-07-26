@@ -6,10 +6,12 @@ const agendaCollection = defineCollection({
   type: 'content', // v2.5.0 and later
   schema: z.object({
     title: z.string(),
+    date: z.string(),
     tags: z.array(z.string()).optional(),
     name: z.string(),
     time: z.string(),
     image: z.string(),
+    type: z.string(),
   }),
 });
 

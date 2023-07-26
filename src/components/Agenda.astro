@@ -2,25 +2,47 @@
 import { getCollection } from 'astro:content';
 
 const allAgendaItems = await getCollection('agenda');
-let talks = [];
+let workshops = [];
+let day1Talks = [];
+let day2Talks = [];
 for (const item of allAgendaItems) {
   const rendered = await item.render();
-  talks.push({
+
+  const talk = {
     content: rendered.Content,
+    type: item.data.type,
     title: item.data.title,
     name: item.data.name,
     time: item.data.time,
     image: item.data.image,
-  });
+  };
+  switch(item.data.date) {
+    case '2023-11-07':
+      workshops.push(talk);
+      break;
+    case '2023-11-08':
+      day1Talks.push(talk);
+      break;
+    case '2023-11-09':
+      day2Talks.push(talk);
+      break;
+  }
 }
+
+workshops = workshops.sort((a, b) => a.time.localeCompare(b.time));
+day1Talks = day1Talks.sort((a, b) => a.time.localeCompare(b.time));
+day2Talks = day2Talks.sort((a, b) => a.time.localeCompare(b.time));
 ---
 
 <section id='agenda'>
   <h2>Agenda</h2>
   <ul class='day-list'>
-    { talks.map(talk => (
+    <li>
+      <h3>2023-11-07 - Workshop</h3>
+      <ul class='talk-list'>
+    { workshops.map(talk => (
         <li class='talk-card'>
-          <span class='badge'>{talk.time}</span>
+          <span class='badge'>{talk.time}</span><span class='badge'>{talk.type}</span>
           <div>
             <h4>{talk.title}</h4>
             <talk.content>
@@ -33,6 +55,48 @@ for (const item of allAgendaItems) {
           </div>
         </li>
       ))}
+    </ul>
+    </li>
+    <li>
+      <h3>2023-11-09 - Conference Day 1</h3>
+      <ul class='talk-list'>
+    { day1Talks.map(talk => (
+        <li class='talk-card'>
+          <span class='badge'>{talk.time}</span><span class='badge'>{talk.type}</span>
+          <div>
+            <h4>{talk.title}</h4>
+            <talk.content>
+          </div>
+          <div class='speaker-row'>
+              <div class='speaker-element'>
+                <img src={talk.image} alt='{speaker.name}' />
+                <p>{talk.name}</p>
+              </div>
+          </div>
+        </li>
+      ))}
+    </ul>
+    </li>
+    <li>
+      <h3>2023-11-09 - Conference Day 2</h3>
+      <ul class='talk-list'>
+    { day2Talks.map(talk => (
+        <li class='talk-card'>
+          <span class='badge'>{talk.time}</span><span class='badge'>{talk.type}</span>
+          <div>
+            <h4>{talk.title}</h4>
+            <talk.content>
+          </div>
+          <div class='speaker-row'>
+              <div class='speaker-element'>
+                <img src={talk.image} alt='{speaker.name}' />
+                <p>{talk.name}</p>
+              </div>
+          </div>
+        </li>
+      ))}
+    </ul>
+    </li>
   </ul>
 </section>
 

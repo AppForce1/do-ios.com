@@ -1,8 +1,10 @@
 ---
 title: This is my talk
-time: '09:00'
-name: 'Stefan Blos'
-image: '/images/speakers/2023/donny.webp'
+date: '2023-11-08'
+time: '10:00'
+name: 'Drew'
+image: '/images/speakers/2023/drew.webp'
+type: 'Talk'
 ---
 
 Please come to my talk. It's _going to be_ great!
