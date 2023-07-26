@@ -12,21 +12,18 @@ import data from '../data/data.json';
           <ul class='talk-list'>
             {day.talks.map((talk) => (
               <li class='talk-card'>
-                <div class='talk-element'>
-                  <p class='talk-time'>{talk.time}</p>
-                  <div class='speaker-row'>
-                    {talk.speakers.map((speaker) => (
-                      <div class='speaker-element'>
-                        <img src={speaker.image} alt='{speaker.name}' />
-                        <p>{speaker.name}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                <span class='badge'>{talk.time}</span>
                 <div>
-                  <span class='badge'>Workshop</span>
                   <h4>{talk.title}</h4>
-                  <!-- <p>{talk.description}</p> -->
+                  <p>{talk.description}</p>
+                </div>
+                <div class='speaker-row'>
+                  {talk.speakers.map((speaker) => (
+                    <div class='speaker-element'>
+                      <img src={speaker.image} alt='{speaker.name}' />
+                      <p>{speaker.name}</p>
+                    </div>
+                  ))}
                 </div>
               </li>
             ))}
@@ -62,6 +59,20 @@ import data from '../data/data.json';
     background: var(--my-blue-background);
   }
 
+  h4 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+  }
+
   ul {
     padding-inline-start: 0rem;
   }
@@ -76,51 +87,11 @@ import data from '../data/data.json';
     padding: 2rem 2rem;
   }
 
-  .talk-card:not(:last-child) {
-    margin-bottom: 1rem;
-  }
-
-  .talk-element {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    place-content: center;
-    margin-bottom: 1rem;
-  }
-
-  .talk-element h4 {
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 0.25rem;
-  }
-
-  .talk-card p {
-    font-size: 18px;
-    line-height: 28px;
-    margin: 0;
-    line-break: anywhere;
-    max-height: 6rem;
-    overflow-y: scroll;
-  }
-
-  .talk-element p {
-    font-size: 30px;
-    font-family: monospace;
-    line-height: 36px;
-    letter-spacing: -0.5px;
-    font-weight: 400;
-    padding: 1rem 0;
-    padding-right: 1rem;
-    margin: auto 0;
-    border-right: 2px solid var(--border-color);
-  }
-
   .speaker-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     align-items: center;
-    padding-left: 1rem;
+    margin-top: 1rem;
     width: 100%;
   }
 
@@ -150,22 +121,11 @@ import data from '../data/data.json';
     margin-left: -1rem;
   }
 
-  .leading-element h4 {
-    font-size: 24px;
-    font-family: monospace;
-    margin: 0;
-    color: white;
-    background: var(--my-green);
-    padding: 0.25rem 1rem;
-    border-radius: 0.5rem;
-    margin-top: -1rem;
-    z-index: 10;
-  }
-
   .badge {
     background: violet;
-    font-size: 14px;
-    /* font-weight: bold; */
+    font-size: 16px;
+    font-weight: bold;
+    font-family: monospace;
     padding: 0.25rem 0.75rem;
     border-radius: 1.5rem;
   }
@@ -173,15 +133,6 @@ import data from '../data/data.json';
   @media only screen and (max-width: 600px) {
     .talk-card {
       padding: 1rem;
-    }
-
-    .talk-element p {
-      padding-right: 1rem;
-      margin-right: 1rem;
-    }
-
-    .speaker-row {
-      padding-left: 0.5rem;
     }
 
     .speaker-element:not(:last-child) {
