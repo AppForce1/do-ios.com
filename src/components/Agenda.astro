@@ -1,36 +1,38 @@
 ---
-import data from '../data/data.json';
+import { getCollection } from 'astro:content';
+
+const allAgendaItems = await getCollection('agenda');
+let talks = [];
+for (const item of allAgendaItems) {
+  const rendered = await item.render();
+  talks.push({
+    content: rendered.Content,
+    title: item.data.title,
+    name: item.data.name,
+    time: item.data.time,
+    image: item.data.image,
+  });
+}
 ---
 
 <section id='agenda'>
   <h2>Agenda</h2>
   <ul class='day-list'>
-    {
-      data.days.map((day) => (
-        <li>
-          <h3>{day.date}</h3>
-          <ul class='talk-list'>
-            {day.talks.map((talk) => (
-              <li class='talk-card'>
-                <span class='badge'>{talk.time}</span>
-                <div>
-                  <h4>{talk.title}</h4>
-                  <p>{talk.description}</p>
-                </div>
-                <div class='speaker-row'>
-                  {talk.speakers.map((speaker) => (
-                    <div class='speaker-element'>
-                      <img src={speaker.image} alt='{speaker.name}' />
-                      <p>{speaker.name}</p>
-                    </div>
-                  ))}
-                </div>
-              </li>
-            ))}
-          </ul>
+    { talks.map(talk => (
+        <li class='talk-card'>
+          <span class='badge'>{talk.time}</span>
+          <div>
+            <h4>{talk.title}</h4>
+            <talk.content>
+          </div>
+          <div class='speaker-row'>
+              <div class='speaker-element'>
+                <img src={talk.image} alt='{speaker.name}' />
+                <p>{talk.name}</p>
+              </div>
+          </div>
         </li>
-      ))
-    }
+      ))}
   </ul>
 </section>
 
