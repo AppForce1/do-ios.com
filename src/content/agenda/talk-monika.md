@@ -1,7 +1,7 @@
 ---
 title: This is my talk
 date: '2023-11-08'
-time: '09:00'
+time: '11:00'
 name: 'Monika'
 image: '/images/speakers/2023/donny.webp'
 type: 'Talk'

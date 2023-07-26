@@ -1,5 +1,5 @@
 ---
-title: This is my talk
+title: Welcome to Do iOS Day 1
 date: '2023-11-08'
 time: '09:00'
 name: 'Jeroen Leenarts'
