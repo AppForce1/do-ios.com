@@ -5,7 +5,7 @@ time: '09:00'
 name: 'Donny Wals'
 image: '/images/speakers/2023/donny.webp'
 type: 'Workshop'
-summary: 'Join Donny Wals for a workshop about Swift Concurrentcy. Expand for details…'
+summary: 'Join Donny Wals for a workshop about Swift Concurrency. Expand for details…'
 ---
 
 ## What you'll get out of this workshop
