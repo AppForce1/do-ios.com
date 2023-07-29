@@ -1,0 +1,121 @@
+---
+export interface Props {
+    talk: Object;
+  }
+
+// Usage: <TalkCard talk=myTalk/>
+const { talk } = Astro.props;
+---
+
+<li class='talk-card'>
+    <span class='badge'>{talk.time}</span><span class='badge'>{talk.type}</span>
+    <div>
+        <h4>{talk.title}</h4>
+        {talk.summary ? (
+        <details>
+            <summary>{talk.summary}</summary>
+            <talk.content>
+        </details>
+        ) : (<talk.content></talk.content>)}
+    </div>
+    <div class='speaker-row'>
+        <div class='speaker-element'>
+            <img src={talk.image} alt='{speaker.name}' />
+            <p>{talk.name}</p>
+        </div>
+    </div>
+</li>
+<style>
+  h4 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  ul {
+    padding-inline-start: 0rem;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .talk-card {
+    border: 4px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    margin-bottom: 1rem;
+
+  }
+
+  .speaker-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .speaker-element {
+    display: flex;
+    align-items: center;
+  }
+
+  .speaker-element img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    z-index: 5;
+    border: 4px solid var(--my-green);
+  }
+
+  .speaker-element p {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    background: var(--my-green);
+    color: white;
+    border-radius: 0.5rem;
+    margin-left: -1rem;
+  }
+
+  .badge {
+    background: violet;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1.5rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .talk-card {
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .speaker-element:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    .speaker-element img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    .speaker-element p {
+      font-size: 14px;
+    }
+  }
+</style>
