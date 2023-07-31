@@ -44,56 +44,5 @@
       "twitter": "https://twitter.com/joshdholtz",
       "twitterHandle": "donnywals"
     }
-  ],
-  "days": [
-    {
-      "date": "2023-11-07",
-      "title": "Workshop | November 7",
-      "talks": [
-        {
-          "time": "09:00",
-          "title": "Getting started with Swift Concurrency",
-          "name": "Donny Wals",
-          "description": "",
-          "speakers": [
-            {
-              "name": "Donny Wals",
-              "bio": "PHA+RG9ubnkgaXMgYSBwYXNzaW9uYXRlIGFuZCBjdXJpb3VzIGlPUyBkZXZlbG9wZXIsIEF1dGhvciBhbmQgU3BlYWtlci4gSGUgaGFzIHdyaXR0ZW4gc2V2ZXJhbCBib29rcyBvbiBpT1MgZGV2ZWxvcG1lbnQgYW5kIGhhcyBkZWxpdmVyZWQgZG96ZW5zIG9mIHRhbGtzIGFuZCB3b3Jrc2hvcHMgb3ZlciB0aGUgcGFzdCB5ZWFycy4gTmV4dCB0byBpT1MgZGV2ZWxvcG1lbnQgaGXigJlzIGEgaHVnZSBjYXQgbG92ZXIgYW5kIGhlIGxpa2VzIGRhYmJsaW5nIG9uIGhpcyBndWl0YXJzLjwvcD4=",
-              "social": {
-                "type": "twitter",
-                "handle": "donnywals"
-              },
-              "image": "/images/speakers/2023/donny.webp"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "date": "2023-11-08",
-      "title": "Day 1 | November 8",
-      "talks": [
-        {
-          "name": "Many speakers",
-          "time": "Soon…",
-          "description": "Many exiting talks about iOS development.",
-          "speakers": [],
-          "title": "Many talks"
-        }
-      ]
-    },
-    {
-      "date": "2023-11-09",
-      "title": "Day 2 | November 9",
-      "talks": [
-        {
-          "name": "Many speakers",
-          "time": "Soon…",
-          "description": "Many exiting talks about iOS development.",
-          "speakers": [],
-          "title": "Many talks"
-        }
-      ]
-    }
   ]
 }
