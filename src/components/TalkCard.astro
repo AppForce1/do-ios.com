@@ -34,7 +34,7 @@ const { talk } = Astro.props;
     margin-bottom: 0.25rem;
   }
 
-  p {
+  .talk-card {
     font-size: 18px;
     line-height: 28px;
     margin: 0;
@@ -98,6 +98,11 @@ const { talk } = Astro.props;
     padding: 0.25rem 0.75rem;
     border-radius: 1.5rem;
   }
+
+
+  .badge:not(:last-child) {
+      margin-right: 0.5rem;
+    }
 
   @media only screen and (max-width: 600px) {
     .talk-card {

@@ -1,0 +1,14 @@
+---
+import { getCollection } from 'astro:content';
+const allTalks = await getCollection('agenda');
+const json = JSON.stringify(
+    allTalks.map((p) => {
+    return {
+      title: p.title,
+      description: p.title,
+      slug: p.url,
+    };
+  })
+);
+---
+{json}
