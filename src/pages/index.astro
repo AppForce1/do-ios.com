@@ -21,6 +21,16 @@ import Hosts from '../components/Hosts.astro';
       </h2>
       <a href='#tickets' class='ticket-button'>🚀 Tickets available now 🚀</a>
     </section>
+    <section class="email-signup">
+      <form action="https://sendy.appforce1.net/subscribe" method="POST" accept-charset="utf-8">
+        <label for="email">Stay informed on Do iOS news and updates.</label>
+        <div style="text-align:center"><input type="email" name="email" id="email" class="email" placeholder="email address" required/>
+        <input type="submit" value="Subscribe" name="submit" id="submit"  class="signup-button"/></div>
+        <div style="display:none;"><label for="hp">HP</label><input type="text" name="hp" id="hp"/></div>
+        <input type="hidden" name="list" value="AdW3A892ID2J58BxyArjRhFw"/>
+        <input type="hidden" name="subform" value="yes"/>
+      </form>
+    </section>
     <section class='info-grid'>
       <Card title='Workshop with Donny Wals on Concurrency' body='November 7' />
       <Card
@@ -111,7 +121,15 @@ import Hosts from '../components/Hosts.astro';
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
+  }
+  
+  .email-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
   }
 
   .ticket-button {
@@ -135,6 +153,27 @@ import Hosts from '../components/Hosts.astro';
     border: 0 solid transparent;
   }
 
+  .signup-button {
+    border: 0 solid transparent;
+    background: violet;
+    color: black;
+    padding: 0.25rem 1rem;
+    /* font-size: 24px; */
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-top: 1rem;
+    text-decoration: none;
+  }
+
+  .signup-button:hover {
+    background: blue;
+    color: white;
+    box-shadow: 0 0 0 4px rgba(1, 1, 1, 0.2);
+    border: 0 solid transparent;
+  }
+
   .info-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -152,6 +191,10 @@ import Hosts from '../components/Hosts.astro';
     }
 
     .ticket-button {
+      font-size: 20px;
+    }
+
+    .signup-button {
       font-size: 20px;
     }
 
