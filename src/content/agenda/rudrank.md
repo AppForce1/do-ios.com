@@ -1,5 +1,5 @@
 ---
-title: 'Workshop: Getting started with Swift Concurrency'
+title: 'Widgets, Widgets Everywhere and Not a Pixel to Spare'
 date: '2023-11-08'
 time: '09:00'
 name: 'Rudrank Riyam'
