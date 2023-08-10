@@ -18,12 +18,12 @@ const { talk } = Astro.props;
         </details>
         ) : (<talk.content></talk.content>)}
     </div>
-    <div class='speaker-row'>
+    {talk.image && (<div class='speaker-row'>
         <div class='speaker-element'>
-            <img src={talk.image} alt='{speaker.name}' />
+            <img src={talk.image} alt='{talk.name}' />
             <p>{talk.name}</p>
         </div>
-    </div>
+    </div>)}
 </li>
 <style>
   h4 {
