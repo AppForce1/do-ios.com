@@ -1,4 +1,3 @@
-
 ---
 title: 'Become a Shipshape Shipping Engineer'
 date: '2023-11-08'
