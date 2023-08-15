@@ -7,4 +7,4 @@ image: '/images/hosts/2023/jeroen.webp'
 type: 'Drinks'
 ---
 
-Let's have a drink together.
+At the end of the workshop all attendees, Donny, and Jeroen can have a drink together. Right outside the Auditorium, in the NEMO Science Museum.

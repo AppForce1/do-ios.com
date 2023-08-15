@@ -5,4 +5,4 @@ time: '17:00'
 type: 'Drinks'
 ---
 
-Let's have a drink together.
+At the end of the conference all attendees, speakers, and staff can have a drink together. Right outside the Auditorium, in the NEMO Science Museum.
