@@ -41,8 +41,14 @@
     {
       "name": "Donny Wals",
       "image": "/images/speakers/2023/donny.webp",
-      "twitter": "https://twitter.com/joshdholtz",
+      "twitter": "https://twitter.com/donnywals",
       "twitterHandle": "donnywals"
+    },
+    {
+      "name": "Daniel Steinberg",
+      "image": "/images/hosts/2023/daniel.webp",
+      "twitter": "https://twitter.com/dimsumthinking",
+      "twitterHandle": "dimsumthinking"
     }
   ]
 }
