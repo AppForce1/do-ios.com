@@ -8,7 +8,7 @@ type: 'Talk'
 summary: 'Learn about Swift Concurrency…'
 ---
 
-"Can you hear me? I can't see your screen anymore." These are some of the phrases we use a lot during our video calls, triggered by their a-sync nature. In this talk, we will learn how we used Swift Concurrency to tackle some of these challenges, while building our brand new video calling iOS SDK.
+"Can you hear me? I can't see your screen anymore." These are some of the phrases we use a lot during our video calls, triggered by their async nature. In this talk, we will learn how we used Swift Concurrency to tackle some of these challenges, while building our brand new video calling iOS SDK.
 
 This talk is a sponsored by Stream.
 
