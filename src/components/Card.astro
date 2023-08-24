@@ -2,9 +2,10 @@
 export interface Props {
   title: string;
   body: string;
+  soldOut?: boolean;
 }
 
-const { title, body } = Astro.props;
+const { title, body, soldOut } = Astro.props;
 ---
 
 <li class='card'>
@@ -23,7 +24,7 @@ const { title, body } = Astro.props;
     ></path>
   </svg>
   <p>
-    {body}
+    {body} {soldOut && 'SOLD OUT'}
   </p>
   <h2>
     {title}
