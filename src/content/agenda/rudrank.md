@@ -16,7 +16,12 @@ The rollout of widgets across the Apple ecosystem, be it an iPhone, iPad, Mac, o
 
 This talk explores interactive widgets to guide you and give your users powerful interactions whenever and wherever they need them.
 
-Session attendees will learn the following: - Evolution from iOS 14 static and dynamic widgets to interactive ones - Implementing interactive widgets across platforms - Utilising App Intents in widgets, Shortcut and Siri - Tips and tricks for pixel-perfect widget implementation
+Session attendees will learn the following:
+
+- Evolution from iOS 14 static and dynamic widgets to interactive ones
+- Implementing interactive widgets across platforms
+- Utilising App Intents in widgets, Shortcut and Siri
+- Tips and tricks for pixel-perfect widget implementation
 
 An invitation for you to reinvent, reimagine, and rethink interactive user experiences - one pixel at a time.
 
