@@ -1,0 +1,106 @@
+---
+import stage from "../data/images/location/stage.jpeg";
+---
+
+<section id="call-for-papers-closed">
+  <h2>Call for Papers Closed</h2>
+  <div class="stage-section">
+    <div>
+      <figure>
+        <blockquote>
+          <p>"You (yes, you!) would look great on that stage."</p>
+        </blockquote>
+        <figcaption>—Jeroen Leenarts, <cite>Organizer</cite></figcaption>
+      </figure>
+    </div>
+    <img src={stage} alt="The stage of the Nemo Science Museum." />
+  </div>
+
+  <p class="description">We closed our call for papers.</p>
+</section>
+<style>
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    font-weight: 800;
+  }
+
+  .stage-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 2px solid var(--border-color);
+  }
+
+  .stage-section img {
+    width: 100%;
+  }
+
+  .description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  blockquote {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bolder;
+    margin: 0;
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+
+  .info h3 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: bolder;
+  }
+
+  .info span {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bolder;
+  }
+
+  .info button {
+    border: 0 solid transparent;
+    background: violet;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .info button:hover {
+    background: blue;
+    color: white;
+    box-shadow: 0 0 0 4px rgba(1, 1, 1, 0.2);
+    border: 0 solid transparent;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .stage-section {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 180px;
+    }
+
+    .info {
+      padding: 0 1rem;
+      grid-template-columns: 1fr;
+      justify-items: start;
+    }
+
+    .description {
+      padding: 0 1rem;
+    }
+  }
+</style>
