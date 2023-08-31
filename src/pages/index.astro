@@ -54,14 +54,17 @@ import Support from "../components/Support.astro";
       </form>
     </section>
     <section class="info-grid">
-      <Card title="Workshop with Donny Wals on Concurrency" body="November 7" />
-      <Card
-        title="Workshop with Daniel Steinberg on SwiftData"
-        body="November 7"
-      />
+      <div class="info-workshops">
+        <Card title="Workshop: Donny Wals on Concurrency" body="November 7" />
+        <Card
+          title="Workshop: Daniel Steinberg on SwiftData"
+          body="November 7"
+        />
+      </div>
       <Card
         title="2 Conference days with (awesome) talks"
         body="November 8 + 9"
+        description="Two conference days filled with talks. A walking dinner to help you connect with your peers, share knowledge, and celebrate iOS development together. Right in the heart of Amsterdam. Join us in November."
       />
       <!-- <Card title='Location' body='NEMO Science Museum' /> -->
     </section>
@@ -201,9 +204,14 @@ import Support from "../components/Support.astro";
     border: 0 solid transparent;
   }
 
+  .info-workshops {
+    display: grid;
+    gap: 2rem;
+  }
+
   .info-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 
