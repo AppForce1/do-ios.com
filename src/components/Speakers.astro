@@ -1,17 +1,19 @@
 ---
-import data from '../data/data.json';
-import TwitterButton from './TwitterButton.astro';
+import data from "../data/data.json";
+import TwitterButton from "./TwitterButton.astro";
 ---
 
 <section>
   <h2>Speakers</h2>
-  <div class='speaker-grid'>
+  <div class="speaker-grid">
     {
       data.speakers.map((speaker) => (
-        <div class='speaker-element'>
+        <div class="speaker-element">
           <img src={speaker.image} alt={speaker.name} />
           <h3>{speaker.name}</h3>
-          <TwitterButton handle={speaker.twitterHandle} />
+          {speaker.twitterHandle && (
+            <TwitterButton handle={speaker.twitterHandle} />
+          )}
         </div>
       ))
     }
