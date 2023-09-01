@@ -1,6 +1,6 @@
 ---
-import data from '../data/data.json';
-import TwitterButton from './TwitterButton.astro';
+import data from "../data/data.json";
+import TwitterButton from "./TwitterButton.astro";
 ---
 
 <section>
@@ -11,10 +11,10 @@ import TwitterButton from './TwitterButton.astro';
     ask questions and make sure you have a great time.
   </p>
 
-  <div class='host-grid'>
+  <div class="host-grid">
     {
       data.hosts.map((host) => (
-        <div class='host-element'>
+        <div class="host-element">
           <img src={host.image} alt={host.name} />
           <h3>{host.name}</h3>
           <TwitterButton handle={host.twitterHandle} />

@@ -101,6 +101,12 @@
       "image": "/images/hosts/2023/daniel.webp",
       "twitter": "https://twitter.com/dimsumthinking",
       "twitterHandle": "dimsumthinking"
+    },
+    {
+      "name": "Tim Condon",
+      "image": "/images/speakers/2023/tim.webp",
+      "twitter": "https://twitter.com/0xTim",
+      "twitterHandle": "0xTim"
     }
   ]
 }
