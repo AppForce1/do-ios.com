@@ -123,6 +123,12 @@
       "image": "/images/speakers/2023/tim.webp",
       "twitter": "https://twitter.com/0xTim",
       "twitterHandle": "0xTim"
+    },
+    {
+      "name": "Charlie Chapman",
+      "image": "/images/speakers/2023/charlie.jpg",
+      "twitter": "https://twitter.com/_chuckyc",
+      "twitterHandle": "_chuckyc"
     }
   ]
 }
