@@ -1,7 +1,7 @@
 ---
 title: "A talk sponsored by ABN-AMRO"
-date: "2023-11-09"
-time: "14:00"
+date: "2023-11-08"
+time: "10:45"
 type: "Talk"
 summary: "More info later…"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "A talk by our sponsor RevenueCat"
-date: "2023-11-09"
-time: "14:25"
+date: "2023-11-08"
+time: "11:10"
 name: "Charlie Chapman"
 image: "/images/speakers/2023/charlie.jpg"
 type: "Talk"
