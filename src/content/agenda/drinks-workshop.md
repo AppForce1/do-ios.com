@@ -10,4 +10,6 @@ summary: "At the end of the workshop all attendees, Donny, Daniel, and Qing and 
 
 Right outside the Auditorium, in the NEMO Science Museum.
 
-Made possible by our sponsor ING. They have some really cool [vacancies available](https://www.ing.jobs/netherlands/vacancies.htm) too.
+Drop by and meet the key developers behind the Netherlands' biggest financial app, the ING Mobile Banking App! Always wanted to know what it's like to work on an app used by millions of people, to work with more than 50 highly skilled iOS engineers on an app that is used in multiple countries? We would love to tell you everything about it while enjoying some drinks!
+
+Always wanted to know what it's like to work on an financial app used by millions of people, to work with more than 50 highly skilled iOS engineers on an app used in multiple countries? Send an email to [sjoerd.van.oostenbrugge@ing.com](mailto:sjoerd.van.oostenbrugge@ing.com) and we might speak soon!

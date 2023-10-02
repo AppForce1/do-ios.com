@@ -1,7 +1,7 @@
 ---
 title: 'Deep Dive into "any" and "some"'
-date: "2023-11-08"
-time: "15:30"
+date: "2023-11-09"
+time: "11:30"
 name: "Aki Yuki"
 image: "/images/speakers/2023/aki.webp"
 type: "Talk"
