@@ -5,10 +5,10 @@ time: "15:30"
 type: "Talk"
 name: "Dmitrii Ivanov"
 image: "/images/speakers/2023/dmitrii.jpeg"
-summary: "At ING we deal with PRs a lot, so we tried to dig deeper than usual into the topic."
+summary: "Learn about some best practices for handling pull requests, based on the experience by the team at our sponsor ING."
 ---
 
-We will look at Pull Requests and Code Review from atypical angles considering Psychology, Culturology or the Theory of Communication. We will use those branches of science to explain some well-known best practices and to discover the new ones which are already in use at ING.
+In a large and complex organisation like ING, dozens of Pull Requests are being merged every day and many hours are spent on code reviews. In this talk, we will walk you through some approaches we use and talk about some hidden sides of the beast called: 'Code Reviews'.  We will look at it from an atypical angle: psychology, culture and communication theory. We use these branches of science to explain some well-known best practices and discover new ones already in use at ING.
 
 ## Learn more about ING
 
