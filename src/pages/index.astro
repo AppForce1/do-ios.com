@@ -3,7 +3,6 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Location from "../components/Location.astro";
 import Agenda from "../components/Agenda.astro";
-import Tickets from "../components/Tickets.astro";
 import Sponsors from "../components/Sponsors.astro";
 import Footer from "../components/Footer.astro";
 import Speakers from "../components/Speakers.astro";
@@ -19,9 +18,7 @@ import Support from "../components/Support.astro";
         Join us in Amsterdam on<br /><strong>November 8 and 9, 2023</strong>.<br
         /><br />Separate workshop on <strong>November 7</strong>.
       </h2>
-      <a href="#tickets" class="ticket-button"
-        >🚀 Ticket Waitlist Available 🚀</a
-      >
+      <p>🚀 All Tickets sold 🚀</p>
     </section>
     <section class="email-signup">
       <form
@@ -29,7 +26,9 @@ import Support from "../components/Support.astro";
         method="POST"
         accept-charset="utf-8"
       >
-        <label for="email">Stay informed on Do iOS news and updates.</label>
+        <label for="email"
+          >Stay informed on Do iOS news, updates and 2024 ticket availability.</label
+        >
         <div style="text-align:center">
           <input
             type="email"
@@ -81,7 +80,6 @@ import Support from "../components/Support.astro";
     <Speakers />
     <Hosts />
     <Support />
-    <Tickets />
     <Location />
   </main>
   <footer>
@@ -162,27 +160,6 @@ import Support from "../components/Support.astro";
     padding-bottom: 2rem;
   }
 
-  .ticket-button {
-    border: 0 solid transparent;
-    background: violet;
-    color: black;
-    padding: 0.5rem 1rem;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    margin-top: 1rem;
-    text-decoration: none;
-  }
-
-  .ticket-button:hover {
-    background: blue;
-    color: white;
-    box-shadow: 0 0 0 4px rgba(1, 1, 1, 0.2);
-    border: 0 solid transparent;
-  }
-
   .signup-button {
     border: 0 solid transparent;
     background: violet;
@@ -223,10 +200,6 @@ import Support from "../components/Support.astro";
   @media only screen and (max-width: 600px) {
     main {
       padding: 0.5rem;
-    }
-
-    .ticket-button {
-      font-size: 20px;
     }
 
     .signup-button {
