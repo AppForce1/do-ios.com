@@ -8,7 +8,7 @@ type: "Drinks"
 summary: "At the end of the workshop all attendees, Donny, Daniel, and Qing and Jeroen will have a drink together."
 ---
 
-Right outside the Auditorium, in the NEMO Science Museum.
+Upstairs on the 5th, in the NEMO Science Museum Restaurant.
 
 Today there won't be ING developers available during the drinks. But the ING does want to make sure you are well taken care of.
 
