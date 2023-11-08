@@ -1,9 +1,9 @@
 ---
-import TalkCard from './TalkCard.astro';
+import TalkCard from "./TalkCard.astro";
 
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
 
-const allAgendaItems = await getCollection('agenda');
+const allAgendaItems = await getCollection("agenda");
 let workshops = [];
 let day1Talks = [];
 let day2Talks = [];
@@ -19,14 +19,14 @@ for (const item of allAgendaItems) {
     image: item.data.image,
     summary: item.data.summary,
   };
-  switch(item.data.date) {
-    case '2023-11-07':
+  switch (item.data.date) {
+    case "2023-11-07":
       workshops.push(talk);
       break;
-    case '2023-11-08':
+    case "2023-11-08":
       day1Talks.push(talk);
       break;
-    case '2023-11-09':
+    case "2023-11-09":
       day2Talks.push(talk);
       break;
   }
@@ -37,26 +37,26 @@ day1Talks = day1Talks.sort((a, b) => a.time.localeCompare(b.time));
 day2Talks = day2Talks.sort((a, b) => a.time.localeCompare(b.time));
 ---
 
-<section id='agenda'>
+<section id="agenda">
   <h2>Agenda</h2>
-  <ul class='day-list'>
-    <li>
-      <h3>2023-11-07 - Workshop</h3>
-      <ul class='talk-list'>
-    { workshops.map(talk => (<TalkCard talk={talk} />))}
-    </ul>
-    </li>
+  <ul class="day-list">
     <li>
       <h3>2023-11-08 - Conference Day 1</h3>
-      <ul class='talk-list'>
-    { day1Talks.map(talk => (<TalkCard talk={talk} />))}
-    </ul>
+      <ul class="talk-list">
+        {day1Talks.map((talk) => <TalkCard talk={talk} />)}
+      </ul>
     </li>
     <li>
       <h3>2023-11-09 - Conference Day 2</h3>
-      <ul class='talk-list'>
-    { day2Talks.map(talk => (<TalkCard talk={talk} />))}
-    </ul>
+      <ul class="talk-list">
+        {day2Talks.map((talk) => <TalkCard talk={talk} />)}
+      </ul>
+    </li>
+    <li>
+      <h3>2023-11-07 - Workshop</h3>
+      <ul class="talk-list">
+        {workshops.map((talk) => <TalkCard talk={talk} />)}
+      </ul>
     </li>
   </ul>
 </section>
