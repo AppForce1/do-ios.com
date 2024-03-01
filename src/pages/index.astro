@@ -2,12 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Location from "../components/Location.astro";
-import Agenda from "../components/Agenda.astro";
 import Sponsors from "../components/Sponsors.astro";
 import Footer from "../components/Footer.astro";
-import Speakers from "../components/Speakers.astro";
-import Hosts from "../components/Hosts.astro";
-import Support from "../components/Support.astro";
 ---
 
 <Layout title="Do iOS 2023">
@@ -15,10 +11,10 @@ import Support from "../components/Support.astro";
     <section class="hero">
       <h1>Welcome to <span class="text-gradient">Do iOS</span></h1>
       <h2>
-        Join us in Amsterdam on<br /><strong>November 8 and 9, 2023</strong>.<br
-        /><br />Separate workshop on <strong>November 7</strong>.
+        Join us in Amsterdam on<br /><strong>November 12, 13 and 14, 2024</strong>.<br
+        /><br />Workshops on <strong>November 12</strong>, conference on November 13 and 14.
       </h2>
-      <p>🚀 All Tickets sold 🚀</p>
+      <p>🚀 Tickets available soon 🚀</p>
     </section>
     <section class="email-signup">
       <form
@@ -56,30 +52,25 @@ import Support from "../components/Support.astro";
     <section class="info-grid">
       <div class="info-workshops">
         <Card
-          title="Workshop: Daniel Steinberg on SwiftData"
-          body="November 7"
+          title="Workshops"
+          body="November 12"
         />
-        <Card title="Workshop: Donny Wals on Concurrency" body="November 7" />
       </div>
       <Card
         title="2 Conference days with (awesome) talks"
-        body="November 8 + 9"
+        body="November 13 + 14"
         description="Two conference days filled with talks. A walking dinner to help you connect with your peers, share knowledge, and celebrate iOS development together. Right in the heart of Amsterdam. Join us in November."
       />
       <!-- <Card title='Location' body='NEMO Science Museum' /> -->
     </section>
     <section>
       <p>
-        Do iOS is back in 2023. After 4 successful editions in 2015, 2016, 2018,
-        and 2022 we again invite you to join us in Amsterdam to celebrate iOS
+        Do iOS is back in 2024. After 5 successful editions in 2015, 2016, 2018, 2022,
+        and 2023 we again invite you to join us in Amsterdam to celebrate iOS
         development in all its aspects.
       </p>
     </section>
     <Sponsors />
-    <Agenda />
-    <Speakers />
-    <Hosts />
-    <Support />
     <Location />
   </main>
   <footer>
