@@ -20,13 +20,13 @@ for (const item of allAgendaItems) {
     summary: item.data.summary,
   };
   switch (item.data.date) {
-    case "2024-11-12":
+    case "2023-11-07":
       workshops.push(talk);
       break;
-    case "2023-11-13":
+    case "2023-11-08":
       day1Talks.push(talk);
       break;
-    case "2023-11-14":
+    case "2023-11-09":
       day2Talks.push(talk);
       break;
   }
@@ -41,9 +41,9 @@ day2Talks = day2Talks.sort((a, b) => a.time.localeCompare(b.time));
   <h2>Agenda</h2>
   <ul class="day-list">
     <li>
-      <h3>2023-11-09 - Conference Day 2</h3>
+      <h3>2023-11-07 - Workshop</h3>
       <ul class="talk-list">
-        {day2Talks.map((talk) => <TalkCard talk={talk} />)}
+        {workshops.map((talk) => <TalkCard talk={talk} />)}
       </ul>
     </li>
     <li>
@@ -51,11 +51,11 @@ day2Talks = day2Talks.sort((a, b) => a.time.localeCompare(b.time));
       <ul class="talk-list">
         {day1Talks.map((talk) => <TalkCard talk={talk} />)}
       </ul>
-    </li>
+      </li>
     <li>
-      <h3>2023-11-07 - Workshop</h3>
+      <h3>2023-11-09 - Conference Day 2</h3>
       <ul class="talk-list">
-        {workshops.map((talk) => <TalkCard talk={talk} />)}
+        {day2Talks.map((talk) => <TalkCard talk={talk} />)}
       </ul>
     </li>
   </ul>
