@@ -1,0 +1,55 @@
+{
+  "support": [
+    {
+      "name": "Marco",
+      "image": "/images/support/2023/marco.jpg",
+      "twitter": "https://twitter.com/eMilty",
+      "twitterHandle": "eMilty",
+      "role": "Audio and Visuals"
+    },
+    {
+      "name": "Jolanda",
+      "image": "/images/support/2023/jolanda.jpg",
+      "twitter": "https://twitter.com/JolandaArends",
+      "twitterHandle": "JolandaArends",
+      "role": "Conference Support"
+    },
+    {
+      "name": "Qing",
+      "image": "/images/support/2023/qing.jpg",
+      "twitter": "https://twitter.com/QingLiQing",
+      "twitterHandle": "QingLiQing",
+      "role": "Workshop and Conference Support"
+    },
+    {
+      "name": "Bart",
+      "image": "/images/support/2023/bart.jpg",
+      "twitter": "https://twitter.com/barthoffman",
+      "twitterHandle": "barthoffman",
+      "role": "Conference Support"
+    }
+  ],
+  "hosts": [
+    {
+      "name": "Jeroen Leenarts",
+      "image": "/images/hosts/2023/jeroen.webp",
+      "twitter": "https://twitter.com/appforce1",
+      "twitterHandle": "appforce1"
+    }
+  ],
+  "speakers": [
+    {
+      "name": "Antoine van der Lee",
+      "image": "/images/speakers/2024/antoine.jpeg",
+      "twitter": "https://x.com/twannl",
+      "twitterHandle": "twannl"
+
+    },
+    {
+      "name": "Donny Wals",
+      "image": "/images/speakers/2024/donny.webp",
+      "twitter": "https://x.com/donnywals",
+      "twitterHandle": "donnywals"
+    }
+  ]
+}
