@@ -1,19 +1,23 @@
 ---
-import data from "../data/data-2023.json";
+import data from "../data/data-2024.json";
 import TwitterButton from "./TwitterButton.astro";
 ---
 
 <section>
-  <h2>Conference Speakers</h2>
-  <div class="speaker-grid">
+  <h2>Hosts</h2>
+
+  <p>
+    Two hosts will guide you through the day. They will introduce the speakers,
+    ask questions and make sure you have a great time.
+  </p>
+
+  <div class="host-grid">
     {
-      data.speakers.map((speaker) => (
-        <div class="speaker-element">
-          <img src={speaker.image} alt={speaker.name} />
-          <h3>{speaker.name}</h3>
-          {speaker.twitterHandle && (
-            <TwitterButton handle={speaker.twitterHandle} />
-          )}
+      data.hosts.map((host) => (
+        <div class="host-element">
+          <img src={host.image} alt={host.name} />
+          <h3>{host.name}</h3>
+          <TwitterButton handle={host.twitterHandle} />
         </div>
       ))
     }
@@ -21,6 +25,11 @@ import TwitterButton from "./TwitterButton.astro";
 </section>
 
 <style>
+  p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
   h2 {
     font-size: 36px;
     line-height: 48px;
@@ -29,41 +38,41 @@ import TwitterButton from "./TwitterButton.astro";
     margin: 0;
   }
 
-  .speaker-grid {
+  .host-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    gap: 4rem;
     margin: 2rem 0;
   }
 
-  .speaker-element {
+  .host-element {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .speaker-element h3 {
+  .host-element h3 {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -1px;
     font-weight: 800;
     margin: 0;
-    background: var(--my-yellow);
+    background: var(--my-orange);
     padding: 0.5rem 1rem;
     margin-top: -1rem;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
   }
 
-  .speaker-element img {
+  .host-element img {
     border-radius: 50%;
     max-width: 100%;
     aspect-ratio: 1;
-    border: 4px solid var(--my-yellow);
+    border: 8px solid var(--my-orange);
   }
 
   @media only screen and (max-width: 600px) {
-    .speaker-grid {
+    .host-grid {
       padding: 1rem;
     }
   }
