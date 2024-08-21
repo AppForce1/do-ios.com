@@ -1,0 +1,143 @@
+{
+  "support": [
+    {
+      "name": "Marco",
+      "image": "/images/support/2023/marco.jpg",
+      "twitter": "https://twitter.com/eMilty",
+      "twitterHandle": "eMilty",
+      "role": "Audio and Visuals"
+    },
+    {
+      "name": "Jolanda",
+      "image": "/images/support/2023/jolanda.jpg",
+      "twitter": "https://twitter.com/JolandaArends",
+      "twitterHandle": "JolandaArends",
+      "role": "Conference Support"
+    },
+    {
+      "name": "Qing",
+      "image": "/images/support/2023/qing.jpg",
+      "twitter": "https://twitter.com/QingLiQing",
+      "twitterHandle": "QingLiQing",
+      "role": "Workshop and Conference Support"
+    },
+    {
+      "name": "Bart",
+      "image": "/images/support/2023/bart.jpg",
+      "twitter": "https://twitter.com/barthoffman",
+      "twitterHandle": "barthoffman",
+      "role": "Conference Support"
+    }
+  ],
+  "hosts": [
+    {
+      "name": "Jeroen Leenarts",
+      "image": "/images/hosts/2023/jeroen.webp",
+      "twitter": "https://twitter.com/appforce1",
+      "twitterHandle": "appforce1"
+    },
+    {
+      "name": "Daniel Steinberg",
+      "image": "/images/hosts/2023/daniel.webp",
+      "twitter": "https://twitter.com/dimsumthinking",
+      "twitterHandle": "dimsumthinking"
+    }
+  ],
+  "speakers": [
+    {
+      "name": "Drew McCormack",
+      "image": "/images/speakers/2023/drew.webp",
+      "twitter": "https://twitter.com/drewmccormack",
+      "twitterHandle": "drewmccormack"
+    },
+    {
+      "name": "Monika Mateska",
+      "image": "/images/speakers/2023/monika.jpeg",
+      "twitter": "https://twitter.com/monika_mateska",
+      "twitterHandle": "monika_mateska"
+    },
+    {
+      "name": "Vincent Pradeilles",
+      "image": "/images/speakers/2023/vincent.jpg",
+      "twitter": "https://twitter.com/v_pradeilles",
+      "twitterHandle": "v_pradeilles"
+    },
+    {
+      "name": "Zachary Brass",
+      "image": "/images/speakers/2023/zach.jpg",
+      "twitter": "https://twitter.com/zhbrass",
+      "twitterHandle": "zhbrass"
+    },
+    {
+      "name": "Aki Yuki",
+      "image": "/images/speakers/2023/aki.webp",
+      "twitter": "https://twitter.com/___freddi___",
+      "twitterHandle": "___freddi___"
+    },
+    {
+      "name": "Rudrank Riyam",
+      "image": "/images/speakers/2023/rudrank.jpeg",
+      "twitter": "https://twitter.com/rudrankriyam",
+      "twitterHandle": "rudrankriyam"
+    },
+    {
+      "name": "Alina Boshchenko",
+      "image": "/images/speakers/2023/alina.jpg"
+    },
+    {
+      "name": "Martin Mitrevski",
+      "image": "/images/speakers/2023/martin.jpeg",
+      "twitter": "https://twitter.com/mitrevski",
+      "twitterHandle": "mitrevski"
+    },
+    {
+      "name": "Josh Holtz",
+      "image": "/images/speakers/2023/josh.jpeg",
+      "twitter": "https://twitter.com/joshdholtz",
+      "twitterHandle": "joshdholtz"
+    },
+    {
+      "name": "Tianna Henry-Lewis",
+      "image": "/images/speakers/2023/tianna.webp"
+    },
+    {
+      "name": "Filip Sardjoski",
+      "image": "/images/speakers/2023/filip.jpg",
+      "twitter": "https://twitter.com/filipsardjoski",
+      "twitterHandle": "filipsardjoski"
+    },
+    {
+      "name": "Dmitrii Ivanov",
+      "image": "/images/speakers/2023/dmitrii.jpeg",
+      "twitter": "https://twitter.com/filipsardjoski"
+    },
+    {
+      "name": "Donny Wals",
+      "image": "/images/speakers/2023/donny.webp",
+      "twitter": "https://twitter.com/donnywals",
+      "twitterHandle": "donnywals"
+    },
+    {
+      "name": "Daniel Steinberg",
+      "image": "/images/hosts/2023/daniel.webp",
+      "twitter": "https://twitter.com/dimsumthinking",
+      "twitterHandle": "dimsumthinking"
+    },
+    {
+      "name": "Tim Condon",
+      "image": "/images/speakers/2023/tim.webp",
+      "twitter": "https://twitter.com/0xTim",
+      "twitterHandle": "0xTim"
+    },
+    {
+      "name": "Jeroen de Vrind",
+      "image": "/images/speakers/2023/jeroenv.jpeg"
+    },
+    {
+      "name": "Charlie Chapman",
+      "image": "/images/speakers/2023/charlie.jpg",
+      "twitter": "https://twitter.com/_chuckyc",
+      "twitterHandle": "_chuckyc"
+    }
+  ]
+}
