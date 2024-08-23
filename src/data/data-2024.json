@@ -32,9 +32,15 @@
   "hosts": [
     {
       "name": "Jeroen Leenarts",
-      "image": "/images/hosts/2023/jeroen.webp",
-      "twitter": "https://twitter.com/appforce1",
+      "image": "/images/hosts/2024/jeroen.webp",
+      "twitter": "https://x.com/appforce1",
       "twitterHandle": "appforce1"
+    },
+    {
+      "name": "Daniel Steinberg",
+      "image": "/images/hosts/2024/daniel.webp",
+      "twitter": "https://x.com/dimsumthinking",
+      "twitterHandle": "dimsumthinking"
     }
   ],
   "speakers": [
@@ -50,6 +56,12 @@
       "image": "/images/speakers/2024/donny.webp",
       "twitter": "https://x.com/donnywals",
       "twitterHandle": "donnywals"
+    },
+    {
+      "name": "Daniel Steinberg",
+      "image": "/images/hosts/2024/daniel.webp",
+      "twitter": "https://x.com/dimsumthinking",
+      "twitterHandle": "dimsumthinking"
     }
   ]
 }
