@@ -54,6 +54,11 @@
       "xHandle": "felibe444"
     },
     {
+      "name": "Azam Sharp",
+      "image": "/images/speakers/2024/azam.jpg",
+      "xHandle": "azamsharp"
+    },
+    {
       "name": "Donny Wals",
       "image": "/images/speakers/2024/donny.webp",
       "xHandle": "donnywals"
@@ -67,11 +72,6 @@
       "name": "Tim Condon",
       "image": "/images/speakers/2023/tim.webp",
       "xHandle": "0xTim"
-    },
-    {
-      "name": "Azam Sharp",
-      "image": "/images/speakers/2024/azam.jpg",
-      "xHandle": "azamsharp"
     }
   ]
 }
