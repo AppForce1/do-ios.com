@@ -1,6 +1,6 @@
 ---
 import data from "../data/data-2024.json";
-import TwitterButton from "./TwitterButton.astro";
+import XButton from "./XButton.astro";
 ---
 
 <section id="speakers">
@@ -11,9 +11,7 @@ import TwitterButton from "./TwitterButton.astro";
         <div class="speaker-element">
           <img src={speaker.image} alt={speaker.name} />
           <h3>{speaker.name}</h3>
-          {speaker.twitterHandle && (
-            <TwitterButton handle={speaker.twitterHandle} />
-          )}
+          {speaker.xHandle && <XButton handle={speaker.xHandle} />}
         </div>
       ))
     }

@@ -3,29 +3,26 @@
     {
       "name": "Marco",
       "image": "/images/support/2023/marco.jpg",
-      "twitter": "https://twitter.com/eMilty",
-      "twitterHandle": "eMilty",
+      "xHandle": "eMilty",
       "role": "Audio and Visuals"
     },
     {
       "name": "Jolanda",
       "image": "/images/support/2023/jolanda.jpg",
-      "twitter": "https://twitter.com/JolandaArends",
-      "twitterHandle": "JolandaArends",
+      "xHandle": "JolandaArends",
       "role": "Conference Support"
     },
     {
       "name": "Qing",
       "image": "/images/support/2023/qing.jpg",
-      "twitter": "https://twitter.com/QingLiQing",
-      "twitterHandle": "QingLiQing",
+      "xHandle": "QingLiQing",
       "role": "Workshop and Conference Support"
     },
     {
       "name": "Bart",
       "image": "/images/support/2023/bart.jpg",
-      "twitter": "https://twitter.com/barthoffman",
-      "twitterHandle": "barthoffman",
+      "x": "https://x.com/barthoffman",
+      "xHandle": "barthoffman",
       "role": "Conference Support"
     }
   ],
@@ -33,33 +30,48 @@
     {
       "name": "Jeroen Leenarts",
       "image": "/images/hosts/2024/jeroen.webp",
-      "twitter": "https://x.com/appforce1",
-      "twitterHandle": "appforce1"
+      "xHandle": "appforce1"
     },
     {
       "name": "Daniel Steinberg",
-      "image": "/images/hosts/2024/daniel.webp",
-      "twitter": "https://x.com/dimsumthinking",
-      "twitterHandle": "dimsumthinking"
+      "image": "/images/hosts/2024/daniel.webp"
     }
   ],
   "speakers": [
     {
       "name": "Antoine van der Lee",
       "image": "/images/speakers/2024/antoine.jpeg",
-      "twitter": "https://x.com/twannl",
-      "twitterHandle": "twannl"
-
+      "xHandle": "twannl"
+    },
+    {
+      "name": "Via Fairchild",
+      "image": "/images/speakers/2024/via.jpg",
+      "xHandle": "codingmilf"
+    },
+    {
+      "name": "Feli Bernutz",
+      "image": "/images/speakers/2024/feli.jpg",
+      "xHandle": "felibe444"
     },
     {
       "name": "Donny Wals",
       "image": "/images/speakers/2024/donny.webp",
-      "twitter": "https://x.com/donnywals",
-      "twitterHandle": "donnywals"
+      "xHandle": "donnywals"
     },
     {
-      "name": "Daniel Steinberg",
-      "image": "/images/hosts/2024/daniel.webp"
+      "name": "Jochem Uytdehaage",
+      "image": "/images/speakers/2024/jochem.webp",
+      "xHandle": "uytdehaage"
+    },
+    {
+      "name": "Tim Condon",
+      "image": "/images/speakers/2023/tim.webp",
+      "xHandle": "0xTim"
+    },
+    {
+      "name": "Azam Sharp",
+      "image": "/images/speakers/2024/azam.jpg",
+      "xHandle": "azamsharp"
     }
   ]
 }
