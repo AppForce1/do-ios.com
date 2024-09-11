@@ -1,19 +1,13 @@
 ---
 import jeroen from '../data/images/people/jeroen.webp';
 import shutter from '../data/images/shutter.png';
-import twitter from '../data/images/twitter-logo.svg';
+import XButton from './XButton.astro';
 ---
 
 <section>
   <div class='produced-row left'>
     <img src={shutter.src} alt='Logo' />
-    <a
-      href='https://twitter.com/intent/follow?screen_name=iosconf'
-      class='twitter-button'
-    >
-      <img src={twitter.src} alt="Twitter's logo" />
-      <p>Follow @iosconf</p>
-    </a>
+    <XButton handle='iosconf' />
   </div>
   <div class='produced-row right'>
     <div>
@@ -113,7 +107,7 @@ import twitter from '../data/images/twitter-logo.svg';
   }
 
   .twitter-button {
-    background: var(--twitter-blue);
+    background: var(--x-black);
     border-radius: 0.5rem;
     padding: 0.5rem;
     display: flex;
