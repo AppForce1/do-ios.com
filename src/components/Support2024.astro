@@ -1,6 +1,6 @@
 ---
 import data from "../data/data-2024.json";
-import TwitterButton from "./TwitterButton.astro";
+import XButton from "./XButton.astro";
 ---
 
 <section>
@@ -18,7 +18,7 @@ import TwitterButton from "./TwitterButton.astro";
         <div class="support-element">
           <img src={staff.image} alt={staff.name} />
           <h3>{staff.name}</h3>
-          <TwitterButton handle={staff.twitterHandle} />
+          {staff.xHandle && <XButton handle={staff.xHandle} />}
           <p>{staff.role}</p>
         </div>
       ))
