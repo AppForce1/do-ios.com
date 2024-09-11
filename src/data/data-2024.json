@@ -76,6 +76,11 @@
     {
       "name": "Samuel Goodwin",
       "image": "/images/speakers/2024/samuel.webp"
+    },
+    {
+      "name": "Pol Piella",
+      "image": "/images/speakers/2024/pol.webp",
+      "xHandle": "polpielladev"
     }
   ]
 }
