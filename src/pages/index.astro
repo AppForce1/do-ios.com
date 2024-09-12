@@ -13,84 +13,59 @@ import Footer from "../components/Footer.astro";
 <Layout title="Do iOS Developer Conference 2024 Amsterdam">
   <main>
     <section class="hero">
-      <p class="header">Welcome to <span class="text-gradient">Do iOS</span></p>
-      <h1>iOS Developer Conference 2024</h1>
-      <h2>
-        Join us for the 2024 edition of one of Europe's premier iOS developer
-        conferences in Amsterdam, the capital city of The Netherlands.
-      </h2>
-      <h2>
-        Workshops on <strong>November 12</strong>.<br />
-        Conference on <strong>November 13 and 14</strong>.
-      </h2>
-      <a href="#tickets" class="ticket-button">🚀 Tickets available now 🚀</a>
-      <p>
-        We are also looking for sponsors of the 2024 edition of Do iOS. Please
-        reach out, contact info at bottom of this page.
-      </p>
+      <div class="hero-content">
+        <h1>Do iOS <span class="text-gradient">2024</span></h1>
+        <h2>iOS Developer Conference</h2>
+        <p class="hero-dates">
+          <strong>Workshops:</strong> November 12<br />
+          <strong>Conference:</strong> November 13-14
+        </p>
+        <a href="#tickets" class="cta-button">Get Your Tickets Now</a>
+      </div>
     </section>
-    <section class="email-signup">
+
+    <section class="newsletter">
+      <h2>Stay Updated</h2>
       <form
         action="https://sendy.appforce1.net/subscribe"
         method="POST"
         accept-charset="utf-8"
+        class="newsletter-form"
       >
-        <label for="email"
-          >Stay informed on Do iOS news, updates and 2024 ticket availability.</label
-        >
-        <div style="text-align:center">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="email"
-            placeholder="email address"
-            required
-          />
-          <input
-            type="submit"
-            value="Subscribe"
-            name="submit"
-            id="submit"
-            class="signup-button"
-          />
-        </div>
-        <div style="display:none;">
-          <label for="hp">HP</label><input type="text" name="hp" id="hp" />
-        </div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your email address"
+          required
+        />
+        <button type="submit" class="submit-button">Subscribe</button>
         <input type="hidden" name="list" value="AdW3A892ID2J58BxyArjRhFw" />
         <input type="hidden" name="subform" value="yes" />
       </form>
     </section>
-    <section class="info-grid">
-      <div class="info-workshops">
+
+    <section class="highlights">
+      <h2>Conference Highlights</h2>
+      <div class="highlights-grid">
         <Card
           title="Workshop: Getting Ready for Swift 6"
           body="November 12"
-          description="Join Daniel Steinberg, and get a broad exploration of Swift 6 and its features and how you can adopt those."
+          description="Join Daniel Steinberg for a broad exploration of Swift 6 features."
         />
         <Card
-          title="Workshop: Swift 6 Deep Dive into Actors, Sendable, Strict Concurrency"
+          title="Workshop: Swift 6 Concurrency Deep Dive"
           body="November 12"
-          description="Join Donny Wals, and go in-depth on all things concurrency in Swift 6."
+          description="Go in-depth on Swift 6 concurrency with Donny Wals."
+        />
+        <Card
+          title="Two Days of Inspiring Talks"
+          body="November 13-14"
+          description="Connect with peers, share knowledge, and celebrate iOS development in the heart of Amsterdam."
         />
       </div>
-      <Card
-        title="2 Conference days with (awesome) talks"
-        body="November 13 + 14"
-        description="Two conference days filled with talks. A walking dinner to help you connect with your peers, share knowledge, and celebrate iOS development together. Right in the heart of Amsterdam. Join us in November."
-      />
     </section>
-    <section>
-      <p>
-        Do iOS is back in 2024. After 5 successful editions in <a href="/2015"
-          >2015</a
-        >, <a href="/2016">2016</a>, <a href="/2018">2018</a>, <a href="/2022"
-          >2022</a
-        >, and <a href="/2023">2023</a> we again invite you to join us in Amsterdam
-        to celebrate iOS development in all its aspects.
-      </p>
-    </section>
+
     <Sponsors />
     <Tickets />
     <Speakers />
@@ -105,166 +80,145 @@ import Footer from "../components/Footer.astro";
 
 <style>
   main {
-    margin: auto;
-    padding: 1.5rem;
-    max-width: 70ch;
-  }
-  .header {
-    font-size: 76px;
-    line-height: 84px;
-    letter-spacing: -1px;
-    font-weight: 800;
-    margin: 0;
-    backdrop-filter: blur(10px);
-  }
-
-  .text-gradient {
-    display: block;
-    background-image: linear-gradient(
-      45deg,
-      blue,
-      violet,
-      red,
-      orange,
-      yellow,
-      green
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
-  }
-
-  h1 {
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -0.5px;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 3rem;
-  }
-
-  h2 {
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -0.5px;
-    font-weight: 400;
-    text-align: center;
-    /* margin-top: 3rem; */
-  }
-
-  .hero::before {
-    content: "";
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: -10;
-    display: block;
-    background-image: url("/logo.png");
-    background-size: contain;
-    filter: blur(50px);
-    /* background-repeat: no-repeat; */
-    background-position: center;
-    width: 100%;
-    height: 400px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
   }
 
   .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 2rem;
-  }
-
-  .email-signup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 2rem;
-  }
-
-  .ticket-button {
-    font-size: 20px;
-  }
-
-  .signup-button {
-    border: 0 solid transparent;
-    background: violet;
-    color: black;
-    padding: 0.25rem 1rem;
-    /* font-size: 24px; */
-    font-weight: bold;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    margin-top: 1rem;
-    text-decoration: none;
-  }
-
-  .ticket-button {
-    border: 0 solid transparent;
-    background: violet;
-    color: black;
-    padding: 0.5rem 1rem;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    margin-top: 1rem;
-    text-decoration: none;
-  }
-
-  .ticket-button:hover {
-    background: blue;
+    background: linear-gradient(135deg, #0a2463, #3e92cc);
     color: white;
-    box-shadow: 0 0 0 4px rgba(1, 1, 1, 0.2);
-    border: 0 solid transparent;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
   }
 
-  .signup-button:hover {
-    background: blue;
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .text-gradient {
+    background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-dates {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: #ff6b6b;
     color: white;
-    box-shadow: 0 0 0 4px rgba(1, 1, 1, 0.2);
-    border: 0 solid transparent;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
   }
 
-  .info-workshops {
+  .cta-button:hover {
+    background: #ff4757;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .newsletter {
+    background: #f1f2f6;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .newsletter h2 {
+    margin-bottom: 1rem;
+  }
+
+  .newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .newsletter-form input[type="email"] {
+    flex-grow: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 2rem 0 0 2rem;
+    font-size: 1rem;
+  }
+
+  .submit-button {
+    background: #3e92cc;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0 2rem 2rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .submit-button:hover {
+    background: #2980b9;
+  }
+
+  .highlights {
+    margin-bottom: 2rem;
+  }
+
+  .highlights h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .highlights-grid {
     display: grid;
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
   }
 
-  .info-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
-  p {
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    main {
-      padding: 0.5rem;
+  @media (max-width: 768px) {
+    .hero {
+      padding: 3rem 1rem;
     }
 
-    .ticket-button {
-      font-size: 20px;
-    }
-    .signup-button {
-      font-size: 20px;
+    h1 {
+      font-size: 3rem;
     }
 
-    .info-grid {
-      gap: 1rem;
+    h2 {
+      font-size: 1.5rem;
     }
 
-    p {
-      padding: 1rem;
+    .newsletter-form {
+      flex-direction: column;
+    }
+
+    .newsletter-form input[type="email"],
+    .submit-button {
+      width: 100%;
+      border-radius: 2rem;
+      margin-bottom: 1rem;
     }
   }
 </style>
