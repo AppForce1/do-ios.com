@@ -16,11 +16,21 @@ import Footer from "../components/Footer.astro";
       <div class="hero-content">
         <h1>Do iOS <span class="text-gradient">2024</span></h1>
         <h2>iOS Developer Conference</h2>
+              <p>
+        Join us for the 2024 edition of one of Europe's premier iOS developer
+        conferences in Amsterdam, the capital city of The Netherlands.
+      </p>
+
         <p class="hero-dates">
           <strong>Workshops:</strong> November 12<br />
           <strong>Conference:</strong> November 13-14
         </p>
         <a href="#tickets" class="cta-button">Get Your Tickets Now</a>
+         <p class="hero-sponsors">
+        We are also looking for sponsors of the 2024 edition of Do iOS. Please
+        reach out, contact info at bottom of this page.
+      </p>
+
       </div>
     </section>
 
@@ -90,7 +100,7 @@ import Footer from "../components/Footer.astro";
     color: white;
     padding: 4rem 2rem;
     border-radius: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
   }
 
@@ -102,6 +112,7 @@ import Footer from "../components/Footer.astro";
   h1 {
     font-size: 4rem;
     margin-bottom: 0.5rem;
+    margin-top: 1rem;
   }
 
   h2 {
@@ -121,6 +132,10 @@ import Footer from "../components/Footer.astro";
     font-size: 1.2rem;
     margin-bottom: 2rem;
   }
+  .hero-sponsors {
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+  }
 
   .cta-button {
     display: inline-block;
@@ -132,6 +147,8 @@ import Footer from "../components/Footer.astro";
     font-weight: bold;
     text-decoration: none;
     transition: all 0.3s ease;
+    margin-bottom: 1rem;
+
   }
 
   .cta-button:hover {
