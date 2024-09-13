@@ -1,16 +1,12 @@
 ---
 title: Drinks
-date: '2024-11-12'
+date: "2024-11-12"
 time: "17:00"
-name: "ING"
-image: "/images/sponsors/2023/ing-icon.png"
 type: "Drinks"
 summary: "At the end of the workshop all attendees, Donny, Daniel, and Qing and Jeroen will have a drink together."
 ---
 
 Upstairs on the 5th, in the NEMO Science Museum Restaurant.
-
-Today there won't be ING developers available during the drinks. But the ING does want to make sure you are well taken care of.
 
 If you are taking part in the conference days, drop by during the drinks on the first conference day and meet the key developers behind the Netherlands' biggest financial app, the ING Mobile Banking App!
 

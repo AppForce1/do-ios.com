@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Location from "../components/Location.astro";
 import Sponsors from "../components/Sponsors2024.astro";
+import Agenda from "../components/Agenda2024.astro";
 import Tickets from "../components/Tickets.astro";
 import Speakers from "../components/Speakers2024.astro";
 import Hosts from "../components/Hosts2024.astro";
@@ -89,6 +90,7 @@ import Footer from "../components/Footer.astro";
 
     <Sponsors />
     <Tickets />
+    <Agenda />
     <Speakers />
     <Hosts />
     <Support />
@@ -107,7 +109,7 @@ import Footer from "../components/Footer.astro";
   }
 
   .hero {
-    background: linear-gradient(135deg, #0a2463, #3e92cc);
+    background: linear-gradient(135deg, #0a2463, var(--my-blue));
     color: white;
     padding: 4rem 2rem;
     border-radius: 1rem;
@@ -195,7 +197,7 @@ import Footer from "../components/Footer.astro";
   }
 
   .submit-button {
-    background: #3e92cc;
+    background: var(--my-blue);
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
