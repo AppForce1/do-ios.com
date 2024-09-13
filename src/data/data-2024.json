@@ -75,6 +75,10 @@
       "name": "Pol Piella",
       "image": "/images/speakers/2024/pol.webp",
       "xHandle": "polpielladev"
+    },
+    {
+      "name": "Mustafa Karakus",
+      "image": "/images/speakers/2024/mustafa.jpeg"
     }
   ]
 }
