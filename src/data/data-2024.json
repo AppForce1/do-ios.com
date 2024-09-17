@@ -9,12 +9,17 @@
     {
       "name": "Jolanda",
       "image": "/images/support/2023/jolanda.jpg",
-      "role": "Conference Support"
+      "role": "Conference & Workshop Support"
+    },
+    {
+      "name": "Peter Friese",
+      "image": "/images/support/2024/peter.webp",
+      "xHandle": "peterfriese",
+      "role": "Conference & Workshop Support"
     },
     {
       "name": "Bart",
       "image": "/images/support/2023/bart.jpg",
-      "x": "https://x.com/barthoffman",
       "xHandle": "barthoffman",
       "role": "Conference Support"
     }
@@ -55,6 +60,11 @@
       "name": "Donny Wals",
       "image": "/images/speakers/2024/donny.webp",
       "xHandle": "donnywals"
+    },
+    {
+      "name": "Peter Friese",
+      "image": "/images/speakers/2024/peter.webp",
+      "xHandle": "peterfriese"
     },
     {
       "name": "Jochem Uytdehaage",
