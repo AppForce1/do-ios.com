@@ -19,3 +19,7 @@ By the end of this session, you'll know how to get started with Embedded Swift o
 ## Juraj Michálek
 
 Juraj's motto is to make embedded development simpler with the help of open source. Open source is key for [Espressif Systems](https://www.espressif.com/en), where he works with the Developer Relations team to help the community, makers, and professionals understand and effectively use software tools and development practices.
+
+This talk is a sponsored by Espressif Systems.
+
+<a href="https://www.espressif.com/en/" target="_blank"><img src="/images/sponsors/espressif.svg" width= "250" /></a>
