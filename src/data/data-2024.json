@@ -91,7 +91,8 @@
     },
     {
       "name": "Michael Hulet",
-      "image": "/images/speakers/2024/michael.png"
+      "image": "/images/speakers/2024/michael.png",
+      "xHandle": "mhuletdev"
     },
     {
       "name": "Sergei Petrachkov",
