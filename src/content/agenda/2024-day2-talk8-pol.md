@@ -1,7 +1,7 @@
 ---
 title: "Ship your app on a Friday… and enjoy your weekend!"
 date: "2024-11-14"
-time: "16:15"
+time: "16:30"
 name: "Pol Piella"
 image: "/images/speakers/2024/pol.webp"
 type: "Talk"

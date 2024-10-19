@@ -1,7 +1,7 @@
 ---
 title: "While we're waiting for Apple Intelligence...why not build it ourselves?"
 date: "2024-11-14"
-time: "14:00"
+time: "14:15"
 name: "Stefan Blos"
 image: "/images/speakers/2024/stefan.webp"
 type: "Talk"

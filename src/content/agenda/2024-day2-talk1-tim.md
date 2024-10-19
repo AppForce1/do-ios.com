@@ -1,7 +1,7 @@
 ---
 title: "Passkeys: the why, the what, the how"
 date: "2024-11-14"
-time: "09:15"
+time: "09:00"
 name: "Tim Condon"
 image: "/images/speakers/2023/tim.webp"
 type: "Talk"

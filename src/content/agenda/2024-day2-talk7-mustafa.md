@@ -1,7 +1,7 @@
 ---
 title: "The Power of the Swift Macros"
 date: "2024-11-14"
-time: "15:30"
+time: "15:45"
 name: "Mustafa Karakus"
 image: "/images/speakers/2024/mustafa.jpeg"
 type: "Talk"

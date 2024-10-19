@@ -1,7 +1,7 @@
 ---
 title: "Making Apps Faster With Tools We Get For Free "
 date: "2024-11-14"
-time: "10:45"
+time: "09:45"
 name: "Samuel Goodwin"
 image: "/images/speakers/2024/samuel.webp"
 type: "Talk"

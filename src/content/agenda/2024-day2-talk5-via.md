@@ -1,7 +1,7 @@
 ---
 title: "Powerhouse Programming History"
 date: "2024-11-14"
-time: "13:15"
+time: "13:30"
 name: "Via Fairchild"
 image: "/images/speakers/2024/via.jpg"
 type: "Talk"

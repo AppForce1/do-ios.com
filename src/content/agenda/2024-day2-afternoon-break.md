@@ -1,8 +1,8 @@
 ---
 title: Coffee
-date: '2024-11-14'
-time: '14:45'
-type: 'Break'
+date: "2024-11-14"
+time: "15:00"
+type: "Break"
 ---
 
 Time for a break.

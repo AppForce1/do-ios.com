@@ -1,7 +1,7 @@
 ---
 title: "How to build a second brain using Siri, Google's Gemini, and Firebase"
 date: "2024-11-14"
-time: "11:30"
+time: "12:00"
 name: "Peter Friese"
 image: "/images/speakers/2024/peter.webp"
 type: "Talk"
