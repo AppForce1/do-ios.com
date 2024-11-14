@@ -16,7 +16,7 @@ The perception is often that only large companies have the resources to directly
 **Moderator: Borbála Szücs-Bártfai**
 _European Policy Manager, ACT | The App Association_
 
-[Find her on LinkedIN](https://www.linkedin.com/in/borbala-szucs-bartfai/overlay/about-this-profile/).
+[Find her on LinkedIN](https://www.linkedin.com/in/borbala-szucs-bartfai/).
 
 With a specialized expertise in European law, Borbála is deeply involved in the dynamic realm of tech policy as the European Policy Manager at ACT | The App Association. She has been actively involved in discussions around emerging and evolving European digital laws, such as the EU Standard-Essential Patent (SEP) Regulation, Digital Markets Act (DMA), the Digital Services Act (DSA), the AI Act, and the enforcement of the General Data Protection Regulation (GDPR). Borbála’s work extends across the European Union and the UK, where she engages with EU and national laws, driven by a commitment to amplify the voices of small tech companies within complex regulatory landscapes.
 
