@@ -1,0 +1,123 @@
+---
+import abnamro from "../data/images/sponsors/ABN-AMRO.png";
+import espressif from "../data/images/sponsors/espressif.svg";
+import stream from "../data/images/sponsors/stream-logo.svg";
+import rocketsim from "../data/images/sponsors/RocketSim.png";
+import screenshotbot from "../data/images/sponsors/screenshotbot.svg";
+import flitsmeister from "../data/images/sponsors/flitsmeister.png";
+import appassociation from "../data/images/sponsors/appassociation.png";
+---
+
+<section id="sponsors">
+  <h2>2024 Conference Sponsors</h2>
+  <p>
+    We are also looking for sponsors of the 2025 edition of Do iOS. Please
+    contact us at{" "}
+    <a href="mailto:sponsors@do-ios.com">sponsors@do-ios.com</a> for more
+    information.
+  </p>
+
+  <div class="sponsors-grid-gold">
+    <a
+      href="https://www.werkenbijabnamro.nl/en/vacancies/department/it"
+      class="abn-amro sponsor-link"
+    >
+      <img src={abnamro.src} alt="ABN AMRO logo" />
+    </a>
+    <a
+      href="https://screenshotbot.io/?utm_source=doios"
+      class="screenshotbot sponsor-link"
+    >
+      <img src={screenshotbot.src} alt="ScreenshotBot logo" class="screenshotbot"/>
+    </a>
+    <a
+      href="https://www.actonline.org"
+      class="appassociation sponsor-link"
+    >
+      <img src={appassociation.src} alt="ScreenshotBot logo" class="appassociation"/>
+    </a>
+    <a
+      href="https://espressif.com/en/"
+      class="espressif sponsor-link"
+    >
+      <img src={espressif.src} alt="Espressif logo" />
+    </a>
+    <a
+      href="https://getstream.io/chat/sdk/swiftui/?utm_source=doiOS&utm_medium=sponsorship&utm_content=&utm_campaign=doiOS_November2024_event_klmh22"
+      class="stream sponsor-link"
+    >
+      <img src={stream.src} alt="Stream logo" />
+    </a>
+    <a
+      href="https://www.rocketsim.app?utm_source=sponsoring&utm_medium=conference&utm_campaign=do_ios_2024"
+      class="rocketsim sponsor-link"
+    >
+      <img src={rocketsim.src} alt="RocketSim logo" />
+    </a>
+    <a
+      href="https://flitsmeister.homerun.co/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="sponsor-link"
+    >
+      <img src={flitsmeister.src} alt="Flitsmeister logo" />
+    </a>
+  </div>
+</section>
+
+<style>
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+
+  .sponsors-grid-gold {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 4rem;
+  }
+
+  .sponsor-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    transition: all 0.3s ease;
+  }
+
+  .sponsor-link img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+  }
+
+  .sponsor-link:hover {
+    transform: scale(1.05);
+  }
+
+  .sponsor-link:hover img {
+    opacity: 0.8;
+  }
+
+  .rocketsim, .screenshotbot {
+    height: 150px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .sponsors-grid-gold {
+      grid-gap: 2rem;
+    }
+
+    .sponsor-link {
+      height: 4rem;
+    }
+
+    .rocketsim, .screenshotbot {
+      height: 100px;
+    }
+  }
+</style>

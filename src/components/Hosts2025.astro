@@ -1,0 +1,80 @@
+---
+import data from "../data/data-2025.json";
+import XButton from "./XButton.astro";
+---
+
+<section>
+  <h2>Hosts</h2>
+
+  <p>
+    Currently, one host will guide you through the day. He will introduce the speakers,
+    ask questions and make sure you have a great time.
+  </p>
+
+  <div class="host-grid">
+    {
+      data.hosts.map((host) => (
+        <div class="host-element">
+          <img src={host.image} alt={host.name} />
+          <h3>{host.name}</h3>
+          {host.xHandle && <XButton handle={host.xHandle} />}
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  .host-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4rem;
+    margin: 2rem 0;
+  }
+
+  .host-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .host-element h3 {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -1px;
+    font-weight: 800;
+    margin: 0;
+    background: var(--my-blue);
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .host-element img {
+    border-radius: 50%;
+    max-width: 100%;
+    aspect-ratio: 1;
+    border: 8px solid var(--my-blue);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .host-grid {
+      padding: 1rem;
+    }
+  }
+</style>

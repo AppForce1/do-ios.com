@@ -1,0 +1,89 @@
+---
+import data from "../data/data-2025.json";
+import XButton from "./XButton.astro";
+---
+
+<section>
+  <h2>Support</h2>
+
+  <p>
+    During the day a number of individuals will be available to assist you with
+    any questions you might have. Anything you need help with? Come talk to
+    anyone of the Do iOS support team.
+  </p>
+
+  <div class="support-grid">
+    {
+      data.support.map((staff) => (
+        <div class="support-element">
+          <img src={staff.image} alt={staff.name} />
+          <h3>{staff.name}</h3>
+          <p>{staff.role}</p>
+          {staff.xHandle && <XButton handle={staff.xHandle} />}
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  .support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 4rem;
+    margin: 2rem 0;
+  }
+
+  .support-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .support-element h3 {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -1px;
+    font-weight: 800;
+    margin: 0;
+    background: var(--my-blue);
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .support-element p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0.5rem 0rem;
+  }
+
+  .support-element img {
+    border-radius: 50%;
+    max-width: 100%;
+    aspect-ratio: 1;
+    border: 8px solid var(--my-blue);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .support-grid {
+      padding: 1rem;
+    }
+  }
+</style>

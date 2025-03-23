@@ -1,32 +1,30 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Sponsors from "../components/Sponsors2025.astro";
-import Card from "../components/Card.astro";
-import Agenda from "../components/Agenda2025.astro";
-import CallForPapers from "../components/CallForPapers.astro";
-import Speakers from "../components/Speakers2025.astro";
-import Hosts from "../components/Hosts2025.astro";
-import Support from "../components/Support2025.astro";
-import Location from "../components/Location.astro";
-import Tickets from "../components/Tickets.astro";
-import Footer from "../components/Footer.astro";
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
+import Location from "../../components/Location.astro";
+import Sponsors from "../../components/Sponsors2024.astro";
+import Agenda from "../../components/Agenda2024.astro";
+import Tickets from "../../components/Tickets.astro";
+import Speakers from "../../components/Speakers2024.astro";
+import Hosts from "../../components/Hosts2024.astro";
+import Support from "../../components/Support2024.astro";
+import Footer from "../../components/Footer.astro";
 ---
 
-<Layout title="Do iOS Developer Conference 2025 Amsterdam">
+<Layout title="Do iOS Developer Conference 2024 Amsterdam">
   <main>
     <section class="hero">
       <div class="hero-content">
-        <h1>Do iOS <span class="text-gradient">2025</span></h1>
+        <h1>Do iOS <span class="text-gradient">2024</span></h1>
         <h2>iOS Developer Conference</h2>
               <p>
-                Join us for the 2025 edition of one of Europe's premier iOS developer
-                conferences. Three days of workshops, talks, and networking in the heart of
-                Amsterdam.
+        Join us for the 2024 edition of one of Europe's premier iOS developer
+        conferences in Amsterdam, the capital city of The Netherlands.
       </p>
 
         <p class="hero-dates">
-          <strong>Workshops:</strong> November 12<br />
-          <strong>Conference:</strong> November 13-14
+          <strong>Workshops:</strong> November 11<br />
+          <strong>Conference:</strong> November 12-13
         </p>
          <!-- <a href="#tickets" class="cta-button">Get Your Tickets Now</a> -->
          <p class="hero-sponsors">
@@ -65,79 +63,44 @@ import Footer from "../components/Footer.astro";
         <p>
           Do iOS is back in 2024. After 5 successful editions in <a href="/2015"
             >2015</a
-          >, <a href="/2016">2016</a>, <a href="/2018">2018</a>, <a href="/2022">2022</a>, <a href="/2023"
-        >2023</a>, and <a href="/2024">2024</a> we again invite you to join us in Amsterdam
+          >, <a href="/2016">2016</a>, <a href="/2018">2018</a>, <a href="/2022"
+            >2022</a
+          >, and <a href="/2023">2023</a> we again invite you to join us in Amsterdam
           to celebrate iOS development in all its aspects.
         </p>
       </section>
 
       <div class="highlights-grid">
         <Card
-          title="Workshop: TBA"
-          body="November 11"
-          description="More info coming soon."
+          title="Workshop: Getting Ready for Swift 6"
+          body="November 12"
+          description="Join Daniel Steinberg for a broad exploration of Swift 6 features."
         />
         <Card
-          title="Workshop: TBA"
-          body="November 11"
-          description="More info coming soon."
-
+          title="Workshop: Swift 6 Concurrency Deep Dive"
+          body="November 12"
+          description="Go in-depth on Swift 6 concurrency with Donny Wals."
         />
         <Card
           title="Two Days of Inspiring Talks"
-          body="November 12-13"
+          body="November 13-14"
           description="Connect with peers, share knowledge, and celebrate iOS development in the heart of Amsterdam."
         />
       </div>
     </section>
 
-    <section class="hero">
-      <h1>Do iOS <span class="text-gradient">2025</span></h1>
-      <p class="hero-text">
-        Join us for the 2025 edition of one of Europe's premier iOS developer
-        conferences. Three days of workshops, talks, and networking in the heart of
-        Amsterdam.
-      </p>
-    </section>
-
-
-    <section class="tickets">
-      <Tickets />
-    </section>
-
-    <section class="location">
-      <Location />
-    </section>
-
-    <section class="agenda">
-      <Agenda />
-    </section>
-
-    <section class="speakers">
-      <Speakers />
-    </section>
-
-    <section class="hosts">
-      <Hosts />
-    </section>
-
-    <section class="support">
-      <Support />
-    </section>
-
-    <section class="sponsors">
-      <Sponsors />
-    </section>
-
-    <!-- <section class="cfp">
-      <h2>Call for Papers</h2>
-      <CallForPapers />
-    </section> -->
+    <Sponsors />
+    <Tickets />
+    <Agenda />
+    <Speakers />
+    <Hosts />
+    <Support />
+    <Location />
   </main>
   <footer>
     <Footer />
   </footer>
-</Layout> 
+</Layout>
 
 <style>
   main {
