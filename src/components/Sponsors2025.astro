@@ -1,68 +1,25 @@
 ---
-import abnamro from "../data/images/sponsors/ABN-AMRO.png";
-import espressif from "../data/images/sponsors/espressif.svg";
-import stream from "../data/images/sponsors/stream-logo.svg";
-import rocketsim from "../data/images/sponsors/RocketSim.png";
-import screenshotbot from "../data/images/sponsors/screenshotbot.svg";
-import flitsmeister from "../data/images/sponsors/flitsmeister.png";
-import appassociation from "../data/images/sponsors/appassociation.png";
+import guardsquare from "../data/images/sponsors/guardsquare.png";
 ---
 
 <section id="sponsors">
-  <h2>2024 Conference Sponsors</h2>
+  <h2>Conference Sponsors</h2>
+  <div class="sponsors-grid-gold">
+    <a
+      href="http://www.guardsquare.com/?utm_source=sponsoring&utm_medium=conference&utm_campaign=do_ios_2025"
+      class="guardsquare sponsor-link"
+    >
+      <img src={guardsquare.src} alt="Guardsquare logo" />
+    </a>
+    <p><b>Guardsquare</b> provides a comprehensive, easy-to-integrate mobile app security solution, from testing and code hardening to real-time threat visibility. Trusted by over 900 customers worldwide, Guardsquare helps protect apps and SDKs from reverse engineering and tampering throughout the development lifecycle.</p>
+  </div>
+  <h3>Support Do iOS</h3>
   <p>
-    We are also looking for sponsors of the 2025 edition of Do iOS. Please
+    We are still looking for additional sponsors for the 2025 edition of Do iOS. Please
     contact us at{" "}
     <a href="mailto:sponsors@do-ios.com">sponsors@do-ios.com</a> for more
     information.
   </p>
-
-  <div class="sponsors-grid-gold">
-    <a
-      href="https://www.werkenbijabnamro.nl/en/vacancies/department/it"
-      class="abn-amro sponsor-link"
-    >
-      <img src={abnamro.src} alt="ABN AMRO logo" />
-    </a>
-    <a
-      href="https://screenshotbot.io/?utm_source=doios"
-      class="screenshotbot sponsor-link"
-    >
-      <img src={screenshotbot.src} alt="ScreenshotBot logo" class="screenshotbot"/>
-    </a>
-    <a
-      href="https://www.actonline.org"
-      class="appassociation sponsor-link"
-    >
-      <img src={appassociation.src} alt="ScreenshotBot logo" class="appassociation"/>
-    </a>
-    <a
-      href="https://espressif.com/en/"
-      class="espressif sponsor-link"
-    >
-      <img src={espressif.src} alt="Espressif logo" />
-    </a>
-    <a
-      href="https://getstream.io/chat/sdk/swiftui/?utm_source=doiOS&utm_medium=sponsorship&utm_content=&utm_campaign=doiOS_November2024_event_klmh22"
-      class="stream sponsor-link"
-    >
-      <img src={stream.src} alt="Stream logo" />
-    </a>
-    <a
-      href="https://www.rocketsim.app?utm_source=sponsoring&utm_medium=conference&utm_campaign=do_ios_2024"
-      class="rocketsim sponsor-link"
-    >
-      <img src={rocketsim.src} alt="RocketSim logo" />
-    </a>
-    <a
-      href="https://flitsmeister.homerun.co/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="sponsor-link"
-    >
-      <img src={flitsmeister.src} alt="Flitsmeister logo" />
-    </a>
-  </div>
 </section>
 
 <style>
@@ -76,8 +33,8 @@ import appassociation from "../data/images/sponsors/appassociation.png";
 
   .sponsors-grid-gold {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 2rem;
   }
 
   .sponsor-link {
@@ -109,14 +66,14 @@ import appassociation from "../data/images/sponsors/appassociation.png";
 
   @media only screen and (max-width: 600px) {
     .sponsors-grid-gold {
-      grid-gap: 2rem;
+      grid-gap: 1rem;
     }
 
     .sponsor-link {
       height: 4rem;
     }
 
-    .rocketsim, .screenshotbot {
+    .guardsquare {
       height: 100px;
     }
   }

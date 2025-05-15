@@ -18,7 +18,7 @@ import Footer from "../components/Footer.astro";
     <section class="hero">
       <div class="hero-content">
         <h1>Do iOS <span class="text-gradient">2025</span></h1>
-        <h2>iOS Developer Conference</h2>
+        <h3>iOS Developer Conference</h3>
               <p>
                 Join us for the 2025 edition of one of Europe's premier iOS developer
                 conferences. Three days of workshops, talks, and networking in the heart of
@@ -26,20 +26,13 @@ import Footer from "../components/Footer.astro";
       </p>
 
         <p class="hero-dates">
-          <strong>Workshops:</strong> November 11<br />
-          <strong>Conference:</strong> November 12-13
+          <strong>Workshops:</strong> November 11 / <strong>Conference:</strong> November 12-13
         </p>
-         <!-- <a href="#tickets" class="cta-button">Get Your Tickets Now</a> -->
-         <p class="hero-sponsors">
-        We are also looking for sponsors of the 2025 edition of Do iOS. Please
-        reach out, contact info at bottom of this page.
-      </p>
 
       </div>
     </section>
 
     <section class="newsletter">
-      <h2>Do iOS will be back in 2025 on Nov. 11, 12 and 13.</h2>
       <h3>Stay Updated</h3>
       <form
         action="https://sendy.appforce1.net/subscribe"
@@ -61,10 +54,9 @@ import Footer from "../components/Footer.astro";
     </section>
 
     <section class="highlights">
-      <h2>Conference Highlights</h2>
       <section>
         <p>
-          Do iOS is back in 2024. After 6 successful editions in <a href="/2015"
+          Do iOS is back in 2025. After 6 successful editions in <a href="/2015"
             >2015</a
           >, <a href="/2016">2016</a>, <a href="/2018">2018</a>, <a href="/2022">2022</a>, <a href="/2023"
         >2023</a>, and <a href="/2024">2024</a> we again invite you to join us in Amsterdam
@@ -92,6 +84,10 @@ import Footer from "../components/Footer.astro";
       </div>
     </section>
 
+    <section class="sponsors">
+      <Sponsors />
+    </section>
+
     <section class="tickets">
       <Tickets />
     </section>
@@ -116,10 +112,6 @@ import Footer from "../components/Footer.astro";
       <Support />
     </section>
 
-    <section class="sponsors">
-      <Sponsors />
-    </section>
-
     <!-- <section class="cfp">
       <h2>Call for Papers</h2>
       <CallForPapers />
@@ -141,7 +133,7 @@ import Footer from "../components/Footer.astro";
   .hero {
     background: linear-gradient(135deg, #0a2463, var(--my-blue));
     color: white;
-    padding: 4rem 2rem;
+    padding: 1rem 1rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -206,9 +198,9 @@ import Footer from "../components/Footer.astro";
 
   .newsletter {
     background: #f1f2f6;
-    padding: 3rem 2rem;
+    padding: 1rem 1rem;
     border-radius: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
   }
 
