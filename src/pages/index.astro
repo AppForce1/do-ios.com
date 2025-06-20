@@ -11,6 +11,7 @@ import Location from "../components/Location.astro";
 import Tickets from "../components/Tickets.astro";
 import Partners from "../components/Partners.astro";
 import Footer from "../components/Footer.astro";
+import CallForPapers from "../components/CallForPapers.astro";
 ---
 
 <Layout title="Do iOS Developer Conference 2025 Amsterdam">
@@ -96,13 +97,17 @@ import Footer from "../components/Footer.astro";
       <Location />
     </section>
 
-    <section class="agenda">
-      <Agenda />
+    <section class="cfp">
+      <CallForPapers />
     </section>
 
-    <section class="speakers">
+    <!-- <section class="agenda">
+      <Agenda />
+    </section> -->
+
+    <!-- <section class="speakers">
       <Speakers />
-    </section>
+    </section> -->
 
     <section class="hosts">
       <Hosts />
@@ -112,10 +117,14 @@ import Footer from "../components/Footer.astro";
       <Support />
     </section>
 
-    <!-- <section class="cfp">
+    <section class="cfp">
       <h2>Call for Papers</h2>
       <CallForPapers />
-    </section> -->
+    </section>
+
+    <section class="sponsors">
+      <Sponsors />
+    </section>
   </main>
   <footer>
     <Partners />
