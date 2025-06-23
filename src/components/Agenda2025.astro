@@ -1,5 +1,5 @@
 ---
-import TalkCard from "./TalkCard2025.astro";
+import TalkCard from "./TalkCard2024.astro";
 
 import { getCollection } from "astro:content";
 
@@ -20,13 +20,13 @@ for (const item of allAgendaItems) {
     summary: item.data.summary,
   };
   switch (item.data.date) {
-    case "2024-11-12":
+    case "2025-11-11":
       workshops.push(talk);
       break;
-    case "2024-11-13":
+    case "2025-11-12":
       day1Talks.push(talk);
       break;
-    case "2024-11-14":
+    case "2025-11-13":
       day2Talks.push(talk);
       break;
   }
@@ -37,89 +37,66 @@ day1Talks = day1Talks.sort((a, b) => a.time.localeCompare(b.time));
 day2Talks = day2Talks.sort((a, b) => a.time.localeCompare(b.time));
 ---
 
-<div class="agenda-grid">
-  <h2>Agenda</h2>
-  <div class="agenda-day">
-    <h3>2025-11-11 - Workshop</h3>
-    <div class="talks">
-      <TalkCard
-        title="Workshop Day"
-        description="Full day of hands-on workshops"
-        time="09:00 - 17:00"
-        speaker="TBA"
-      />
-    </div>
-  </div>
+<section id="agenda">
+  <h2>Conference Agenda</h2>
+  <ul class="day-list">
+    <li>
+      <h3>2025-11-11 - Workshops</h3>
+      <ul class="talk-list">
+        {workshops.map((talk) => <TalkCard talk={talk} />)}
+      </ul>
+    </li>
+    <li>
+      <h3>2025-11-12 - Conference Day 1</h3>
+      <ul class="talk-list">
+        {day1Talks.map((talk) => <TalkCard talk={talk} />)}
+      </ul>
+    </li>
+    <li>
+      <h3>2025-11-13 - Conference Day 2</h3>
+      <ul class="talk-list">
+        {day2Talks.map((talk) => <TalkCard talk={talk} />)}
+      </ul>
+    </li>
+  </ul>
+</section>
 
-  <div class="agenda-day">
-    <h3>2025-11-12 - Conference Day 1</h3>
-    <div class="talks">
-      <TalkCard
-        title="Welcome"
-        description="Opening of the conference"
-        time="09:00 - 09:30"
-        speaker="TBA"
-      />
-      <TalkCard
-        title="Morning Talks"
-        description="Series of talks from our speakers"
-        time="09:30 - 12:30"
-        speaker="TBA"
-      />
-      <TalkCard
-        title="Lunch Break"
-        description="Lunch and networking"
-        time="12:30 - 13:30"
-        speaker="TBA"
-      />
-      <TalkCard
-        title="Afternoon Talks"
-        description="More talks from our speakers"
-        time="13:30 - 17:00"
-        speaker="TBA"
-      />
-      <TalkCard
-        title="Drinks & Networking"
-        description="Social event and networking"
-        time="17:00 - 19:00"
-        speaker="TBA"
-      />
-    </div>
-  </div>
+<style>
+  section {
+    margin-top: 4rem;
+  }
 
-  <div class="agenda-day">
-    <h3>2025-11-13 - Conference Day 2</h3>
-    <div class="talks">
-      <TalkCard
-        title="Welcome"
-        description="Opening of day 2"
-        time="09:00 - 09:30"
-        speaker="TBA"
-      />
-      <TalkCard
-        title="Morning Talks"
-        description="Series of talks from our speakers"
-        time="09:30 - 12:30"
-        speaker="TBA"
-      />
-      <TalkCard
-        title="Lunch Break"
-        description="Lunch and networking"
-        time="12:30 - 13:30"
-        speaker="TBA"
-      />
-      <TalkCard
-        title="Afternoon Talks"
-        description="More talks from our speakers"
-        time="13:30 - 17:00"
-        speaker="TBA"
-      />
-      <TalkCard
-        title="Closing Party"
-        description="Final celebration and networking"
-        time="17:00 - 20:00"
-        speaker="TBA"
-      />
-    </div>
-  </div>
-</div> 
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    border-left: 8px solid var(--my-blue);
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 8px;
+    background: var(--my-blue-background);
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  ul {
+    padding-inline-start: 0rem;
+  }
+
+  li {
+    list-style: none;
+  }
+</style>
