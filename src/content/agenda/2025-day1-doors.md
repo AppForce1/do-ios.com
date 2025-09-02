@@ -1,7 +1,7 @@
 ---
 title: Doors open
 date: '2025-11-12'
-time: '08:30/'
+time: '08:30'
 type: 'Logistics'
 ---
 

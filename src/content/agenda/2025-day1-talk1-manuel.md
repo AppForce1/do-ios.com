@@ -5,10 +5,8 @@ time: "09:15"
 name: "	Manuel Carrasco Molina"
 image: "/images/speakers/2025/manuel.webp"
 type: "Talk"
-summary: "What if I told you that you might be unnecessarily complicating your SwiftUI apps by selecting an architecture that doesn’t align with the declarative nature of the SwiftUI framework? Instead of battling against the framework, what if you could seamlessly work with it?"
+summary: "A lot of time Privacy of my data as a user is not a priority for Developers. Wether it’s my calendar, my contacts, my location, I want as a user to be able to use an app without all of those attacks in my privacy."
 ---
-
-A lot of time Privacy of my data as a user is not a priority for Developers. Wether it’s my calendar, my contacts, my location, I want as a user to be able to use an app without all of those attacks in my privacy.
 
 Manuel will summarise some things an iOS developer should do to ensure the most critical user can still use an app in some regards, and not just say “I need all your information” like on other platforms. This is the beauty of iOS, being able to have fine grained control over your data (although not enough) so let’s do this all together, as a beautiful community concerned by Privacy.
 
