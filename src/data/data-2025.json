@@ -1,5 +1,10 @@
 {
-  "speakers": [],
+  "speakers": [
+    {
+      "name": "Manuel Carrasco Molina",
+      "image": "/images/speakers/2025/manuel.webp"
+    }
+  ],
   "hosts": [
     {
       "name": "Jeroen Leenarts",
