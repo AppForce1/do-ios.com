@@ -12,4 +12,4 @@ Manuel will summarise some things an iOS developer should do to ensure the most 
 
 ## Manuel Carrasco Molina
 
-Started with his C64 at age 11 in 1987. Manuel “Stuff” Carrasco Molina became a Pro Software Dev in 1997 after 3 years of CS. Started the first french podcast about Apple in 2005. Started developing for iOS in 2008. With Swift since 2014 (pre-1.0). Just started to work for Certgate, a company which Businesses is Security and Privacy.
+Started with his C64 at age 11 in 1987. Manuel “Stuff” Carrasco Molina became a Pro Software Dev in 1997 after 3 years of CS. Started the first french podcast about Apple in 2005. Started developing for iOS in 2008. With Swift since 2014 (pre-1.0).
