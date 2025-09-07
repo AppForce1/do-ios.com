@@ -2,7 +2,8 @@
   "speakers": [
     {
       "name": "Manuel Carrasco Molina",
-      "image": "/images/speakers/2025/manuel.webp"
+      "image": "/images/speakers/2025/manuel.webp",
+      "xHandle": "stuffmc"
     },
     {
       "name": "Peter Kurzok",
@@ -14,7 +15,8 @@
     },
     {
       "name": "Eric Bariaux",
-      "image": "/images/speakers/2025/eric.webp"
+      "image": "/images/speakers/2025/eric.webp",
+      "xHandle": "ebariaux"
     },
     {
       "name": "Samuel Hopstock",
