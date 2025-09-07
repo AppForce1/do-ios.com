@@ -15,6 +15,11 @@
     {
       "name": "Eric Bariaux",
       "image": "/images/speakers/2025/eric.webp"
+    },
+    {
+      "name": "Samuel Hopstock",
+      "image": "/images/speakers/2025/samuel.webp",
+      "xHandle": "Masrepus"
     }
   ],
   "hosts": [
