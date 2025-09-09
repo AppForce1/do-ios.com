@@ -1,5 +1,5 @@
 ---
-title: "Dive deep into modularization"
+title: "Cryptography 101: What Every Swift Developer Should Understand"
 date: "2025-11-12"
 time: "11:30"
 name: "Eric Bariaux"
