@@ -1,7 +1,7 @@
 ---
 title: "The enemy within: how UIKit mindset is leaking into your SwiftUI views"
 date: "2025-11-12"
-time: "13:15"
+time: "16:15"
 name: "Lucy Galik"
 image: "/images/speakers/2025/lucy.webp"
 type: "Talk"

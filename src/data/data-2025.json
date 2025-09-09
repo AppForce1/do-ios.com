@@ -18,6 +18,11 @@
       "image": "/images/speakers/2025/burcu.webp"
     },
     {
+      "name": "Antoine van der Lee",
+      "image": "/images/speakers/2025/antoine.jpeg",
+      "xHandle": "twannl"
+    },
+    {
       "name": "Eric Bariaux",
       "image": "/images/speakers/2025/eric.webp",
       "xHandle": "ebariaux"
