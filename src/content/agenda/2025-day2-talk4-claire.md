@@ -2,7 +2,7 @@
 title: "Who Let the App Intents Out? 🐾"
 date: "2025-11-13"
 time: "12:00"
-name: "Claire Sivadie"
+name: "Claire Sivadier"
 image: "/images/speakers/2025/claire.webp"
 type: "Talk"
 summary: "Who says you need to open an app to use it? With App Intents, I tracked walks with my puppy 🐶 without taking out my iPhone. Learn how to extend your app beyond the UI using Siri, Shortcuts, Spotlight, and widgets—hands-free, in pure Swift."
