@@ -1,7 +1,7 @@
 ---
 title: "Swift Concurrency in 6.2: Patterns & Pitfalls Nobody Told You About"
-date: "2025-11-13"
-time: "13:30"
+date: "2025-11-12"
+time: "15:30"
 name: "Kanagasabapathy Rajkumar"
 image: "/images/speakers/2025/kanagasabapathy.webp"
 type: "Talk"
