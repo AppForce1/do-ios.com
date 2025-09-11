@@ -72,6 +72,11 @@
       "role": "Audio and Visuals"
     },
     {
+      "name": "Axel",
+      "image": "/images/support/2025/axel.webp",
+      "role": "Workshop Host"
+    },
+    {
       "name": "Bart",
       "image": "/images/support/2023/bart.jpg",
       "xHandle": "barthoffman",
