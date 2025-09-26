@@ -1,5 +1,6 @@
 ---
 import guardsquare from "../data/images/sponsors/guardsquare.png";
+import rocketsim from "../data/images/sponsors/RocketSim.png";
 ---
 
 <section id="sponsors">
@@ -13,6 +14,17 @@ import guardsquare from "../data/images/sponsors/guardsquare.png";
     </a>
     <p><b>Guardsquare</b> provides a comprehensive, easy-to-integrate mobile app security solution, from testing and code hardening to real-time threat visibility. Trusted by over 900 customers worldwide, Guardsquare helps protect apps and SDKs from reverse engineering and tampering throughout the development lifecycle.</p>
   </div>
+  <br />
+  <div class="sponsors-grid">
+    <a
+      href="https://www.rocketsim.app?utm_source=sponsoring&utm_medium=conference&utm_campaign=do_ios_2025"
+      class="rocketsim sponsor-link"
+    >
+      <img src={rocketsim.src} alt="RocketSim logo" />
+    </a>
+    <p>Boost your productivity and streamline your workflow with our powerful Xcode Simulator tools. Developers report building, testing, and verifying apps up to 2x faster with <b>RocketSim.</b></p>
+  </div>
+  <br />
   <h3>Support Do iOS</h3>
   <p>
     We are still looking for additional sponsors for the 2025 edition of Do iOS. Please
@@ -60,12 +72,20 @@ import guardsquare from "../data/images/sponsors/guardsquare.png";
     opacity: 0.8;
   }
 
-  .rocketsim, .screenshotbot {
+  .screenshotbot {
     height: 150px;
+  }
+
+  .rocketsim {
+    height: 100px;
   }
 
   @media only screen and (max-width: 600px) {
     .sponsors-grid-gold {
+      grid-gap: 1rem;
+    }
+
+    .sponsors-grid {
       grid-gap: 1rem;
     }
 
@@ -75,6 +95,10 @@ import guardsquare from "../data/images/sponsors/guardsquare.png";
 
     .guardsquare {
       height: 100px;
+    }
+
+    .rocketsim {
+      height: 80px;
     }
   }
 </style>
