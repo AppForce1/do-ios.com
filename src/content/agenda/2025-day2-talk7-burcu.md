@@ -1,7 +1,7 @@
 ---
 title: "The Evolution of iOS Development & Swift Language"
-date: "2025-11-12"
-time: "14:00"
+date: "2025-11-13"
+time: "16:15"
 name: "Burcu Kutluay"
 image: "/images/speakers/2025/burcu.webp"
 type: "Talk"

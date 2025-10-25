@@ -1,7 +1,7 @@
 ---
 title: "Crafting SwiftUI components in the same way Apple does!"
 date: "2025-11-13"
-time: "09:45"
+time: "10:45"
 name: "Thomas Durand"
 image: "/images/speakers/2025/thomas.webp"
 type: "Talk"

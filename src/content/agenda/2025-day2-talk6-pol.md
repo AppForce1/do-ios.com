@@ -1,7 +1,7 @@
 ---
 title: "Tuning your app using Xcode's instruments"
 date: "2025-11-13"
-time: "14:15"
+time: "15:30"
 name: "Pol Piella Abadia"
 image: "/images/speakers/2025/pol.webp"
 type: "Talk"

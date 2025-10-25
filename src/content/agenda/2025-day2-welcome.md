@@ -1,7 +1,7 @@
 ---
 title: Welcome to Do iOS Day 2
 date: "2025-11-13"
-time: "08:45"
+time: "09:00"
 name: "Jeroen Leenarts"
 image: "/images/hosts/2023/jeroen.webp"
 type: "Welcome"

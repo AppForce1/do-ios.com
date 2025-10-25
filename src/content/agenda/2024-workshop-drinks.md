@@ -3,7 +3,7 @@ title: Drinks
 date: "2024-11-12"
 time: "17:00"
 type: "Drinks"
-summary: "At the end of the workshop all attendees, Donny, Joshua, and Jeroen will have a drink together."
+summary: "At the end of the workshop all attendees, Donny, Joannis, and Jeroen will have a drink together."
 ---
 
 On the 2th floor, in the NEMO Science Museum Cafe.

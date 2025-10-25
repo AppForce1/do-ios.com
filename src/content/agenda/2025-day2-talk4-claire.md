@@ -1,7 +1,7 @@
 ---
 title: "Who Let the App Intents Out? 🐾"
 date: "2025-11-13"
-time: "12:00"
+time: "13:15"
 name: "Claire Sivadier"
 image: "/images/speakers/2025/claire.webp"
 type: "Talk"

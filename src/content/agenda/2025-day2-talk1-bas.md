@@ -1,7 +1,7 @@
 ---
 title: "Roasting your app's accessibility"
 date: "2025-11-13"
-time: "09:00"
+time: "09:15"
 name: "Bas Broek"
 image: "/images/speakers/2025/bas.webp"
 type: "Talk"

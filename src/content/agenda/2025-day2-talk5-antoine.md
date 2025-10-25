@@ -1,7 +1,7 @@
 ---
 title: "Swift 6.2 is here — It's time to migrate to Strict Concurrency"
 date: "2025-11-13"
-time: "13:30"
+time: "14:00"
 name: "Antoine van der Lee"
 image: "/images/speakers/2024/antoine.jpeg"
 type: "Talk"

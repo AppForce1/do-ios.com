@@ -1,7 +1,7 @@
 ---
 title: "Engineering Accessibility: Practical, Maintainable, Testable"
 date: "2025-11-13"
-time: "11:15"
+time: "11:30"
 name: "Robin Kanatzar"
 image: "/images/speakers/2025/robin.webp"
 type: "Talk"

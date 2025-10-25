@@ -59,6 +59,11 @@
       "name": "Pol Piella Abadia",
       "image": "/images/speakers/2025/pol.webp",
       "xHandle": "polpielladev"
+    },
+    {
+      "name": "Joannis Orlandos",
+      "image": "/images/speakers/2025/joannis.jpg",
+      "xHandle": "joannisorlandos"
     }
   ],
   "hosts": [
