@@ -3,7 +3,7 @@ title: "Swift Concurrency in 6.2: Patterns & Pitfalls Nobody Told You About"
 date: "2025-11-12"
 time: "15:30"
 name: "Kanagasabapathy Rajkumar"
-image: "/images/speakers/2025/kanagasabapathy.webp"
+image: "/images/speakers/2025/kanagasabapathy.jpg"
 type: "Talk"
 summary: "Swift 6.2 introduces stricter concurrency rules—Sendable, actor isolation, and priority enforcement—all of which reshape how we write async Swift. This talk unpacks real-world pitfalls, surprising edge cases, and modern concurrency patterns that actually hold up in production."
 ---
