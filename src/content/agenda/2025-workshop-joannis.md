@@ -21,6 +21,4 @@ Join us and discover how far Swift can take you. Whether you’re building the n
 
 ## Joannis Orlandos
 
-Joannis Orlandos is a pioneer in the cross-platform Swift ecosystem. As a member of various workgroups, including the Swift Server and Android workgroups, Joannis helps drive the ecosystem in new directions. As a maintainer of widely used opensource projects like Vapor 3, Hummingbird 2 and MongoKitten, his work powers critical infrastructure at many companies including Apple
-
-Through his company, Unbeatable Software B.V., he builds full-stack Swift products including scalable backends, apps and embedded software. Joannis is passionate about bringing Swift to all corners of the world, empowering developers to build performant and safe code that’s highly maintainable and expressive.
+Joannis is a veteran OpenSource maintainer in the Swift community. He’s a member of the Swift Android Workgroup, Swift Server Workgroup and the Information Architecture Project for the Swift Website Workgroup. As a member of these projects, Joannis maintains high profile libraries used by many companies, including Apple, such as Hummingbird, MongoKitten and Citadel, while contributing to many more such as VSCode, Embedded Swift, Android, OpenTelemetry, Vapor and more.
