@@ -3,7 +3,7 @@ title: "Less AI, more Magic"
 date: "2025-11-13"
 time: "15:30"
 name: "Hidde van der Ploeg"
-image: "/images/speakers/2025/pol.webp"
+image: "/images/speakers/2025/hidde.webp"
 type: "Talk"
 summary: "I will show you how to craft magical experiences for your users using the power of AI, without explicitly highlighting the fact it’s using AI."
 ---
