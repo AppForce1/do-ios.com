@@ -1,25 +1,17 @@
 ---
-title: "Tuning your app using Xcode's instruments"
+title: "Less AI, more Magic"
 date: "2025-11-13"
 time: "15:30"
-name: "Pol Piella Abadia"
+name: "Hidde van der Ploeg"
 image: "/images/speakers/2025/pol.webp"
 type: "Talk"
-summary: "Updated for Xcode 26, this live coding session dives into real-world debugging with Instruments. Learn how to track down memory leaks, CPU spikes, and UI issues using practical tools and workflows I have mastered after years of optimizing app performance at scale."
+summary: "I will show you how to craft magical experiences for your users using the power of AI, without explicitly highlighting the fact it’s using AI."
 ---
 
-Have you ever spent hours chasing down frustrating performance issues like bloated app storage or laggy UIs? Or maybe you've noticed something off in your app's performance but weren't quite sure how to track down the root cause?
+AI is everywhere these days and 90% of the time it's represented by a sparkles icon.
 
-You're not alone. After years of debugging apps at scale, I've built a toolkit of techniques, tools, and processes to help you quickly identify and fix those elusive performance problems like a pro.
+During this session, I’ll explain why it’s sometimes best not to reveal the use of AI and offer examples of when it’s necessary to do so. I’ll also provide guidance on how to make longer loading times feel magical. The focus will be on designing AI features to ensure your app maintains its uniqueness. I will share real examples and key takeaways to remember when building your next AI-based feature.
 
-In this session, I'll take you on a deep dive into analyzing real-world performance, memory, and UI issues using Xcode's Instruments. Drawing from my own experience working with apps at scale, I'll walk you through the most common challenges developers face—from unexpected memory spikes to sluggish UI elements. You'll see how to approach these problems in practice, using real scenarios I've encountered in production apps.
+## Hidde van der Ploeg
 
-We'll explore several powerful Instruments templates, including Time Profiler for spotting CPU bottlenecks and analyzing thread usage, Zombies for catching memory leaks, and the Concurrency instrument for visualizing task execution and actor behavior. I'll also highlight the often-overlooked SwiftUI instrument—a potential game-changer for anyone working with SwiftUI, especially in Xcode 26.
-
-By the end of this session, you'll walk away with a clear process and a practical toolkit for investigating and resolving a wide range of app performance issues—ready to put to work in your own projects.
-
-## Pol Piella Abadia
-
-I'm an iOS Developer and Content Creator from Spain, and the maker of popular apps such as Helm for App Store Connect, NowPlaying, QReate, and Fosi.
-
-I also curate the iOS CI Newsletter, regularly speak at conferences around the world and work as a Senior Software Engineer at RevenueCat.
+I'm a software maker from Amsterdam. Specializing in creating beautiful, user-centered software. You might know me as the maker of popular apps such as Helm for App Store Connect or NowPlaying. I also regularly speak at conferences around the world and work as a Senior UI Engineer at RevenueCat.
