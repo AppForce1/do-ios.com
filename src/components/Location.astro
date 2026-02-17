@@ -1,11 +1,16 @@
 ---
 import nemo from '../data/images/location/nemo.jpeg';
 import map from '../data/images/location/nemo-location.png';
+
+export interface Props {
+  year?: number;
+}
+const { year = 2026 } = Astro.props;
 ---
 
 <section>
   <h2>Conference Location</h2>
-  <p>Do iOS 2025 will be in the <b>Nemo Science Museum, Oosterdok 2, 1011 VX Amsterdam</b>.</p>
+  <p>Do iOS {year} will be in the <b>Nemo Science Museum, Oosterdok 2, 1011 VX Amsterdam</b>.</p>
   <p>Amsterdam, one of many capital cities in Europe. Known for its canals and unique architecture.</p>
   <a
     href='http://maps.apple.com/?address=Oosterdok+2+Amsterdam&q=NEMO+Science+Museum'

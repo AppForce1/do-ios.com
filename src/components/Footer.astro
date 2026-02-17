@@ -2,6 +2,11 @@
 import jeroen from '../data/images/people/jeroen.webp';
 import shutter from '../data/images/shutter.png';
 import XButton from './XButton.astro';
+
+export interface Props {
+  year?: number;
+}
+const { year = 2026 } = Astro.props;
 ---
 
 <section>
@@ -11,13 +16,13 @@ import XButton from './XButton.astro';
   </div>
   <div class='produced-row right'>
     <div>
-      <span>Do iOS 2024 produced by</span>
+      <span>Do iOS {year} produced by</span>
       <a href='https://appforce1.net'><h2>AppForce1</h2></a>. You can find me on <a rel="me" href="https://hachyderm.io/@appforce1" data-related="AppForce1" target="_blank">Mastodon too</a>.
     </div>
     <img src={jeroen.src} alt='Jeroen Leenarts, better known as the organizer' />
   </div>
   <p>
-    DO iOS 2025 is dedicated to a harassment-free conference experience for everyone.
+    DO iOS {year} is dedicated to a harassment-free conference experience for everyone.
     Our anti-harassment <a
     href='/coc.html'>policy can be found here.</a
     >

@@ -1,30 +1,37 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import Location from "../components/Location.astro";
-import Partners from "../components/Partners.astro";
-import Footer from "../components/Footer.astro";
+import Layout from "../../layouts/Layout.astro";
+import Sponsors from "../../components/Sponsors2025.astro";
+import Card from "../../components/Card.astro";
+import Agenda from "../../components/Agenda2025.astro";
+import Speakers from "../../components/Speakers2025.astro";
+import Hosts from "../../components/Hosts2025.astro";
+import Support from "../../components/Support2025.astro";
+import Location from "../../components/Location.astro";
+import Partners from "../../components/Partners.astro";
+import Footer from "../../components/Footer.astro";
 ---
 
-<Layout title="Do iOS Developer Conference 2026 Amsterdam">
+<Layout title="Do iOS Developer Conference 2025 Amsterdam">
   <main>
     <section class="hero">
       <div class="hero-content">
-        <h1>Do iOS <span class="text-gradient">2026</span></h1>
+        <h1>Do iOS <span class="text-gradient">2025</span></h1>
         <h3>iOS Developer Conference</h3>
-        <p>
-          Join us for the 2026 edition of one of Europe's premier iOS developer
-          conferences. Three days of workshops, talks, and networking in the heart of
-          Amsterdam.
-        </p>
+              <p>
+                Join us for the 2025 edition of one of Europe's premier iOS developer
+                conferences. Three days of workshops, talks, and networking in the heart of
+                Amsterdam.
+      </p>
 
         <p class="hero-dates">
-          <strong>Workshops:</strong> November 10 / <strong>Conference:</strong> November 11–12
+          <strong>Workshops:</strong> November 11 / <strong>Conference:</strong> November 12-13
         </p>
+
       </div>
     </section>
 
     <section class="newsletter">
+      <h3>Do iOS will be back in 2026 on November 10, 11 and 12.</h3>
       <h3>Stay Updated</h3>
       <form
         action="https://sendy.appforce1.net/subscribe"
@@ -48,36 +55,69 @@ import Footer from "../components/Footer.astro";
     <section class="highlights">
       <section>
         <p>
-          Do iOS is back in 2026. After 7 successful editions in <a href="/2015">2015</a>, <a href="/2016">2016</a>, <a href="/2018">2018</a>, <a href="/2022">2022</a>, <a href="/2023">2023</a>, <a href="/2024">2024</a>, and <a href="/2025">2025</a> we again invite you to join us in Amsterdam to celebrate iOS development in all its aspects.
+          Do iOS is back in 2025. After 6 successful editions in <a href="/2015"
+            >2015</a
+          >, <a href="/2016">2016</a>, <a href="/2018">2018</a>, <a href="/2022">2022</a>, <a href="/2023"
+        >2023</a>, and <a href="/2024">2024</a> we again invite you to join us in Amsterdam
+          to celebrate iOS development in all its aspects.
         </p>
       </section>
 
       <div class="highlights-grid">
         <Card
-          title="Call for Papers"
-          body="Opening soon"
-          description="We'll open our call for papers in the coming months. First-time speaker? We'd love to hear from you. Stay tuned and subscribe above for updates."
+          title="Workshop: Using Instruments to write performant SwiftUI code"
+          body="November 11"
+          description="Join Donny Wals for a workshop about SwiftUI performance."
         />
         <Card
-          title="Workshops"
-          body="November 10"
-          description="A day of in-depth workshops. Details and registration will be announced soon."
+          title="Workshop: Building Connected Devices with Embedded Swift by Joannis Orlandos"
+          body="November 11"
+          description="Explore the world of embedded development using Swift!"
+
+        />
+        <Card
+          title="Workshop: Intro to App Intents by Daniel Steinberg"
+          body="November 11"
+          description="Learn to use App Intents  to make an app more discoverable and a more flexible part of the user experience."
+
         />
         <Card
           title="Two Days of Inspiring Talks"
-          body="November 11–12"
+          body="November 12-13"
           description="Connect with peers, share knowledge, and celebrate iOS development in the heart of Amsterdam."
         />
       </div>
     </section>
 
+    <section class="sponsors">
+      <Sponsors />
+    </section>
+
+    <Speakers />
+
     <section class="location">
-      <Location />
+      <Location year={2025} />
+    </section>
+
+    <section class="agenda">
+      <Agenda />
+    </section>
+
+    <section class="hosts">
+      <Hosts />
+    </section>
+
+    <section class="support">
+      <Support />
+    </section>
+
+    <section class="sponsors">
+      <Sponsors />
     </section>
   </main>
   <footer>
     <Partners />
-    <Footer />
+    <Footer year={2025} />
   </footer>
 </Layout>
 
