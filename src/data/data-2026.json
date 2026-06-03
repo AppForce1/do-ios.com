@@ -1,0 +1,20 @@
+{
+  "speakers": [
+    {
+      "name": "Raluca Bujor",
+      "image": "/images/speakers/2026/raluca.webp"
+    }
+  ],
+  "hosts": [
+    {
+      "name": "Jeroen Leenarts",
+      "image": "/images/hosts/2024/jeroen.webp",
+      "xHandle": "appforce1"
+    },
+    {
+      "name": "Daniel Steinberg",
+      "image": "/images/hosts/2024/daniel.webp",
+      "xHandle": "dimsumthinking"
+    }
+  ]
+}

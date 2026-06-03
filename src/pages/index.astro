@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import CallForPapers from "../components/CallForPapers.astro";
+import Hosts from "../components/Hosts2026.astro";
+import Speakers from "../components/Speakers2026.astro";
 import Location from "../components/Location.astro";
 import Tickets from "../components/Tickets.astro";
 import Partners from "../components/Partners.astro";
@@ -71,6 +73,14 @@ import Footer from "../components/Footer.astro";
           description="Connect with peers, share knowledge, and celebrate iOS development in the heart of Amsterdam."
         />
       </div>
+    </section>
+
+    <section class="hosts">
+      <Hosts />
+    </section>
+
+    <section class="speakers">
+      <Speakers />
     </section>
 
     <CallForPapers />
