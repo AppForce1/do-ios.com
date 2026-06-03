@@ -1,0 +1,221 @@
+---
+import guardsquare from "../data/images/sponsors/guardsquare.png";
+import rocketsim from "../data/images/sponsors/RocketSim.png";
+import hummingbird from "../data/images/sponsors/hummingbird.png";
+---
+
+<section id="sponsors" class="sponsors">
+  <h2>Conference Sponsors</h2>
+
+  <div class="sponsors-cta">
+    <h3>We are looking for Do iOS 2026 sponsors</h3>
+    <p>
+      If your company is as enthusiastic about mobile development as we are, we would
+      love to partner with you. Reach Europe's iOS developer community in Amsterdam —
+      November 10–12, 2026.
+    </p>
+    <p>
+      Sponsorship packages include logo placement, social mentions, and opportunities
+      to connect with attendees.
+    </p>
+    <a
+      class="sponsors-cta-button"
+      href="mailto:info@do-ios.com?subject=Do%20iOS%202026%20Sponsorship"
+    >
+      Become a sponsor
+    </a>
+    <p class="sponsors-cta-contact">
+      <a href="tel:+31624350511">+31 (0)6 243 505 11</a>
+      ·
+      <a href="mailto:info@do-ios.com">info@do-ios.com</a>
+    </p>
+  </div>
+
+  <div class="sponsors-past">
+    <h3>Do iOS 2025 sponsors</h3>
+    <p class="sponsors-past-intro">
+      Thank you to the partners who supported last year's conference.
+    </p>
+
+    <div class="sponsors-grid-gold">
+      <a
+        href="http://www.guardsquare.com/?utm_source=sponsoring&utm_medium=conference&utm_campaign=do_ios_2025"
+        class="guardsquare sponsor-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={guardsquare.src} alt="Guardsquare logo" />
+      </a>
+      <p>
+        <b>Guardsquare</b> provides a comprehensive, easy-to-integrate mobile app security
+        solution, from testing and code hardening to real-time threat visibility. Trusted
+        by over 900 customers worldwide, Guardsquare helps protect apps and SDKs from
+        reverse engineering and tampering throughout the development lifecycle.
+      </p>
+    </div>
+
+    <div class="sponsors-grid">
+      <a
+        href="https://www.rocketsim.app?utm_source=sponsoring&utm_medium=conference&utm_campaign=do_ios_2025"
+        class="rocketsim sponsor-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={rocketsim.src} alt="RocketSim logo" />
+      </a>
+      <p>
+        Boost your productivity and streamline your workflow with powerful Xcode Simulator
+        tools. Developers report building, testing, and verifying apps up to 2x faster with
+        <b>RocketSim.</b>
+      </p>
+    </div>
+
+    <div class="sponsors-grid">
+      <a
+        href="https://www.hummingbird.codes?utm_source=sponsoring&utm_medium=conference&utm_campaign=do_ios_2025"
+        class="hummingbird sponsor-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={hummingbird.src} alt="Hummingbird logo" />
+      </a>
+      <p>
+        Hummingbird is a lightweight, flexible modern web application framework that runs on
+        top of a SwiftNIO based server implementation. It is designed to require the minimum
+        number of dependencies.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .sponsors h2 {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    font-weight: 800;
+    margin: 0 0 1.5rem;
+  }
+
+  .sponsors h3 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 800;
+    margin: 0 0 0.75rem;
+  }
+
+  .sponsors p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .sponsors-cta {
+    background: linear-gradient(135deg, #0a2463, var(--my-blue));
+    color: white;
+    padding: 1.75rem 1.5rem;
+    border-radius: 0.75rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  .sponsors-cta h3 {
+    color: white;
+    margin-bottom: 0.75rem;
+  }
+
+  .sponsors-cta p {
+    margin: 0 0 0.75rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sponsors-cta-button {
+    display: inline-block;
+    background: #ff6b6b;
+    color: white;
+    padding: 0.9rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0.5rem 0 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  .sponsors-cta-button:hover {
+    background: #ff4757;
+    transform: translateY(-2px);
+  }
+
+  .sponsors-cta-contact {
+    font-size: 15px;
+    margin: 0 !important;
+  }
+
+  .sponsors-cta-contact a {
+    color: white;
+    font-weight: 600;
+  }
+
+  .sponsors-past-intro {
+    margin: 0 0 1.5rem;
+    color: #555;
+  }
+
+  .sponsors-grid-gold,
+  .sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .sponsor-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    transition: transform 0.3s ease;
+  }
+
+  .sponsor-link img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+  }
+
+  .sponsor-link:hover {
+    transform: scale(1.05);
+  }
+
+  .sponsor-link:hover img {
+    opacity: 0.8;
+  }
+
+  .guardsquare {
+    height: 100px;
+  }
+
+  .rocketsim {
+    height: 100px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .sponsors-grid-gold,
+    .sponsors-grid {
+      grid-gap: 1rem;
+    }
+
+    .sponsor-link {
+      height: 4rem;
+    }
+
+    .guardsquare,
+    .rocketsim {
+      height: 80px;
+    }
+  }
+</style>
