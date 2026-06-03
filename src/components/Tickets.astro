@@ -1,50 +1,201 @@
 ---
+interface Props {
+  shop?: string;
+}
+
+const { shop = "do-ios-2026" } = Astro.props;
+const paydroUrl = `https://appforce1.paydro.com/${shop}`;
+const embedUrl = `${paydroUrl}/embed?embed=true&header=false&info=false&map=false&social=false`;
 ---
 
-<section id="tickets">
-  <h2>Conference Tickets</h2>
-  <p>
-    If below form does not work for you, likely your browser is blocking
-    pop-ups. <a href="https://appforce1.paydro.com/do-ios-2026" target="_blank"
-      >Try this link instead</a
-    >.
+<section id="tickets" class="tickets">
+  <h2>Tickets</h2>
+  <p class="tickets-intro">
+    Choose the pass that fits your schedule. All options are available in our ticket shop.
   </p>
-  <p>
-    <iframe
-      src="https://appforce1.paydro.com/do-ios-2026/embed?embed=true&header=false&info=false&map=false&social=false"
-      frameborder="0"
-      width="100%"
-      height="1240"
-      marginheight="0"
-      marginwidth="0"
-      allowtransparency="true"
-      id="paydro-iframe"
-      scrolling="no"
-      data-shop="do-ios-2026"
-      style="max-width: 650px;"></iframe>
-    <!-- <script src="https://appforce1.paydro.com/js/paydro-embed.js"></script> -->
-  </p>
-  <p>
-    If above form does not work for you, likely your browser is blocking
-    pop-ups. <a href="https://appforce1.paydro.com/do-ios-2026" target="_blank"
-      >Try this link instead</a
-    >.
-  </p>
+
+  <ul class="tickets-types">
+    <li>
+      <strong>Workshop tickets</strong> — <span class="tickets-date">November 10</span>
+      <span class="tickets-detail">Full-day workshops (workshop day only).</span>
+    </li>
+    <li>
+      <strong>Conference tickets</strong> — <span class="tickets-date">November 11 &amp; 12</span>
+      <span class="tickets-detail">Two days of talks at NEMO Science Museum.</span>
+    </li>
+    <li>
+      <strong>Workshop + conference</strong> — <span class="tickets-date">November 10–12</span>
+      <span class="tickets-detail">Workshop day plus both conference days (pick your workshop after they are announced).</span>
+    </li>
+  </ul>
+
+  <div class="tickets-cta">
+    <a
+      class="tickets-cta-button"
+      href={paydroUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Get your tickets
+    </a>
+    <p class="tickets-cta-note">Opens our secure ticket shop in a new tab (iDEAL, cards &amp; more).</p>
+  </div>
+
+  <details class="tickets-embed">
+    <summary>Or buy tickets on this page</summary>
+    <div class="tickets-embed-frame">
+      <iframe
+        src={embedUrl}
+        id="paydro-iframe"
+        data-shop={shop}
+        title="Do iOS ticket shop"
+        width="100%"
+        height="600"
+        loading="lazy"
+        allowtransparency="true"
+        scrolling="no"
+      ></iframe>
+    </div>
+    <p class="tickets-fallback">
+      Form not loading?
+      <a href={paydroUrl} target="_blank" rel="noopener noreferrer">Open the ticket shop</a>.
+    </p>
+  </details>
 </section>
+
+<script src="https://appforce1.paydro.com/js/paydro-embed.js" defer></script>
+
 <style>
-  h2 {
+  .tickets h2 {
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -1px;
     font-weight: 800;
+    margin: 0;
   }
 
-  p {
+  .tickets-intro {
     font-size: 18px;
     line-height: 28px;
+    margin: 0 0 1rem;
+    max-width: 42rem;
   }
 
-  iframe {
-    height: 1100px;
+  .tickets-types {
+    list-style: none;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    max-width: 42rem;
+  }
+
+  .tickets-types li {
+    font-size: 17px;
+    line-height: 26px;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e3e4e5;
+  }
+
+  .tickets-types li:last-child {
+    border-bottom: 0;
+  }
+
+  .tickets-date {
+    color: var(--my-blue);
+    font-weight: 600;
+  }
+
+  .tickets-detail {
+    display: block;
+    font-size: 15px;
+    line-height: 22px;
+    color: #666;
+    margin-top: 0.25rem;
+  }
+
+  .tickets-cta {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .tickets-cta-button {
+    display: inline-block;
+    background: #ff6b6b;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .tickets-cta-button:hover {
+    background: #ff4757;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .tickets-cta-note {
+    font-size: 15px;
+    line-height: 22px;
+    color: #666;
+    margin: 0.75rem 0 0;
+  }
+
+  .tickets-embed {
+    margin-top: 1rem;
+    border-top: 1px solid #e3e4e5;
+    padding-top: 1rem;
+  }
+
+  .tickets-embed summary {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--my-blue);
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+  }
+
+  .tickets-embed summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .tickets-embed summary::after {
+    content: " ↓";
+    font-size: 0.85em;
+  }
+
+  .tickets-embed[open] summary::after {
+    content: " ↑";
+  }
+
+  .tickets-embed-frame {
+    margin: 1.25rem auto 0;
+    max-width: 650px;
+    background: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 16px rgba(10, 36, 99, 0.08);
+    border: 1px solid #e3e4e5;
+    overflow: hidden;
+  }
+
+  .tickets-embed-frame iframe {
+    display: block;
+    width: 100%;
+    min-height: 400px;
+    border: 0;
+  }
+
+  .tickets-fallback {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0.75rem 0 0;
+  }
+
+  .tickets-fallback a {
+    color: var(--my-blue);
+    font-weight: 600;
   }
 </style>
