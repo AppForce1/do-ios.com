@@ -7,13 +7,26 @@ import XButton from "./XButton.astro";
   <h2>Conference Speakers</h2>
   <div class="speaker-grid">
     {
-      data.speakers.map((speaker) => (
-        <div class="speaker-element">
-          <img src={speaker.image} alt={speaker.name} />
-          <h3>{speaker.name}</h3>
-          {speaker.xHandle && <XButton handle={speaker.xHandle} />}
-        </div>
-      ))
+      data.speakers.map((speaker) => {
+        const Tag = speaker.placeholder ? "a" : "div";
+        const tagProps = speaker.placeholder
+          ? {
+              href: speaker.cfpUrl,
+              target: "_blank",
+              rel: "noopener noreferrer",
+              class: "speaker-element speaker-placeholder",
+              "aria-label": "Submit your talk via the Call for Papers",
+            }
+          : { class: "speaker-element" };
+
+        return (
+          <Tag {...tagProps}>
+            <img src={speaker.image} alt="" />
+            {!speaker.placeholder && <h3>{speaker.name}</h3>}
+            {speaker.xHandle && <XButton handle={speaker.xHandle} />}
+          </Tag>
+        );
+      })
     }
   </div>
 </section>
@@ -59,6 +72,21 @@ import XButton from "./XButton.astro";
     max-width: 100%;
     aspect-ratio: 1;
     border: 4px solid var(--my-blue);
+  }
+
+  .speaker-placeholder {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .speaker-placeholder:hover {
+    transform: translateY(-4px);
+  }
+
+  .speaker-placeholder img {
+    border-style: dashed;
   }
 
   @media only screen and (max-width: 600px) {

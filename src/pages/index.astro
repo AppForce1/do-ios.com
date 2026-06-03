@@ -4,6 +4,7 @@ import Card from "../components/Card.astro";
 import CallForPapers from "../components/CallForPapers.astro";
 import Hosts from "../components/Hosts2026.astro";
 import Speakers from "../components/Speakers2026.astro";
+import Support from "../components/Support2026.astro";
 import Location from "../components/Location.astro";
 import Tickets from "../components/Tickets.astro";
 import Partners from "../components/Partners.astro";
@@ -75,6 +76,12 @@ import Footer from "../components/Footer.astro";
       </div>
     </section>
 
+    <Tickets shop="do-ios-2026" />
+
+    <section class="location">
+      <Location />
+    </section>
+
     <section class="hosts">
       <Hosts />
     </section>
@@ -83,13 +90,11 @@ import Footer from "../components/Footer.astro";
       <Speakers />
     </section>
 
-    <CallForPapers />
-
-    <Tickets shop="do-ios-2026" />
-
-    <section class="location">
-      <Location />
+    <section class="support">
+      <Support />
     </section>
+
+    <CallForPapers />
   </main>
   <footer>
     <Partners />

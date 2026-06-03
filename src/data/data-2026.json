@@ -3,6 +3,18 @@
     {
       "name": "Raluca Bujor",
       "image": "/images/speakers/2026/raluca.webp"
+    },
+    {
+      "name": "Enter the CFP",
+      "image": "/images/speakers/2026/placeholder-cfp.svg",
+      "placeholder": true,
+      "cfpUrl": "https://www.papercall.io/do-ios-2026"
+    },
+    {
+      "name": "Enter the CFP",
+      "image": "/images/speakers/2026/placeholder-cfp.svg",
+      "placeholder": true,
+      "cfpUrl": "https://www.papercall.io/do-ios-2026"
     }
   ],
   "hosts": [
@@ -15,6 +27,25 @@
       "name": "Daniel Steinberg",
       "image": "/images/hosts/2024/daniel.webp",
       "xHandle": "dimsumthinking"
+    }
+  ],
+  "support": [
+    {
+      "name": "Marco",
+      "image": "/images/support/2023/marco.jpg",
+      "xHandle": "eMilty",
+      "role": "Audio and Visuals"
+    },
+    {
+      "name": "Axel",
+      "image": "/images/support/2025/axel.webp",
+      "role": "Workshop Host"
+    },
+    {
+      "name": "Bart",
+      "image": "/images/support/2023/bart.jpg",
+      "xHandle": "barthoffman",
+      "role": "Conference Support"
     }
   ]
 }
