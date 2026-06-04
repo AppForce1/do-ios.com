@@ -5,6 +5,11 @@
       "image": "/images/speakers/2026/raluca.webp"
     },
     {
+      "name": "Antoine van der Lee",
+      "image": "/images/speakers/2026/antoine.jpeg",
+      "xHandle": "twannl"
+    },
+    {
       "name": "Enter the CFP",
       "image": "/images/speakers/2026/placeholder-cfp.svg",
       "placeholder": true,
