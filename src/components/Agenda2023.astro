@@ -1,14 +1,14 @@
 ---
 import TalkCard from "./TalkCard2023.astro";
 
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 
 const allAgendaItems = await getCollection("agenda");
 let workshops = [];
 let day1Talks = [];
 let day2Talks = [];
 for (const item of allAgendaItems) {
-  const rendered = await item.render();
+  const rendered = await render(item);
 
   const talk = {
     content: rendered.Content,
