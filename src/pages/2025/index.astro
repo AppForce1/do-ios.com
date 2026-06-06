@@ -11,8 +11,20 @@ import Partners from "../../components/Partners.astro";
 import Footer from "../../components/Footer.astro";
 ---
 
-<Layout title="Do iOS Developer Conference 2025 Amsterdam">
+<Layout
+  title="Do iOS 2025 — iOS Developer Conference in Amsterdam"
+  description="Do iOS 2025 was Europe's premier iOS developer conference in Amsterdam. Workshops, talks, and networking at NEMO Science Museum, November 11–13, 2025."
+  ogImage="https://do-ios.com/images/card.png?v=2025"
+>
   <main>
+    <aside class="next-edition" aria-label="Next edition">
+      <a href="/" class="next-edition-link">
+        <span class="next-edition-label">Next edition</span>
+        <strong>Do iOS 2026</strong>
+        <span class="next-edition-meta">November 10–12 · Amsterdam · NEMO Science Museum</span>
+      </a>
+    </aside>
+
     <section class="hero">
       <div class="hero-content">
         <h1>Do iOS <span class="text-gradient">2025</span></h1>
@@ -126,6 +138,46 @@ import Footer from "../../components/Footer.astro";
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+  }
+
+  .next-edition {
+    margin-bottom: 1rem;
+  }
+
+  .next-edition-link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 1.25rem 1.5rem;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, #0a2463, var(--my-violet));
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 24px rgba(10, 36, 99, 0.18);
+  }
+
+  .next-edition-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(10, 36, 99, 0.24);
+  }
+
+  .next-edition-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+
+  .next-edition-link strong {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .next-edition-meta {
+    font-size: 1rem;
+    opacity: 0.92;
   }
 
   .hero {

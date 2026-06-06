@@ -10,8 +10,15 @@ const { year = 2026 } = Astro.props;
 
 <section>
   <h2>Conference Location</h2>
-  <p>Do iOS {year} will be in the <b>Nemo Science Museum, Oosterdok 2, 1011 VX Amsterdam</b>.</p>
-  <p>Amsterdam, one of many capital cities in Europe. Known for its canals and unique architecture.</p>
+  <p>
+    Do iOS {year} takes place at <strong>NEMO Science Museum</strong> in central Amsterdam,
+    a short walk from Amsterdam Central Station.
+  </p>
+  <address class="venue-address">
+    NEMO Science Museum<br />
+    Oosterdok 2<br />
+    1011 VX Amsterdam, Netherlands
+  </address>
   <a
     href='http://maps.apple.com/?address=Oosterdok+2+Amsterdam&q=NEMO+Science+Museum'
     class='map'
@@ -33,6 +40,14 @@ const { year = 2026 } = Astro.props;
     --opacity: 1;
     --bottom: 0;
     --scale: 1.5;
+  }
+
+  .venue-address {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 0 1.5rem;
+    color: var(--primary-text-color);
   }
 
   h2 {

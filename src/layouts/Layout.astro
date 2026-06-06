@@ -1,29 +1,47 @@
 ---
 import Navbar from '../components/Navbar.astro';
+import EventSchema2026 from '../components/seo/EventSchema2026.astro';
+
 export interface Props {
   title: string;
+  description?: string;
+  ogImage?: string;
   theme?: "2026";
 }
 
-const { title, theme } = Astro.props;
+const {
+  title,
+  description = "Do iOS is the iOS developer conference in Amsterdam. Join workshops, talks, and Europe's iOS community.",
+  ogImage = "https://do-ios.com/images/card.png?v=2026",
+  theme,
+} = Astro.props;
+
 const bodyClass = theme === "2026" ? "theme-2026" : undefined;
+const canonicalURL = Astro.site
+  ? new URL(Astro.url.pathname, Astro.site)
+  : undefined;
 ---
 
 <!DOCTYPE html>
 <html lang='en'>
   <head>
     <meta charset='UTF-8' />
-    <meta name="description" content="Meet us in Amsterdam in November 2026."/>
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://do-ios.com/images/card.png?v=2026">
-    <meta name="twitter:site" content="@iosconf">
-    <meta name="twitter:title" content="DO iOS Conference - The iOS conference in Amsterdam">
-    <meta name="twitter:description" content="Meet us in Amsterdam in November 2026.">
-    <meta property="og:url" content="https://do-ios.com/" />
-    <meta property="og:title" content="DO iOS Conference - The iOS Conference in Amsterdam" />
-    <meta property="og:description" content="Meet us in Amsterdam in November 2026." />
-    <meta property="og:image" content="https://do-ios.com/images/card.png?v=2026" />
-    <meta name="keywords" content="iOS conference amsterdam do november 2026"/>
+    <meta name="description" content={description} />
+    {canonicalURL && <link rel="canonical" href={canonicalURL} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content="Do iOS — iOS Developer Conference in Amsterdam" />
+    <meta name="twitter:site" content="@iosconf" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {canonicalURL && <meta property="og:url" content={canonicalURL} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Do iOS" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content="Do iOS — iOS Developer Conference in Amsterdam" />
     <!-- <link rel="stylesheet" href="main.css?v=57"/> -->
     <link rel="shortcut icon" type="image/png" href="/images/logo-60.png"/>
     <link rel="apple-touch-icon" href="/images/logo-60.png">
@@ -34,16 +52,7 @@ const bodyClass = theme === "2026" ? "theme-2026" : undefined;
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
-    {theme === "2026" && (
-      <>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-      </>
-    )}
+    {theme === "2026" && <EventSchema2026 />}
     <!-- Cronitor RUM -->
     <script async src="https://rum.cronitor.io/script.js"></script>
     <script>

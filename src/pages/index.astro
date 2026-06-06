@@ -13,9 +13,14 @@ import Sponsors from "../components/Sponsors2026.astro";
 import Agenda from "../components/Agenda2026.astro";
 import Partners from "../components/Partners.astro";
 import Footer from "../components/Footer.astro";
+import Faq2026 from "../components/Faq2026.astro";
+
+const pageTitle = "Do iOS 2026 — iOS Developer Conference in Amsterdam";
+const pageDescription =
+  "Do iOS 2026 is Europe's premier iOS developer conference in Amsterdam. Workshops Nov 10, talks Nov 11–12 at NEMO Science Museum. Get tickets or submit your talk.";
 ---
 
-<Layout title="Do iOS Developer Conference 2026 Amsterdam" theme="2026">
+<Layout title={pageTitle} description={pageDescription} theme="2026">
   <main class="page-2026">
     <Hero2026 />
 
@@ -99,6 +104,10 @@ import Footer from "../components/Footer.astro";
 
     <section class="panel">
       <Sponsors />
+    </section>
+
+    <section class="panel">
+      <Faq2026 />
     </section>
   </main>
   <footer class="page-footer">

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /talks.json
+
+Sitemap: https://do-ios.com/sitemap-index.xml

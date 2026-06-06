@@ -2,3 +2,9 @@ RewriteEngine On
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteCond %{HTTP_HOST} ^(?:www\.)?(.*)$ [NC]
 RewriteRule (.*) https://%1%{REQUEST_URI} [L,R=301]
+
+<IfModule mod_headers.c>
+  <FilesMatch "talks\.json$">
+    Header set X-Robots-Tag "noindex, nofollow"
+  </FilesMatch>
+</IfModule>

@@ -1,0 +1,21 @@
+# Do iOS — iOS Developer Conference
+
+> Do iOS is Europe's premier in-person iOS developer conference, held annually in Amsterdam at NEMO Science Museum.
+
+## Current edition
+
+- [Do iOS 2026](https://do-ios.com/): November 10–12, 2026. Workshop day on Nov 10; conference talks Nov 11–12.
+- Tickets: https://appforce1.paydro.com/do-ios-2026
+- Call for Papers: https://www.papercall.io/do-ios-2026 (closes August 16, 2026)
+
+## Past editions
+
+- [Do iOS 2025](https://do-ios.com/2025/)
+- [Do iOS 2024](https://do-ios.com/2024/)
+- [Do iOS 2023](https://do-ios.com/2023/)
+
+## Contact
+
+- Email: info@do-ios.com
+- Organizer: AppForce1 (https://appforce1.net)
+- X: @iosconf

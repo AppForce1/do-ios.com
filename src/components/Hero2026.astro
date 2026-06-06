@@ -1,11 +1,13 @@
 <section class="hero" aria-label="Do iOS 2026">
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="hero-inner">
-    <p class="hero-eyebrow">Amsterdam · NEMO Science Museum</p>
-    <h1>Do iOS <span class="year">2026</span></h1>
-    <p class="hero-tagline">iOS Developer Conference</p>
+    <p class="hero-eyebrow">Amsterdam · NEMO Science Museum · November 10–12, 2026</p>
+    <h1>
+      <span class="hero-title">Do iOS <span class="year">2026</span></span>
+      <span class="hero-tagline">iOS Developer Conference in Amsterdam</span>
+    </h1>
     <p class="hero-intro">
-      Three days of workshops, talks, and networking with Europe's iOS community.
+      Three days of workshops, talks, and networking with Europe's iOS developer community at NEMO Science Museum.
     </p>
 
     <div class="hero-dates" role="list" aria-label="Conference dates">
@@ -88,11 +90,17 @@
   }
 
   h1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0 0 1rem;
+  }
+
+  .hero-title {
     font-size: clamp(3rem, 10vw, 4.75rem);
     line-height: 1;
     letter-spacing: -0.04em;
     font-weight: 800;
-    margin: 0 0 0.5rem;
   }
 
   .year {
@@ -105,7 +113,6 @@
   .hero-tagline {
     font-size: clamp(1.25rem, 3vw, 1.75rem);
     font-weight: 500;
-    margin: 0 0 1rem;
     opacity: 0.92;
   }
 

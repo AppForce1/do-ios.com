@@ -1,0 +1,98 @@
+---
+const faqs = [
+  {
+    question: "When is Do iOS 2026?",
+    answer:
+      "Do iOS 2026 runs November 10–12, 2026 in Amsterdam. November 10 is the workshop day; November 11 and 12 are the two main conference days with talks and networking.",
+  },
+  {
+    question: "Where is Do iOS 2026 held?",
+    answer:
+      "The conference takes place at NEMO Science Museum, Oosterdok 2, 1011 VX Amsterdam, in the city centre near Amsterdam Central Station.",
+  },
+  {
+    question: "How do I get tickets for Do iOS 2026?",
+    answer:
+      "Tickets are sold through our official shop at appforce1.paydro.com/do-ios-2026. You can choose a workshop pass, a two-day conference pass, or a combined workshop and conference pass.",
+  },
+  {
+    question: "How do I submit a talk for Do iOS 2026?",
+    answer:
+      "The Call for Papers is open on PaperCall at papercall.io/do-ios-2026. First-time speakers and niche topics are welcome. Submissions close on August 16, 2026.",
+  },
+  {
+    question: "What is included in a Do iOS conference ticket?",
+    answer:
+      "Conference tickets include two days of talks at NEMO Science Museum, lunch on both conference days, and the walking dinner on the first conference evening. Workshop tickets are sold separately for November 10.",
+  },
+  {
+    question: "Is Do iOS an in-person iOS conference?",
+    answer:
+      "Yes. Do iOS is an in-person iOS developer conference focused on live talks, workshops, and meeting peers in Amsterdam. It has run seven successful editions since 2015.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<section class="faq" id="faq" aria-labelledby="faq-heading">
+  <h2 class="section-heading" id="faq-heading">Frequently Asked Questions</h2>
+  <p class="section-lead">
+    Everything you need to know about Europe's iOS developer conference in Amsterdam.
+  </p>
+
+  <dl class="faq-list">
+    {
+      faqs.map((faq) => (
+        <div class="faq-item">
+          <dt>{faq.question}</dt>
+          <dd>{faq.answer}</dd>
+        </div>
+      ))
+    }
+  </dl>
+</section>
+
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+<style>
+  .faq-list {
+    margin: 1.5rem 0 0;
+    padding: 0;
+  }
+
+  .faq-item {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  }
+
+  .faq-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .faq-item dt {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 0.5rem;
+  }
+
+  .faq-item dd {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--text-secondary);
+  }
+</style>

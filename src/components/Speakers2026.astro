@@ -21,7 +21,10 @@ import XButton from "./XButton.astro";
 
         return (
           <Tag {...tagProps}>
-            <img src={speaker.image} alt="" />
+            <img
+              src={speaker.image}
+              alt={speaker.placeholder ? "Call for Papers — submit your talk" : `${speaker.name}, Do iOS 2026 speaker`}
+            />
             {!speaker.placeholder && <h3>{speaker.name}</h3>}
             {speaker.xHandle && <XButton handle={speaker.xHandle} />}
           </Tag>
