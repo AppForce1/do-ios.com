@@ -8,11 +8,18 @@
 - Tickets: https://appforce1.paydro.com/do-ios-2026
 - Call for Papers: https://www.papercall.io/do-ios-2026 (closes August 16, 2026)
 
-## Past editions
+## Past editions (indexed)
 
 - [Do iOS 2025](https://do-ios.com/2025/)
 - [Do iOS 2024](https://do-ios.com/2024/)
 - [Do iOS 2023](https://do-ios.com/2023/)
+
+## Historical archives (noindex — preserved for reference only)
+
+- [Do iOS 2022](https://do-ios.com/2022/)
+- [Do iOS 2018](https://do-ios.com/2018/)
+- [Do iOS 2016](https://do-ios.com/2016/)
+- [Do iOS 2015](https://do-ios.com/2015/)
 
 ## Contact
 
