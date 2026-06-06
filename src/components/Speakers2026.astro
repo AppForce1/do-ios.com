@@ -4,7 +4,7 @@ import XButton from "./XButton.astro";
 ---
 
 <section id="speakers">
-  <h2>Conference Speakers</h2>
+  <h2 class="section-heading">Conference Speakers</h2>
   <div class="speaker-grid">
     {
       data.speakers.map((speaker) => {
@@ -33,11 +33,7 @@ import XButton from "./XButton.astro";
 
 <style>
   h2 {
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: -1px;
-    font-weight: 800;
-    margin: 0;
+    margin-bottom: 0.25rem;
   }
 
   .speaker-grid {

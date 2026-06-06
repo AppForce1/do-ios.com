@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import "../styles/theme-2026.css";
+import Hero2026 from "../components/Hero2026.astro";
+import HighlightCard2026 from "../components/HighlightCard2026.astro";
 import CallForPapers from "../components/CallForPapers.astro";
 import Hosts from "../components/Hosts2026.astro";
 import Speakers from "../components/Speakers2026.astro";
@@ -13,26 +15,13 @@ import Partners from "../components/Partners.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="Do iOS Developer Conference 2026 Amsterdam">
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Do iOS <span class="text-gradient">2026</span></h1>
-        <h3>iOS Developer Conference</h3>
-        <p>
-          Join us for the 2026 edition of one of Europe's premier iOS developer
-          conferences. Three days of workshops, talks, and networking in the heart of
-          Amsterdam.
-        </p>
+<Layout title="Do iOS Developer Conference 2026 Amsterdam" theme="2026">
+  <main class="page-2026">
+    <Hero2026 />
 
-        <p class="hero-dates">
-          <strong>Workshops:</strong> November 10 / <strong>Conference:</strong> November 11–12
-        </p>
-      </div>
-    </section>
-
-    <section class="newsletter">
-      <h3>Stay Updated</h3>
+    <section class="newsletter panel">
+      <h2 class="section-heading">Stay updated</h2>
+      <p class="section-lead">Get announcements on speakers, workshops, and ticket releases.</p>
       <form
         action="https://sendy.appforce1.net/subscribe"
         method="POST"
@@ -53,24 +42,26 @@ import Footer from "../components/Footer.astro";
     </section>
 
     <section class="highlights">
-      <section>
-        <p>
-          Do iOS is back in 2026. After 7 successful editions in <a href="/2015">2015</a>, <a href="/2016">2016</a>, <a href="/2018">2018</a>, <a href="/2022">2022</a>, <a href="/2023">2023</a>, <a href="/2024">2024</a>, and <a href="/2025">2025</a> we again invite you to join us in Amsterdam to celebrate iOS development in all its aspects.
-        </p>
-      </section>
+      <p class="intro-copy">
+        Do iOS is back in 2026. After 7 successful editions in <a href="/2015">2015</a>, <a href="/2016">2016</a>, <a href="/2018">2018</a>, <a href="/2022">2022</a>, <a href="/2023">2023</a>, <a href="/2024">2024</a>, and <a href="/2025">2025</a> we again invite you to join us in Amsterdam to celebrate iOS development in all its aspects.
+      </p>
 
       <div class="highlights-grid">
-        <Card
+        <HighlightCard2026
+          accent="cfp"
           title="Call for Papers"
           body="Now open"
           description="Submit your talk or workshop proposal via PaperCall. First-time speaker? We'd love to hear from you. Closes August 16."
+          href="https://www.papercall.io/do-ios-2026"
         />
-        <Card
+        <HighlightCard2026
+          accent="workshops"
           title="Workshops"
           body="November 10"
           description="A day of in-depth workshops. Details and registration will be announced soon."
         />
-        <Card
+        <HighlightCard2026
+          accent="talks"
           title="Two Days of Inspiring Talks"
           body="November 11–12"
           description="Connect with peers, share knowledge, and celebrate iOS development in the heart of Amsterdam."
@@ -78,192 +69,161 @@ import Footer from "../components/Footer.astro";
       </div>
     </section>
 
-    <Tickets shop="do-ios-2026" />
+    <section class="panel">
+      <Tickets shop="do-ios-2026" />
+    </section>
 
-    <section class="location">
+    <section class="panel">
       <Location />
     </section>
 
-    <section class="hosts">
+    <section class="panel">
       <Hosts />
     </section>
 
-    <section class="speakers">
+    <section class="panel">
       <Speakers />
     </section>
 
-    <section class="agenda">
+    <section class="panel">
       <Agenda />
     </section>
 
-    <section class="support">
+    <section class="panel">
       <Support />
     </section>
 
-    <CallForPapers />
+    <section class="panel panel--accent">
+      <CallForPapers />
+    </section>
 
-    <section class="sponsors">
+    <section class="panel">
       <Sponsors />
     </section>
   </main>
-  <footer>
+  <footer class="page-footer">
     <Partners />
     <Footer />
   </footer>
 </Layout>
 
 <style>
-  main {
-    max-width: 1200px;
+  .page-2026 {
+    max-width: 1120px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 1rem 2rem;
   }
 
-  .hero {
-    background: linear-gradient(135deg, #0a2463, var(--my-blue));
-    color: white;
-    padding: 1rem 1rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
+  .panel {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    margin-bottom: 1.25rem;
+    box-shadow: var(--shadow-card);
+    border: 1px solid rgba(15, 23, 42, 0.06);
   }
 
-  .hero-content {
-    max-width: 600px;
-    margin: 0 auto;
+  .panel--accent {
+    background: linear-gradient(180deg, #ffffff 0%, #f8f5ff 100%);
+    border-color: rgba(107, 0, 151, 0.12);
   }
 
-  h1 {
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
-    margin-top: 1rem;
+  .intro-copy {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin: 0 0 1.75rem;
+    max-width: 52rem;
   }
 
-  h2 {
-    font-size: 2rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-  }
-
-  .text-gradient {
-    background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .hero-dates {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-  .hero-next-year {
-    font-size: 2.0rem;
-    margin-bottom: 0rem;
-  }
-  .hero-sponsors {
-    font-size: 1.2rem;
-    margin-bottom: 0rem;
-  }
-
-  .cta-button {
-    display: inline-block;
-    background: #ff6b6b;
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    font-size: 1.2rem;
-    font-weight: bold;
+  .intro-copy a {
+    color: var(--my-blue);
+    font-weight: 600;
     text-decoration: none;
-    transition: all 0.3s ease;
-    margin-bottom: 1rem;
-
   }
 
-  .cta-button:hover {
-    background: #ff4757;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  .intro-copy a:hover {
+    text-decoration: underline;
+  }
+
+  .highlights {
+    margin-bottom: 1.25rem;
+  }
+
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
   }
 
   .newsletter {
-    background: #f1f2f6;
-    padding: 1rem 1rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
     text-align: center;
   }
 
-  .newsletter h2 {
-    margin-bottom: 1rem;
+  .newsletter .section-lead {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .newsletter-form {
     display: flex;
-    max-width: 500px;
+    max-width: 480px;
     margin: 0 auto;
+    background: var(--surface-muted);
+    padding: 0.35rem;
+    border-radius: 999px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
   }
 
   .newsletter-form input[type="email"] {
     flex-grow: 1;
-    padding: 0.75rem 1rem;
+    padding: 0.85rem 1.1rem;
     border: none;
-    border-radius: 2rem 0 0 2rem;
+    border-radius: 999px;
     font-size: 1rem;
+    background: transparent;
+    outline: none;
   }
 
   .submit-button {
     background: var(--my-blue);
     color: white;
     border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0 2rem 2rem 0;
-    font-size: 1rem;
-    font-weight: bold;
+    padding: 0.85rem 1.4rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 700;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
   }
 
   .submit-button:hover {
-    background: #2980b9;
+    background: var(--my-violet);
+    transform: translateY(-1px);
   }
 
-  .highlights {
-    margin-bottom: 2rem;
-  }
-
-  .highlights h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-
-  .highlights-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+  .page-footer {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
   }
 
   @media (max-width: 768px) {
-    .hero {
-      padding: 3rem 1rem;
-    }
-
-    h1 {
-      font-size: 3rem;
-    }
-
-    h2 {
-      font-size: 1.5rem;
+    .panel {
+      padding: 1.25rem;
     }
 
     .newsletter-form {
       flex-direction: column;
+      border-radius: var(--radius-lg);
+      padding: 0.75rem;
     }
 
     .newsletter-form input[type="email"],
     .submit-button {
       width: 100%;
-      border-radius: 2rem;
-      margin-bottom: 1rem;
+      border-radius: 0.75rem;
     }
   }
 </style>

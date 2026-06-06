@@ -1,0 +1,53 @@
+body.theme-2026 {
+  --page-bg: #eef1f8;
+  --surface: #ffffff;
+  --surface-muted: #f7f8fc;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --hero-bg: linear-gradient(145deg, #060d1f 0%, #0a2463 42%, #1e3a6e 100%);
+  --hero-glow-1: rgba(107, 0, 151, 0.45);
+  --hero-glow-2: rgba(62, 146, 204, 0.55);
+  --hero-glow-3: rgba(248, 176, 0, 0.25);
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+  --shadow-soft: 0 12px 40px rgba(10, 36, 99, 0.08);
+  --shadow-card: 0 4px 24px rgba(15, 23, 42, 0.06);
+
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--page-bg);
+  color: var(--text-primary);
+}
+
+body.theme-2026 nav {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: none;
+}
+
+body.theme-2026 nav a:hover {
+  color: var(--my-violet);
+}
+
+body.theme-2026 section,
+body.theme-2026 nav {
+  max-width: none;
+}
+
+body.theme-2026 .section-heading {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+  margin: 0 0 0.5rem;
+  color: var(--text-primary);
+}
+
+body.theme-2026 .section-lead {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0 0 1.5rem;
+  max-width: 42rem;
+}

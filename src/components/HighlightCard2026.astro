@@ -1,0 +1,96 @@
+---
+export interface Props {
+  title: string;
+  body: string;
+  description?: string;
+  accent?: "cfp" | "workshops" | "talks";
+  href?: string;
+}
+
+const { title, body, description, accent = "talks", href } = Astro.props;
+
+const Tag = href ? "a" : "article";
+const tagProps = href
+  ? {
+      href,
+      class: "highlight-card highlight-card--link",
+      ...(href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {}),
+    }
+  : { class: "highlight-card" };
+---
+
+<Tag {...tagProps} data-accent={accent}>
+  <p class="highlight-body">{body}</p>
+  <h3>{title}</h3>
+  {description && <p class="highlight-description">{description}</p>}
+</Tag>
+
+<style>
+  .highlight-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: var(--shadow-card);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .highlight-card--link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .highlight-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.1);
+  }
+
+  .highlight-card[data-accent="cfp"] {
+    border-top: 4px solid var(--my-violet);
+  }
+
+  .highlight-card[data-accent="workshops"] {
+    border-top: 4px solid var(--my-orange);
+  }
+
+  .highlight-card[data-accent="talks"] {
+    border-top: 4px solid var(--my-blue);
+  }
+
+  .highlight-body {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--my-blue);
+  }
+
+  .highlight-card[data-accent="cfp"] .highlight-body {
+    color: var(--my-violet);
+  }
+
+  .highlight-card[data-accent="workshops"] .highlight-body {
+    color: var(--my-orange);
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.35rem;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+    color: var(--text-primary);
+  }
+
+  .highlight-description {
+    margin: 0.25rem 0 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+  }
+</style>
