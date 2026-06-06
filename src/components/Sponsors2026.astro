@@ -24,11 +24,13 @@ import hummingbird from "../data/images/sponsors/hummingbird.png";
     >
       Become a sponsor
     </a>
-    <p class="sponsors-cta-contact">
-      <a href="tel:+31624350511">+31 (0)6 243 505 11</a>
-      ·
-      <a href="mailto:info@do-ios.com">info@do-ios.com</a>
-    </p>
+    <div class="sponsors-cta-contact-wrap">
+      <p class="sponsors-cta-contact">
+        <a class="contact-link" href="tel:+31624350511">+31 (0)6 243 505 11</a>
+        <span class="contact-sep" aria-hidden="true">·</span>
+        <a class="contact-link" href="mailto:info@do-ios.com">info@do-ios.com</a>
+      </p>
+    </div>
   </div>
 
   <div class="sponsors-past">
@@ -144,14 +146,41 @@ import hummingbird from "../data/images/sponsors/hummingbird.png";
     transform: translateY(-2px);
   }
 
+  .sponsors-cta-contact-wrap {
+    container-type: inline-size;
+  }
+
   .sponsors-cta-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem 0;
     font-size: 15px;
     margin: 0 !important;
   }
 
-  .sponsors-cta-contact a {
+  .sponsors-cta-contact .contact-link {
     color: white;
     font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .sponsors-cta-contact .contact-sep {
+    padding: 0 0.25rem;
+    font-weight: 400;
+    user-select: none;
+  }
+
+  @container (max-width: 400px) {
+    .sponsors-cta-contact {
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .sponsors-cta-contact .contact-sep {
+      display: none;
+    }
   }
 
   .sponsors-past-intro {
