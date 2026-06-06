@@ -1,0 +1,118 @@
+---
+import TalkCard from "./TalkCard2024.astro";
+
+import { getCollection, render } from "astro:content";
+
+const allAgendaItems = await getCollection("agenda");
+let workshops = [];
+let day1Talks = [];
+let day2Talks = [];
+for (const item of allAgendaItems) {
+  const rendered = await render(item);
+
+  const talk = {
+    content: rendered.Content,
+    type: item.data.type,
+    title: item.data.title,
+    name: item.data.name,
+    time: item.data.time,
+    image: item.data.image,
+    summary: item.data.summary,
+  };
+  switch (item.data.date) {
+    case "2026-11-10":
+      workshops.push(talk);
+      break;
+    case "2026-11-11":
+      day1Talks.push(talk);
+      break;
+    case "2026-11-12":
+      day2Talks.push(talk);
+      break;
+  }
+}
+
+workshops = workshops.sort((a, b) => a.time.localeCompare(b.time));
+day1Talks = day1Talks.sort((a, b) => a.time.localeCompare(b.time));
+day2Talks = day2Talks.sort((a, b) => a.time.localeCompare(b.time));
+---
+
+<section id="agenda">
+  <h2>Preliminary Conference Agenda</h2>
+  <p class="agenda-note">
+    This preliminary schedule follows the same format as 2025. Speakers, talks, and workshops
+    are not yet confirmed — including from our <a href="https://www.papercall.io/do-ios-2026">Call for Papers</a>.
+  </p>
+  <ul class="day-list">
+    <li>
+      <h3>2026-11-10 - Workshops</h3>
+      <ul class="talk-list">
+        {workshops.map((talk) => <TalkCard talk={talk} />)}
+      </ul>
+    </li>
+    <li>
+      <h3>2026-11-11 - Conference Day 1</h3>
+      <ul class="talk-list">
+        {day1Talks.map((talk) => <TalkCard talk={talk} />)}
+      </ul>
+    </li>
+    <li>
+      <h3>2026-11-12 - Conference Day 2</h3>
+      <ul class="talk-list">
+        {day2Talks.map((talk) => <TalkCard talk={talk} />)}
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<style>
+  section {
+    margin-top: 4rem;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  .agenda-note {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0.5rem 0 1.5rem;
+    color: #555;
+  }
+
+  .agenda-note a {
+    color: var(--my-blue);
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    border-left: 8px solid var(--my-blue);
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 8px;
+    background: var(--my-blue-background);
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  ul {
+    padding-inline-start: 0rem;
+  }
+
+  li {
+    list-style: none;
+  }
+</style>
