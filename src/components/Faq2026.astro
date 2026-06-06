@@ -1,4 +1,9 @@
 ---
+const ticketShopUrl = "https://appforce1.paydro.com/do-ios-2026";
+const cfpUrl = "https://www.papercall.io/do-ios-2026";
+const nemoMapsUrl =
+  "http://maps.apple.com/?address=Oosterdok+2+Amsterdam&q=NEMO+Science+Museum";
+
 const faqs = [
   {
     question: "When is Do iOS 2026?",
@@ -53,14 +58,57 @@ const faqSchema = {
   </p>
 
   <dl class="faq-list">
-    {
-      faqs.map((faq) => (
-        <div class="faq-item">
-          <dt>{faq.question}</dt>
-          <dd>{faq.answer}</dd>
-        </div>
-      ))
-    }
+    <div class="faq-item">
+      <dt>{faqs[0].question}</dt>
+      <dd>{faqs[0].answer}</dd>
+    </div>
+
+    <div class="faq-item">
+      <dt>{faqs[1].question}</dt>
+      <dd>
+        The conference takes place at{" "}
+        <a href={nemoMapsUrl}>NEMO Science Museum</a>, Oosterdok 2, 1011 VX
+        Amsterdam, in the city centre near Amsterdam Central Station.
+      </dd>
+    </div>
+
+    <div class="faq-item">
+      <dt>{faqs[2].question}</dt>
+      <dd>
+        Tickets are sold through our{" "}
+        <a href={ticketShopUrl} target="_blank" rel="noopener noreferrer">
+          official ticket shop
+        </a>
+        . You can choose a workshop pass, a two-day conference pass, or a combined
+        workshop and conference pass.
+      </dd>
+    </div>
+
+    <div class="faq-item">
+      <dt>{faqs[3].question}</dt>
+      <dd>
+        The <a href="#call-for-papers">Call for Papers</a> is open on{" "}
+        <a href={cfpUrl} target="_blank" rel="noopener noreferrer">PaperCall</a>.
+        First-time speakers and niche topics are welcome. Submissions close on
+        August 16, 2026.
+      </dd>
+    </div>
+
+    <div class="faq-item">
+      <dt>{faqs[4].question}</dt>
+      <dd>
+        Conference tickets include two days of talks at{" "}
+        <a href={nemoMapsUrl}>NEMO Science Museum</a>, lunch on both conference
+        days, and the walking dinner on the first conference evening.{" "}
+        <a href="#tickets">Workshop tickets</a> are sold separately for November
+        10.
+      </dd>
+    </div>
+
+    <div class="faq-item">
+      <dt>{faqs[5].question}</dt>
+      <dd>{faqs[5].answer}</dd>
+    </div>
   </dl>
 </section>
 
@@ -94,5 +142,15 @@ const faqSchema = {
     font-size: 1rem;
     line-height: 1.65;
     color: var(--text-secondary);
+  }
+
+  .faq-item dd a {
+    color: var(--my-blue);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .faq-item dd a:hover {
+    text-decoration: underline;
   }
 </style>
