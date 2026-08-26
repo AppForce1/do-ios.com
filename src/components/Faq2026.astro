@@ -35,6 +35,11 @@ const faqs = [
     answer:
       "Yes. Do iOS is an in-person iOS developer conference focused on live talks, workshops, and meeting peers in Amsterdam. It has run seven successful editions since 2015.",
   },
+  {
+    question: "What do I need to bring for the workshops?",
+    answer:
+      "Bring a Mac laptop with Xcode 27. Daniel Steinberg’s workshop also needs a device you can deploy to using iOS 27 or macOS 27. Peter Friese’s workshop requires a physical iPhone. Workshop activities cannot be completed on a tablet or phone alone.",
+  },
 ];
 
 const faqSchema = {
@@ -108,6 +113,11 @@ const faqSchema = {
     <div class="faq-item">
       <dt>{faqs[5].question}</dt>
       <dd>{faqs[5].answer}</dd>
+    </div>
+
+    <div class="faq-item">
+      <dt>{faqs[6].question}</dt>
+      <dd>{faqs[6].answer}</dd>
     </div>
   </dl>
 </section>

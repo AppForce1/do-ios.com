@@ -10,6 +10,11 @@
       "xHandle": "twannl"
     },
     {
+      "name": "Peter Friese",
+      "image": "/images/speakers/2026/peter.webp",
+      "xHandle": "peterfriese"
+    },
+    {
       "name": "Enter the CFP",
       "image": "/images/speakers/2026/placeholder-cfp.svg",
       "placeholder": true,
