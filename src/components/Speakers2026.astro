@@ -7,29 +7,16 @@ import XButton from "./XButton.astro";
   <h2 class="section-heading">Conference Speakers</h2>
   <div class="speaker-grid">
     {
-      data.speakers.map((speaker) => {
-        const Tag = speaker.placeholder ? "a" : "div";
-        const tagProps = speaker.placeholder
-          ? {
-              href: speaker.cfpUrl,
-              target: "_blank",
-              rel: "noopener noreferrer",
-              class: "speaker-element speaker-placeholder",
-              "aria-label": "Submit your talk via the Call for Papers",
-            }
-          : { class: "speaker-element" };
-
-        return (
-          <Tag {...tagProps}>
-            <img
-              src={speaker.image}
-              alt={speaker.placeholder ? "Call for Papers — submit your talk" : `${speaker.name}, Do iOS 2026 speaker`}
-            />
-            {!speaker.placeholder && <h3>{speaker.name}</h3>}
-            {speaker.xHandle && <XButton handle={speaker.xHandle} />}
-          </Tag>
-        );
-      })
+      data.speakers.map((speaker) => (
+        <div class:list={["speaker-element", speaker.placeholder && "speaker-placeholder"]}>
+          <img
+            src={speaker.image}
+            alt={speaker.placeholder ? "Speaker to be announced" : `${speaker.name}, Do iOS 2026 speaker`}
+          />
+          {!speaker.placeholder && <h3>{speaker.name}</h3>}
+          {speaker.xHandle && <XButton handle={speaker.xHandle} />}
+        </div>
+      ))
     }
   </div>
 </section>
@@ -75,14 +62,7 @@ import XButton from "./XButton.astro";
   }
 
   .speaker-placeholder {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-
-  .speaker-placeholder:hover {
-    transform: translateY(-4px);
+    opacity: 0.7;
   }
 
   .speaker-placeholder img {

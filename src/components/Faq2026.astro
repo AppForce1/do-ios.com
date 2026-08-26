@@ -1,6 +1,5 @@
 ---
 const ticketShopUrl = "https://appforce1.paydro.com/do-ios-2026";
-const cfpUrl = "https://forms.gle/723He2D82wB1Q1jx8";
 const nemoMapsUrl =
   "http://maps.apple.com/?address=Oosterdok+2+Amsterdam&q=NEMO+Science+Museum";
 
@@ -21,9 +20,9 @@ const faqs = [
       "Tickets are sold through our official shop at appforce1.paydro.com/do-ios-2026. You can choose a workshop pass, a two-day conference pass, or a combined workshop and conference pass.",
   },
   {
-    question: "How do I submit a talk for Do iOS 2026?",
+    question: "Can I still submit a talk for Do iOS 2026?",
     answer:
-      "The Call for Papers is open via our Google Form at forms.gle/723He2D82wB1Q1jx8. First-time speakers and niche topics are welcome. Submissions close on August 16, 2026.",
+      "The Call for Papers closed on August 16, 2026. Thank you to everyone who submitted. We are reviewing proposals and will announce the remaining lineup soon.",
   },
   {
     question: "What is included in a Do iOS conference ticket?",
@@ -91,12 +90,7 @@ const faqSchema = {
 
     <div class="faq-item">
       <dt>{faqs[3].question}</dt>
-      <dd>
-        The <a href="#call-for-papers">Call for Papers</a> is open via our{" "}
-        <a href={cfpUrl} target="_blank" rel="noopener noreferrer">Google Form</a>.
-        First-time speakers and niche topics are welcome. Submissions close on
-        August 16, 2026.
-      </dd>
+      <dd>{faqs[3].answer}</dd>
     </div>
 
     <div class="faq-item">

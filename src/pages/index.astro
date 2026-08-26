@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import "../styles/theme-2026.css";
 import Hero2026 from "../components/Hero2026.astro";
 import HighlightCard2026 from "../components/HighlightCard2026.astro";
-import CallForPapers from "../components/CallForPapers.astro";
+import CallForPapersClosed from "../components/CallForPapersClosed.astro";
 import Hosts from "../components/Hosts2026.astro";
 import Speakers from "../components/Speakers2026.astro";
 import Support from "../components/Support2026.astro";
@@ -17,7 +17,7 @@ import Faq2026 from "../components/Faq2026.astro";
 
 const pageTitle = "Do iOS 2026 — iOS Developer Conference in Amsterdam";
 const pageDescription =
-  "Do iOS 2026 is Europe's premier iOS developer conference in Amsterdam. Workshops Nov 10, talks Nov 11–12 at NEMO Science Museum. Get tickets or submit your talk.";
+  "Do iOS 2026 is Europe's premier iOS developer conference in Amsterdam. Workshops Nov 10, talks Nov 11–12 at NEMO Science Museum. Get tickets.";
 ---
 
 <Layout title={pageTitle} description={pageDescription} theme="2026">
@@ -52,13 +52,6 @@ const pageDescription =
       </p>
 
       <div class="highlights-grid">
-        <HighlightCard2026
-          accent="cfp"
-          title="Call for Papers"
-          body="Now open"
-          description="Submit your talk or workshop proposal via our Google Form. First-time speaker? We'd love to hear from you. Closes August 16."
-          href="https://forms.gle/723He2D82wB1Q1jx8"
-        />
         <HighlightCard2026
           accent="workshops"
           title="Workshop: Intro to Foundation Models"
@@ -108,7 +101,7 @@ const pageDescription =
     </section>
 
     <section class="panel panel--accent">
-      <CallForPapers />
+      <CallForPapersClosed />
     </section>
 
     <section class="panel">
