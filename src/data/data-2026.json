@@ -30,6 +30,11 @@
     {
       "name": "Alex Antonov",
       "image": "/images/speakers/2026/alex.webp"
+    },
+    {
+      "name": "Cyril Cermak",
+      "image": "/images/speakers/2026/cyril.webp",
+      "xHandle": "cyrilcermak"
     }
   ],
   "hosts": [
