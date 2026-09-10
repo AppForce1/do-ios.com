@@ -1,7 +1,7 @@
 ---
 title: "visionOS in Production: Real Business Use Cases"
-date: "2026-11-12"
-time: "10:45"
+date: "2026-11-11"
+time: "14:00"
 name: "Matvei Novoselov"
 image: "/images/speakers/2026/matvei.webp"
 type: "Talk"

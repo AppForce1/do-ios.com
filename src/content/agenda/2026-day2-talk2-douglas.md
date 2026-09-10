@@ -1,7 +1,7 @@
 ---
 title: "Rust for iOS Developers: More Swifty than Swift"
-date: "2026-11-11"
-time: "14:00"
+date: "2026-11-12"
+time: "10:45"
 name: "Douglas Hill"
 image: "/images/speakers/2026/douglas.webp"
 type: "Talk"
