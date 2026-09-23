@@ -43,6 +43,11 @@
     {
       "name": "Caitlin Steele",
       "image": "/images/speakers/2026/caitlin.webp"
+    },
+    {
+      "name": "Jeroen Leenarts",
+      "image": "/images/speakers/2026/jeroen.webp",
+      "xHandle": "appforce1"
     }
   ],
   "hosts": [

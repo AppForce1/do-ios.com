@@ -8,7 +8,9 @@ function personId(name: string) {
 }
 
 const confirmedSpeakers = data.speakers.filter((speaker) => !speaker.placeholder);
-const performers = [...confirmedSpeakers, ...data.hosts];
+const performers = [...confirmedSpeakers, ...data.hosts].filter(
+  (person, index, all) => all.findIndex((other) => other.name === person.name) === index,
+);
 
 const venueLocation = {
   "@type": "Place",
@@ -103,7 +105,7 @@ const eventSchema = {
           eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
           location: venueLocation,
           description:
-            "More conference talks and community networking, including a live iOS security demo from Cyril Cermak, a Rust talk from Douglas Hill, and an Object-Oriented UX talk from Caitlin Steele.",
+            "More conference talks and community networking, including a live iOS security demo from Cyril Cermak, a Rust talk from Douglas Hill, an Object-Oriented UX talk from Caitlin Steele, and a closing talk from Jeroen Leenarts.",
         },
       ],
     },
