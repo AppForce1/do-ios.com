@@ -1,7 +1,7 @@
 ---
 title: "When Your Expertise Stops Feeling Relevant"
-date: "2026-11-11"
-time: "13:15"
+date: "2026-11-12"
+time: "14:00"
 name: "Ekaterina Volkova"
 image: "/images/speakers/2026/ekaterina.webp"
 type: "Talk"
