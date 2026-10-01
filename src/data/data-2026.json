@@ -53,6 +53,11 @@
       "image": "/images/speakers/2026/emanuele.webp"
     },
     {
+      "name": "Tibor Bödecs",
+      "image": "/images/speakers/2026/tibor.webp",
+      "xHandle": "tiborbodecs"
+    },
+    {
       "name": "Jeroen Leenarts",
       "image": "/images/speakers/2026/jeroen.webp",
       "xHandle": "appforce1"
