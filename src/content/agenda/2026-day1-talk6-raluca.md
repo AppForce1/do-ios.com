@@ -1,7 +1,7 @@
 ---
 title: "Building Scalable Apps using SwiftUI"
 date: "2026-11-11"
-time: "11:30"
+time: "15:30"
 name: "Raluca Bujor"
 image: "/images/speakers/2026/raluca.webp"
 type: "Talk"
