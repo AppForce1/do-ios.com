@@ -20,10 +20,15 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-      - name: Install, build, and upload your site output
-        uses: withastro/action@v6
-        env:
-          GITHUB_PAGES_BASE: /${{ github.event.repository.name }}
+      - name: Prepare redirect site
+        run: |
+          mkdir -p _site
+          cp github-pages/redirect.html _site/index.html
+          cp github-pages/redirect.html _site/404.html
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
 
   deploy:
     needs: build

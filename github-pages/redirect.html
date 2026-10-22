@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting to do-ios.com</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://do-ios.com/" />
+    <script>
+      function githubPagesTarget(pathname, search, hash) {
+        var base = "/do-ios.com";
+        var path = pathname || "/";
+        if (
+          path === base ||
+          path === base + "/" ||
+          path === base + "/index.html" ||
+          path === base + "/404.html"
+        ) {
+          path = "/";
+        } else if (path.indexOf(base + "/") === 0) {
+          path = path.slice(base.length) || "/";
+        }
+        if (path.charAt(0) !== "/") path = "/" + path;
+        return "https://do-ios.com" + path + (search || "") + (hash || "");
+      }
+
+      location.replace(
+        githubPagesTarget(location.pathname, location.search, location.hash)
+      );
+    </script>
+  </head>
+  <body>
+    <p>
+      This site has moved. Continue to
+      <a href="https://do-ios.com/">https://do-ios.com/</a>.
+    </p>
+  </body>
+</html>
