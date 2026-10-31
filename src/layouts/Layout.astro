@@ -7,6 +7,7 @@ export interface Props {
   description?: string;
   ogImage?: string;
   theme?: "2026";
+  nav?: "default" | "compact";
 }
 
 const {
@@ -14,6 +15,7 @@ const {
   description = "Do iOS is the iOS developer conference in Amsterdam. Join workshops, talks, and Europe's iOS community.",
   ogImage = "https://do-ios.com/images/card.png?v=2026",
   theme,
+  nav = "default",
 } = Astro.props;
 
 const bodyClass = theme === "2026" ? "theme-2026" : undefined;
@@ -61,7 +63,7 @@ const canonicalURL = Astro.site
     </script>
   </head>
   <body class={bodyClass}>
-    <Navbar />
+    <Navbar variant={nav} />
     <slot />
   </body>
 </html>

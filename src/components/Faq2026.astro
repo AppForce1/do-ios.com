@@ -39,6 +39,11 @@ const faqs = [
     answer:
       "Bring a Mac laptop with Xcode 27. Daniel Steinberg’s workshop also needs a device you can deploy to using iOS 27 or macOS 27. Peter Friese’s workshop requires a physical iPhone. Workshop activities cannot be completed on a tablet or phone alone.",
   },
+  {
+    question: "How do I check the schedule during Do iOS?",
+    answer:
+      "Open do-ios.com/now on your phone to see what is on now and what is next. Add the schedule to Apple Calendar from do-ios.com/schedule.ics so it is still there if the venue Wi-Fi is busy.",
+  },
 ];
 
 const faqSchema = {
@@ -112,6 +117,14 @@ const faqSchema = {
     <div class="faq-item">
       <dt>{faqs[6].question}</dt>
       <dd>{faqs[6].answer}</dd>
+    </div>
+
+    <div class="faq-item">
+      <dt>{faqs[7].question}</dt>
+      <dd>
+        Open <a href="/now">do-ios.com/now</a> on your phone to see what is on now and what is next.
+        <a href="/schedule.ics">Add the schedule to Calendar</a> so it is still there if the venue Wi-Fi is busy.
+      </dd>
     </div>
   </dl>
 </section>

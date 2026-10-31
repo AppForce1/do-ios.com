@@ -27,22 +27,22 @@
     </div>
   </div>
 
-  <div class="schedule-strip">
-    <article class="schedule-day">
+    <div class="schedule-strip">
+    <a class="schedule-day" href="/now#2026-11-10">
       <time datetime="2026-11-10">Tue, Nov 10</time>
       <strong>Workshop day</strong>
       <span>Daniel Steinberg &amp; Peter Friese on Foundation Models</span>
-    </article>
-    <article class="schedule-day schedule-day--highlight">
+    </a>
+    <a class="schedule-day schedule-day--highlight" href="/now#2026-11-11">
       <time datetime="2026-11-11">Wed, Nov 11</time>
       <strong>Conference day 1</strong>
       <span>Talks, lunch &amp; walking dinner</span>
-    </article>
-    <article class="schedule-day">
+    </a>
+    <a class="schedule-day" href="/now#2026-11-12">
       <time datetime="2026-11-12">Thu, Nov 12</time>
       <strong>Conference day 2</strong>
       <span>More talks &amp; community</span>
-    </article>
+    </a>
   </div>
 </section>
 
@@ -237,6 +237,12 @@
     padding: 1.25rem 1rem;
     background: rgba(0, 0, 0, 0.18);
     text-align: center;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .schedule-day:hover {
+    background: rgba(255, 255, 255, 0.14);
   }
 
   .schedule-day--highlight {

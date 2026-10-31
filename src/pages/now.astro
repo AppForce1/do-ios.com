@@ -1,0 +1,700 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/theme-2026.css";
+import { loadSchedule } from "../lib/load-schedule";
+import { typeLabel } from "../lib/schedule";
+
+const days = await loadSchedule();
+const pageTitle = "Schedule — Do iOS 2026";
+const pageDescription =
+  "What is on now at Do iOS 2026. Phone schedule for the workshops on 10 November and talks on 11–12 November at NEMO Science Museum, Amsterdam.";
+---
+
+<Layout title={pageTitle} description={pageDescription} theme="2026" nav="compact">
+  <main class="now-page">
+    <script is:inline>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <header class="now-header">
+      <p class="eyebrow">Do iOS 2026 · NEMO Science Museum</p>
+      <h1>Schedule</h1>
+      <p class="lede">What is on now, and the rest of the day. Times are Amsterdam time.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/schedule.ics">Add to Calendar</a>
+        <a class="btn btn-ghost" href="webcal://do-ios.com/schedule.ics">Subscribe for updates</a>
+      </div>
+      <p class="fine">
+        Add it before you arrive so the schedule stays on your phone if the Wi-Fi is busy. Subscribe if you want newly announced titles to update in Calendar.
+      </p>
+    </header>
+
+    <div class="day-switch" role="tablist" aria-label="Conference days">
+      {
+        days.map((day, index) => (
+          <a
+            class="day-tab"
+            role="tab"
+            href={`#${day.date}`}
+            data-day={day.date}
+            aria-selected={index === 0 ? "true" : "false"}
+            tabindex={index === 0 ? 0 : -1}
+          >
+            <span class="day-tab-date">
+              {day.weekdayShort} {day.dayNum}
+            </span>
+            <span class="day-tab-label">{day.tab}</span>
+          </a>
+        ))
+      }
+    </div>
+
+    <div class="live" data-live hidden>
+      <div class="live-card live-now" data-live-now hidden>
+        <p class="kicker">Now</p>
+        <a class="live-title" data-live-now-title href="#now"></a>
+        <p class="live-meta" data-live-now-meta></p>
+      </div>
+      <div class="live-card live-next" data-live-next hidden>
+        <p class="kicker" data-live-next-kicker>Next</p>
+        <a class="live-title" data-live-next-title href="#next"></a>
+        <p class="live-meta" data-live-next-meta></p>
+      </div>
+      <p class="live-done" data-live-done hidden>That's everything for today.</p>
+    </div>
+
+    {
+      days.map((day, index) => (
+        <section
+          class:list={["day-panel", { "is-selected": index === 0 }]}
+          id={day.date}
+          data-day-panel={day.date}
+          data-offset={day.offset}
+          aria-labelledby={`heading-${day.date}`}
+        >
+          <div class="day-intro">
+            <h2 id={`heading-${day.date}`}>{day.heading}</h2>
+            <p>{day.label}</p>
+          </div>
+          <ol class="slots">
+            {day.slots.map((slot) => (
+              <li
+                class:list={["slot", { parallel: slot.items.length > 1 }]}
+                data-slot
+                data-start={slot.startMs}
+                data-end={slot.endMs}
+              >
+                <p class="slot-clock">
+                  <time datetime={slot.isoStart}>{slot.time}</time>
+                  <time class="slot-end" datetime={slot.isoEnd}>
+                    {slot.endTime}
+                  </time>
+                </p>
+                <div class="slot-body">
+                  {slot.items.length > 1 && <p class="parallel-label">At the same time</p>}
+                  <div class="slot-items">
+                    {slot.items.map((item) => (
+                      <article class="item" id={item.id} data-item-id={item.id}>
+                        <div class="item-copy">
+                          <p class="item-meta">
+                            <span class:list={["pill", `pill-${item.type.toLowerCase()}`]}>
+                              {typeLabel(item.type)}
+                            </span>
+                            <span class="flag" data-flag hidden></span>
+                          </p>
+                          <h3>{item.displayTitle}</h3>
+                          {item.name && <p class="speaker">{item.name}</p>}
+                          {item.summary && <p class="summary">{item.summary}</p>}
+                        </div>
+                        {item.image && (
+                          <img src={item.image} alt="" width="44" height="44" />
+                        )}
+                      </article>
+                    ))}
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
+          <p class="day-add">
+            <a href={`/schedule/${day.date}.ics`}>Add {day.weekday} only</a>
+          </p>
+        </section>
+      ))
+    }
+  </main>
+
+  <script is:inline>
+    (function () {
+      const timeZone = "Europe/Amsterdam";
+      const tabs = [...document.querySelectorAll("[data-day]")];
+      const panels = [...document.querySelectorAll("[data-day-panel]")];
+      const live = document.querySelector("[data-live]");
+      const liveNow = document.querySelector("[data-live-now]");
+      const liveNext = document.querySelector("[data-live-next]");
+      const liveDone = document.querySelector("[data-live-done]");
+      const nowTitle = document.querySelector("[data-live-now-title]");
+      const nowMeta = document.querySelector("[data-live-now-meta]");
+      const nextKicker = document.querySelector("[data-live-next-kicker]");
+      const nextTitle = document.querySelector("[data-live-next-title]");
+      const nextMeta = document.querySelector("[data-live-next-meta]");
+
+      function amsterdamDate(ms) {
+        return new Intl.DateTimeFormat("en-CA", {
+          timeZone,
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+        }).format(new Date(ms));
+      }
+
+      function currentMs() {
+        const at = new URLSearchParams(location.search).get("at");
+        const match = at && at.match(/^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2})$/);
+        if (!match) return Date.now();
+        const panel = document.querySelector(`[data-day-panel="${match[1]}"]`);
+        const offset = panel?.getAttribute("data-offset") || "+01:00";
+        const ms = new Date(`${match[1]}T${match[2]}:00${offset}`).getTime();
+        return Number.isNaN(ms) ? Date.now() : ms;
+      }
+
+      function preferredDate(ms) {
+        const hash = location.hash.replace(/^#/, "");
+        const dates = panels.map((panel) => panel.dataset.dayPanel);
+        if (dates.includes(hash)) return hash;
+        if (hash) {
+          const target = document.getElementById(hash);
+          const panel = target?.closest("[data-day-panel]");
+          if (panel?.dataset.dayPanel) return panel.dataset.dayPanel;
+        }
+        const today = amsterdamDate(ms);
+        if (dates.includes(today)) return today;
+        return dates.find((date) => date > today) || dates[dates.length - 1];
+      }
+
+      function slotTitle(slot) {
+        const titles = [...slot.querySelectorAll("h3")].map((heading) => heading.textContent.trim());
+        if (titles.length < 2) return titles[0] || "";
+        const speakers = [...slot.querySelectorAll(".speaker")].map((node) => node.textContent.trim()).filter(Boolean);
+        return speakers.length ? speakers.join(" · ") : `${titles.length} sessions`;
+      }
+
+      function slotMeta(slot) {
+        const times = [...slot.querySelectorAll(".slot-clock time")].map((node) => node.textContent.trim());
+        const range = times.length === 2 ? `${times[0]}–${times[1]}` : times.join(" ");
+        const several = slot.querySelectorAll("h3").length > 1;
+        if (several) return range;
+        const speakers = [...slot.querySelectorAll(".speaker")].map((node) => node.textContent.trim()).filter(Boolean);
+        return [range, speakers.join(" · ")].filter(Boolean).join(" · ");
+      }
+
+      function firstItemId(slot) {
+        return slot.querySelector("[data-item-id]")?.dataset.itemId || "";
+      }
+
+      function applyStatus() {
+        const ms = currentMs();
+        const today = amsterdamDate(ms);
+        const panel = panels.find((entry) => entry.classList.contains("is-selected"));
+        if (!panel) return;
+        const date = panel.dataset.dayPanel;
+        const slots = [...panel.querySelectorAll("[data-slot]")];
+        let current = [];
+        let next = null;
+        for (const slot of slots) {
+          const start = Number(slot.dataset.start);
+          const end = Number(slot.dataset.end);
+          slot.classList.remove("is-now", "is-next", "is-past");
+          slot.querySelectorAll("[data-flag]").forEach((flag) => {
+            flag.hidden = true;
+            flag.textContent = "";
+          });
+          if (date < today) {
+            slot.classList.add("is-past");
+            continue;
+          }
+          if (date !== today) continue;
+          if (ms >= start && ms < end) {
+            slot.classList.add("is-now");
+            current.push(slot);
+          } else if (ms >= end) {
+            slot.classList.add("is-past");
+          } else if (!next) {
+            next = slot;
+            slot.classList.add("is-next");
+          }
+        }
+        current.forEach((slot) => {
+          slot.querySelectorAll("[data-flag]").forEach((flag) => {
+            flag.hidden = false;
+            flag.textContent = "Now";
+          });
+        });
+        if (next) {
+          next.querySelectorAll("[data-flag]").forEach((flag) => {
+            flag.hidden = false;
+            flag.textContent = "Next";
+          });
+        }
+
+        const showLive = date === today;
+        live.hidden = !showLive;
+        liveNow.hidden = current.length === 0;
+        liveNext.hidden = !next;
+        liveDone.hidden = !(showLive && current.length === 0 && !next);
+        if (current.length) {
+          nowTitle.textContent = slotTitle(current[0]);
+          nowTitle.href = `#${firstItemId(current[0])}`;
+          nowMeta.textContent = slotMeta(current[0]);
+        }
+        if (next) {
+          nextKicker.textContent = current.length ? "Next" : "Up next";
+          nextTitle.textContent = slotTitle(next);
+          nextTitle.href = `#${firstItemId(next)}`;
+          nextMeta.textContent = slotMeta(next);
+        }
+      }
+
+      function selectDay(date, updateHash) {
+        panels.forEach((panel) => panel.classList.toggle("is-selected", panel.dataset.dayPanel === date));
+        tabs.forEach((tab) => {
+          const selected = tab.dataset.day === date;
+          tab.setAttribute("aria-selected", selected ? "true" : "false");
+          tab.tabIndex = selected ? 0 : -1;
+        });
+        if (updateHash) history.replaceState(null, "", `#${date}`);
+        applyStatus();
+      }
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", (event) => {
+          if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+          event.preventDefault();
+          selectDay(tab.dataset.day, true);
+        });
+      });
+
+      const switcher = document.querySelector(".day-switch");
+      switcher.addEventListener("keydown", (event) => {
+        const index = tabs.indexOf(document.activeElement);
+        if (index < 0) return;
+        const nextIndex = event.key === "ArrowRight" ? index + 1 : event.key === "ArrowLeft" ? index - 1 : -1;
+        if (nextIndex < 0) return;
+        event.preventDefault();
+        const next = tabs[(nextIndex + tabs.length) % tabs.length];
+        next.focus();
+        selectDay(next.dataset.day, true);
+      });
+
+      const initialHash = location.hash.replace(/^#/, "");
+      selectDay(preferredDate(currentMs()), false);
+      if (initialHash) {
+        requestAnimationFrame(() => {
+          document.getElementById(initialHash)?.scrollIntoView({ block: "start" });
+        });
+      }
+
+      setInterval(applyStatus, 30000);
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "visible") applyStatus();
+      });
+    })();
+  </script>
+</Layout>
+
+<style is:global>
+  html.js .now-page .day-panel {
+    display: none;
+  }
+
+  html.js .now-page .day-panel.is-selected {
+    display: block;
+  }
+</style>
+
+<style>
+  .now-page {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0.5rem 1rem calc(2.5rem + env(safe-area-inset-bottom));
+  }
+
+  .now-page section {
+    max-width: none;
+    margin: 0;
+  }
+
+  .now-header {
+    padding: 0.5rem 0 1rem;
+  }
+
+  .eyebrow {
+    margin: 0 0 0.35rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    font-weight: 800;
+  }
+
+  .lede,
+  .fine,
+  .day-intro p,
+  .summary,
+  .speaker,
+  .live-meta,
+  .day-add {
+    color: var(--text-secondary);
+  }
+
+  .lede {
+    margin: 0.45rem 0 1rem;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.75rem;
+    padding: 0.65rem 1.1rem;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  .btn:focus-visible,
+  .day-tab:focus-visible,
+  .live-title:focus-visible,
+  .day-add a:focus-visible {
+    outline: 3px solid var(--my-blue);
+    outline-offset: 2px;
+  }
+
+  .btn-primary {
+    background: #0a2463;
+    color: white;
+  }
+
+  .btn-ghost {
+    background: white;
+    color: #0a2463;
+    border: 2px solid rgba(10, 36, 99, 0.18);
+  }
+
+  .fine {
+    margin: 0.75rem 0 0;
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .day-switch {
+    position: sticky;
+    top: calc(3.5rem + env(safe-area-inset-top));
+    z-index: 15;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.25rem;
+    margin: 0.25rem 0 0.9rem;
+    padding: 0.25rem;
+    border-radius: 1rem;
+    background: rgba(238, 241, 248, 0.94);
+    backdrop-filter: blur(10px);
+  }
+
+  .day-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+    min-height: 3.4rem;
+    padding: 0.45rem 0.25rem;
+    border-radius: 0.8rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .day-tab[aria-selected="true"] {
+    background: white;
+    color: #0a2463;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+  }
+
+  .day-tab-date {
+    font-size: 0.95rem;
+    font-weight: 800;
+  }
+
+  .day-tab-label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .live {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-bottom: 1rem;
+  }
+
+  .live[hidden],
+  .live-card[hidden],
+  .live-done[hidden],
+  .flag[hidden] {
+    display: none !important;
+  }
+
+  .live-card {
+    padding: 0.9rem 1rem;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: var(--shadow-card);
+  }
+
+  .live-now {
+    border-left: 4px solid var(--my-blue);
+  }
+
+  .live-next {
+    border-left: 4px solid var(--my-violet);
+  }
+
+  .kicker,
+  .flag {
+    margin: 0;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .live-now .kicker,
+  .flag {
+    color: var(--my-blue);
+  }
+
+  .live-next .kicker {
+    color: var(--my-violet);
+  }
+
+  .live-title {
+    display: block;
+    margin-top: 0.15rem;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+  }
+
+  .live-next .live-title {
+    font-size: 1.02rem;
+  }
+
+  .live-meta,
+  .live-done {
+    margin: 0.25rem 0 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .live-done {
+    margin: 0;
+    padding: 0.9rem 1rem;
+    border-radius: 1rem;
+    background: white;
+  }
+
+  .day-panel,
+  .item {
+    scroll-margin-top: 5.5rem;
+  }
+
+  .day-intro h2 {
+    margin: 0;
+    font-size: 1.35rem;
+    letter-spacing: -0.03em;
+  }
+
+  .day-intro p {
+    margin: 0.15rem 0 0.85rem;
+  }
+
+  .slots {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slot {
+    display: grid;
+    grid-template-columns: 4.6rem 1fr;
+    gap: 0.75rem;
+    padding: 0.9rem 0;
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    scroll-margin-top: 5.5rem;
+  }
+
+  .slot.is-now,
+  .slot.is-next {
+    margin: 0.35rem 0;
+    padding: 0.85rem 0.75rem;
+    border-top: 0;
+    border-radius: 1rem;
+  }
+
+  .slot.is-now {
+    background: white;
+    box-shadow: inset 4px 0 0 var(--my-blue), var(--shadow-card);
+  }
+
+  .slot.is-next {
+    background: white;
+    box-shadow: inset 4px 0 0 var(--my-violet);
+  }
+
+  .slot.is-past {
+    opacity: 0.55;
+  }
+
+  .slot-clock {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-variant-numeric: tabular-nums;
+    font-weight: 800;
+  }
+
+  .slot-end {
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+
+  .slot-end::before {
+    content: "– ";
+  }
+
+  .parallel-label {
+    margin: 0 0 0.45rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--my-violet);
+  }
+
+  .slot.parallel .slot-items {
+    display: grid;
+    gap: 0.65rem;
+  }
+
+  .slot.parallel .item {
+    padding: 0.75rem;
+    border-radius: 0.9rem;
+    background: var(--surface-muted);
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.75rem;
+    align-items: start;
+  }
+
+  .item-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+    margin: 0 0 0.25rem;
+  }
+
+  .pill {
+    display: inline-flex;
+    padding: 0.12rem 0.45rem;
+    border-radius: 999px;
+    background: #e8eef8;
+    color: #0a2463;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .pill-workshop {
+    background: #f3e8fb;
+    color: #6b0097;
+  }
+
+  .pill-break,
+  .pill-drinks,
+  .pill-dinner {
+    background: #fff4d8;
+    color: #8a5a00;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+  }
+
+  .speaker,
+  .summary {
+    margin: 0.2rem 0 0;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  .speaker {
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .item img {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 2px var(--my-blue);
+  }
+
+  .day-add {
+    margin: 0.5rem 0 0;
+    font-size: 0.95rem;
+  }
+
+  .day-add a {
+    color: var(--my-blue);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  @media (max-width: 420px) {
+    .actions,
+    .btn {
+      width: 100%;
+    }
+  }
+</style>

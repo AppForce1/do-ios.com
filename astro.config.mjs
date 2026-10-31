@@ -6,7 +6,7 @@ export default defineConfig({
   site: 'https://do-ios.com',
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/talks.json'),
+      filter: (page) => !page.includes('/talks.json') && !page.endsWith('.ics'),
     }),
   ],
 });

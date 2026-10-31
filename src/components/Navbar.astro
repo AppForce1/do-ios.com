@@ -1,18 +1,42 @@
 ---
 import logo from "../data/images/logo.png";
+
+interface Props {
+  variant?: "default" | "compact";
+}
+
+const { variant = "default" } = Astro.props;
+const compact = variant === "compact";
 ---
 
-<nav>
+<nav class:list={{ "nav-compact": compact }}>
   <div class="nav-container">
     <a href="/" class="logo-link">
-      <img src={logo.src} alt="Do iOS logo" />
+      <img src={logo.src} alt={compact ? "" : "Do iOS"} />
+      {compact && <span class="wordmark">Do iOS</span>}
     </a>
-    <ul class="nav-links">
-      <!-- <li><a href="#tickets">Conference Tickets</a></li> -->
-      <li><a href='#agenda'>Agenda</a></li>
-      <li><a href='#speakers'>Speakers</a></li>
-      <li><a href="#sponsors">Conference Sponsors</a></li>
-    </ul>
+    {
+      compact ? (
+        <a class="site-link" href="/#agenda">
+          Full agenda
+        </a>
+      ) : (
+        <ul class="nav-links">
+          <li>
+            <a href="/now">Schedule</a>
+          </li>
+          <li>
+            <a href="#agenda">Agenda</a>
+          </li>
+          <li>
+            <a href="#speakers">Speakers</a>
+          </li>
+          <li>
+            <a href="#sponsors">Conference Sponsors</a>
+          </li>
+        </ul>
+      )
+    }
   </div>
 </nav>
 
@@ -35,6 +59,35 @@ import logo from "../data/images/logo.png";
   .logo-link {
     display: flex;
     align-items: center;
+    gap: 0.6rem;
+  }
+
+  .wordmark {
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .site-link {
+    font-weight: 700;
+  }
+
+  .nav-compact {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    margin: 0;
+    padding: 0;
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .nav-compact .nav-container {
+    min-height: 3.5rem;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-compact img {
+    width: 2.25rem;
   }
 
   img {
@@ -66,6 +119,11 @@ import logo from "../data/images/logo.png";
     .nav-container {
       flex-direction: column;
       align-items: flex-start;
+    }
+
+    .nav-compact .nav-container {
+      flex-direction: row;
+      align-items: center;
     }
 
     .nav-links {
