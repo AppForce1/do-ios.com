@@ -12,7 +12,7 @@ Session details will be announced soon.
 
 ## Jeroen Leenarts
 
-Jeroen is a Senior iOS Engineer at Dawn Technology and the organizer of Do iOS. He has been building software since 2002, and iOS has been his main focus since 2012.
+Jeroen is the organizer of Do iOS. He has been building software since 2002, and iOS has been his main focus since 2012.
 
 He previously led iOS developer relations at Stream, where the job was to make a complex product feel simple for other developers. Before that he led iOS work at Achmea and consulted at Xebia. Across that path he has moved between Python, Java, Objective-C, and Swift — and between writing code and talking with the people who have to live with it.
 
