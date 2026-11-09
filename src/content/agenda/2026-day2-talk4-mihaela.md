@@ -1,7 +1,7 @@
 ---
 title: "SwiftUI Is One Graph"
 date: "2026-11-12"
-time: "13:15"
+time: "15:30"
 name: "Mihaela Mihaljevic"
 image: "/images/speakers/2026/mihaela.webp"
 type: "Talk"
