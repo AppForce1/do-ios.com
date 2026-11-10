@@ -1,14 +1,14 @@
 ---
-title: Talk
+title: "What’s new in Foundation Models"
 date: "2026-11-12"
 time: "13:15"
 name: "Daniel Steinberg"
 image: "/images/hosts/2024/daniel.webp"
 type: "Talk"
-summary: "Topic to be announced."
+summary: "Foundation Models is how your app communicates directly with Apple Intelligence."
 ---
 
-Session details will be announced soon.
+We’ll review the basics, including sessions, prompts, and instructions, and look at what’s new: private cloud compute, dynamic instructions, dynamic profiles, including images in prompts, and generating images. We’ll also look at the new evaluations framework.
 
 ## Daniel Steinberg
 
