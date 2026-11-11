@@ -67,12 +67,6 @@ const eventSchema = {
         "@id": `${site}/#organization`,
       },
       performer: personNodes.map((person) => ({ "@id": person["@id"] })),
-      offers: {
-        "@type": "Offer",
-        url: "https://appforce1.paydro.com/do-ios-2026",
-        availability: "https://schema.org/InStock",
-        validFrom: "2026-01-01",
-      },
       subEvent: [
         {
           "@type": "Event",

@@ -7,7 +7,6 @@ import Hosts from "../components/Hosts2026.astro";
 import Speakers from "../components/Speakers2026.astro";
 import Support from "../components/Support2026.astro";
 import Location from "../components/Location.astro";
-import Tickets from "../components/Tickets.astro";
 import Sponsors from "../components/Sponsors2026.astro";
 import Agenda from "../components/Agenda2026.astro";
 import Partners from "../components/Partners.astro";
@@ -16,7 +15,7 @@ import Faq2026 from "../components/Faq2026.astro";
 
 const pageTitle = "Do iOS 2026 — iOS Developer Conference in Amsterdam";
 const pageDescription =
-  "Do iOS 2026 is Europe's premier iOS developer conference in Amsterdam. Workshops Nov 10, talks Nov 11–12 at NEMO Science Museum. Get tickets.";
+  "Do iOS 2026 is Europe's premier iOS developer conference in Amsterdam. Workshops Nov 10, talks Nov 11–12 at NEMO Science Museum.";
 ---
 
 <Layout title={pageTitle} description={pageDescription} theme="2026">
@@ -25,7 +24,7 @@ const pageDescription =
 
     <section class="newsletter panel">
       <h2 class="section-heading">Stay updated</h2>
-      <p class="section-lead">Get announcements on speakers, workshops, and ticket releases.</p>
+      <p class="section-lead">Get news about Do iOS and future editions.</p>
       <form
         action="https://sendy.appforce1.net/subscribe"
         method="POST"
@@ -153,10 +152,6 @@ const pageDescription =
           href="#agenda"
         />
       </div>
-    </section>
-
-    <section class="panel">
-      <Tickets shop="do-ios-2026" />
     </section>
 
     <section class="panel">

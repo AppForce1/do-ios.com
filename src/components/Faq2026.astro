@@ -1,5 +1,4 @@
 ---
-const ticketShopUrl = "https://appforce1.paydro.com/do-ios-2026";
 const nemoMapsUrl =
   "http://maps.apple.com/?address=Oosterdok+2+Amsterdam&q=NEMO+Science+Museum";
 
@@ -15,19 +14,14 @@ const faqs = [
       "The conference takes place at NEMO Science Museum, Oosterdok 2, 1011 VX Amsterdam, in the city centre near Amsterdam Central Station.",
   },
   {
-    question: "How do I get tickets for Do iOS 2026?",
-    answer:
-      "Tickets are sold through our official shop at appforce1.paydro.com/do-ios-2026. You can choose a workshop pass, a two-day conference pass, or a combined workshop and conference pass.",
-  },
-  {
     question: "Can I still submit a talk for Do iOS 2026?",
     answer:
       "The Call for Papers closed on August 16, 2026. Thank you to everyone who submitted. We reviewed proposals and announced the lineup.",
   },
   {
-    question: "What is included in a Do iOS conference ticket?",
+    question: "What is included on the conference days?",
     answer:
-      "Conference tickets include two days of talks at NEMO Science Museum, lunch on both conference days, and the walking dinner on the first conference evening. Workshop tickets are sold separately for November 10.",
+      "The conference days include talks at NEMO Science Museum, lunch on both days, and the walking dinner on the first conference evening. November 10 was the workshop day.",
   },
   {
     question: "Is Do iOS an in-person iOS conference?",
@@ -83,30 +77,22 @@ const faqSchema = {
 
     <div class="faq-item">
       <dt>{faqs[2].question}</dt>
-      <dd>
-        Tickets are sold through our{" "}
-        <a href={ticketShopUrl} target="_blank" rel="noopener noreferrer">
-          official ticket shop
-        </a>
-        . You can choose a workshop pass, a two-day conference pass, or a combined
-        workshop and conference pass.
-      </dd>
+      <dd>{faqs[2].answer}</dd>
     </div>
 
     <div class="faq-item">
       <dt>{faqs[3].question}</dt>
-      <dd>{faqs[3].answer}</dd>
+      <dd>
+        The conference days include talks at{" "}
+        <a href={nemoMapsUrl}>NEMO Science Museum</a>, lunch on both days, and
+        the walking dinner on the first conference evening. November 10 was the
+        workshop day.
+      </dd>
     </div>
 
     <div class="faq-item">
       <dt>{faqs[4].question}</dt>
-      <dd>
-        Conference tickets include two days of talks at{" "}
-        <a href={nemoMapsUrl}>NEMO Science Museum</a>, lunch on both conference
-        days, and the walking dinner on the first conference evening.{" "}
-        <a href="#tickets">Workshop tickets</a> are sold separately for November
-        10.
-      </dd>
+      <dd>{faqs[4].answer}</dd>
     </div>
 
     <div class="faq-item">
@@ -116,11 +102,6 @@ const faqSchema = {
 
     <div class="faq-item">
       <dt>{faqs[6].question}</dt>
-      <dd>{faqs[6].answer}</dd>
-    </div>
-
-    <div class="faq-item">
-      <dt>{faqs[7].question}</dt>
       <dd>
         Open <a href="/now">do-ios.com/now</a> on your phone to see what is on now and what is next.
         <a href="/schedule.ics">Add the schedule to Calendar</a> so it is still there if the venue Wi-Fi is busy.
