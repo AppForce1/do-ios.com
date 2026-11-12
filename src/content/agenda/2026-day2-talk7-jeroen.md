@@ -1,14 +1,14 @@
 ---
-title: Talk
+title: "Do iOS: The Real History"
 date: "2026-11-12"
 time: "16:15"
 name: "Jeroen Leenarts"
 image: "/images/speakers/2026/jeroen.webp"
 type: "Talk"
-summary: "Topic to be announced."
+summary: "A trip down memory lane: why Do iOS was created, and how it evolved over the years."
 ---
 
-Session details will be announced soon.
+Join Jeroen for a trip down memory lane on Do iOS and its history. Learn why Do iOS was created and how it evolved over the years.
 
 ## Jeroen Leenarts
 
